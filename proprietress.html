@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from croweschools.com/proprietress.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 24 Apr 2024 06:55:39 GMT -->
+<head>
+    <meta charset="utf-8">
+    <title>Crowe Schools</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Crowe Schools">
+    <meta name="keywords" content="Crowe Schools, School, Education, Learning, Students, Curriculum, Programs, Admissions, Faculty, Staff, Classes, Courses, 
+    Extracurricular activities, Facilities, Resources, Campus, Academic excellence, Scholarships, Community involvement, Parent involvement, Alumni network, 
+    Technology integration, Research opportunities, Study abroad, Career services, College preparation, International education">
+    <meta name="author" content="Aporaj Enterprise">
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon and Touch Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#6366f1">
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#080032">
+    <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Vendor Styles -->
+    <link rel="stylesheet" href="../cdn.jsdelivr.net/npm/boxicons%40latest/css/boxicons.min.css">
+    <link rel="stylesheet"  href="../cdn.jsdelivr.net/npm/swiper%4010/swiper-bundle.min.css"/>
+    <link rel="stylesheet" media="screen" href="assets/vendor/lightgallery/css/lightgallery-bundle.min.css">
+    <link rel="stylesheet" media="screen" href="assets/vendor/img-comparison-slider/dist/styles.css">
+
+    <!-- Main Theme Styles + Bootstrap -->
+    <link rel="stylesheet" media="screen" href="assets/css/theme.min.css">
+
+    <!-- Page loading styles -->
+    <style>
+      .page-loading {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all .4s .2s ease-in-out;
+        transition: all .4s .2s ease-in-out;
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9999;
+      }
+      .dark-mode .page-loading {
+        background-color: #0b0f19;
+      }
+      .page-loading.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .page-loading-inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: opacity .2s ease-in-out;
+        transition: opacity .2s ease-in-out;
+        opacity: 0;
+      }
+      .page-loading.active > .page-loading-inner {
+        opacity: 1;
+      }
+      .page-loading-inner > span {
+        display: block;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #9397ad;
+      }
+      .dark-mode .page-loading-inner > span {
+        color: #fff;
+        opacity: .6;
+      }
+      .page-spinner {
+        display: inline-block;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-bottom: .75rem;
+        vertical-align: text-bottom;
+        border: .15em solid #b4b7c9;
+        border-right-color: transparent;
+        border-radius: 50%;
+        -webkit-animation: spinner .75s linear infinite;
+        animation: spinner .75s linear infinite;
+      }
+      .dark-mode .page-spinner {
+        border-color: rgba(255,255,255,.4);
+        border-right-color: transparent;
+      }
+      @-webkit-keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+
+    <!-- Theme mode -->
+    <script>
+      let mode = window.localStorage.getItem('mode'),
+          root = document.getElementsByTagName('html')[0];
+      if (mode !== null && mode === 'dark') {
+        root.classList.add('dark-mode');
+      } else {
+        root.classList.remove('dark-mode');
+      }
+    </script>
+    
+    <!-- Page loading scripts -->
+    <script>
+      (function () {
+        window.onload = function () {
+          const preloader = document.querySelector('.page-loading');
+          preloader.classList.remove('active');
+          setTimeout(function () {
+            preloader.remove();
+          }, 1000);
+        };
+      })();
+    </script>
+  </head>
+
+
+  <!-- Body -->
+  <body>
+    
+    <!-- Page loading spinner -->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div><span>Loading...</span>
+      </div>
+    </div>
+
+
+    <!-- Page wrapper for sticky footer -->
+    <!-- Wraps everything except footer to push footer to the bottom of the page if there is little content -->
+    <main class="page-wrapper">
+
+
+      <!-- Navbar -->
+      <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page -->
+      <header class="header navbar navbar-expand-lg position-absolute navbar-sticky">
+        <div class="container ">
+          <a href="index-2.html" class="navbar-brand pe-3">
+            <img src="assets/img/logo.png" width="40" alt="Crowe Schools">Crowe Int'l
+          </a>
+          <div id="navbarNav" class="offcanvas offcanvas-end">
+            <div class="offcanvas-header border-bottom">
+              <h5 class="offcanvas-title">Menu</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a href="index-2.html" class="nav-link">Home</a></li>
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">About</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="about.html" class="dropdown-item py-2">School</a></li>
+                    <li><a href="proprietor.html" class="dropdown-item py-2">Proprietor</a></li>
+                    <li><a href="proprietress.html" class="dropdown-item py-2">Proprietress</a></li>
+                    <li><a href="principal.html" class="dropdown-item py-2">Principal</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item"> <a href="gallery.html" class="nav-link">Gallery</a> </li>
+                <li class="nav-item dropdown"> 
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Portal</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="https://portal.croweschools.com/student-login.php" class="dropdown-item py-2">Student Portal</a></li>
+                    <li><a href="https://portal.croweschools.com/staff-login.php" class="dropdown-item py-2">Staff Portal</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item"><a href="blog.html" class="nav-link">News & Events</a></li>
+                <li class="nav-item"><a href="admission.html" class="nav-link">Admission</a></li>
+              </ul>
+            </div>
+            <div class="offcanvas-header border-top">
+              <a href="contact.html" class="btn btn-primary shadow-primary w-100" >
+                <i class="bx bx bx bx-mail-send fs-4 lh-1 me-1"></i>
+                &nbsp;Contacts Us
+              </a>
+            </div>      
+          </div>
+          <div class="form-check form-switch mode-switch pe-lg-1 ms-auto me-4" data-bs-toggle="mode">
+            <input type="checkbox" class="form-check-input" id="theme-mode">
+            <label class="form-check-label d-none d-sm-block" for="theme-mode">Light</label>
+            <label class="form-check-label d-none d-sm-block" for="theme-mode">Dark</label>
+          </div>
+          <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a href="contact.html" class="btn btn-primary shadow-primary btn-sm fs-sm rounded d-none d-lg-inline-flex" >
+            &nbsp;Contact Us
+          </a>
+        </div>
+      </header>
+      
+      <!-- Hero -->
+      <section class="position-relative pt-5">
+
+        <!-- Background -->
+        <div class="position-absolute top-0 start-0 w-100 bg-position-bottom-center bg-size-cover bg-repeat-0"
+         style="background-image: url(assets/img/about/hero-bg.svg);">
+          <div class="d-lg-none" style="height: 960px;"></div>
+          <div class="d-none d-lg-block" style="height: 768px;"></div>
+        </div>
+
+        <!-- Content -->
+        <div class="container position-relative zindex-5 pt-5">
+          <div class="row">
+            <div class="col-lg-6">
+              <!-- Breadcrumb -->
+              <nav class="pt-md-2 pt-lg-3 pb-4 pb-md-5 mb-xl-4" aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0">
+                  <li class="breadcrumb-item">
+                    <a href="index-2.html"><i class="bx bx-home-alt fs-lg me-1"></i>Home</a>
+                  </li>
+                  <li class="breadcrumb-item">
+                    <a href="about.html">About</a>
+                  </li>
+                  <li class="breadcrumb-item active" aria-current="page">Proprietress</li>
+                </ol>
+              </nav>
+            </div>
+
+            <div class="row g-0 bg-dark bg-repeat-0 bg-position-center border rounded-3 overflow-hidden" style="background-image: url(assets/img/portfolio/courses/author-pattern.svg);">
+              <div class="col-md-5 bg-repeat-0 bg-position-top-center bg-size-cover" style="background-image: url(assets/img/portfolio/courses/author.jpg); min-height: 350px;"></div>
+              <div class="col-md-7 py-xl-5 px-4">
+                <div class="py-5 mx-auto" style="max-width: 650px;">
+                  <div class="fs-xl text-light opacity-80 mb-2">#About</div>
+                  <h2 class="h1 text-light mb-4">Albert Flores</h2>
+                  <p class="text-light opacity-85 fs-lg pb-4 mb-1 mb-md-2 mb-lg-3">Alhaji (Chief) A.B. Olaboopo, a distinguished individual, was born 
+                    into a devout Muslim family in Iragbiji, Osun State, located in the western part of Nigeria. His 
+                    educational journey began in 1955 when he embarked on his primary school education. With a thirst for 
+                    knowledge, he continued his studies at A.U.D College in Ota, where he obtained a Grade Two certificate 
+                    in 1964-1965, laying a solid foundation for his academic pursuits. Driven by a passion for excellence, 
+                    Alhaji (Chief) A.B. Olaboopo pursued his professional. <br> Expanding his intellectual horizons, he 
+                    embarked on a new chapter of his educational journey at the prestigious University of Ibadan from 1984 
+                    to 1987. During this time, he delved into the study of Economics and earned an honorable Bachelor of 
+                    Science degree, further enriching his understanding of economic principles  fueling his intellectual 
+                    curiosity.</p>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
+      <section class="container pt-3 mt-2 mt-lg-4 mt-xl-5">
+        <div class="row">
+
+         <!-- Sidebar (Course summary) -->
+         <aside class="col-lg-4 col-md-5 offset-xl-1 order-md-2 mb-5">
+          <div style="margin-top: -96px;"></div>
+          <div class="position-sticky top-0 pt-5">
+            <div class="pt-5 mt-md-3">
+              <div class="card shadow-sm p-sm-3">
+                <div class="card-body">
+                  <h4 class="mb-4">Contact Information</h4>
+                  <ul class="list-unstyled">
+                    <li class="d-flex align-items-center mb-2">
+                      <i class="text-primary bx bx-phone-call fs-xl me-2 pe-1"></i>
+                      +2348034303393
+                    </li>
+                    <li class="d-flex align-items-center mb-2">
+                      <i class="text-primary bx bx-phone-call fs-xl me-2 pe-1"></i>
+                      +2348083301547
+                    </li>
+                    <li class="d-flex align-items-center mb-2">
+                      <i class="text-primary bx bx-envelope fs-xl me-2 pe-1"></i>
+                      ayoolaboopo@gmail.com
+                    </li>
+                  </ul>
+                  <div class="d-flex pt-1 pt-md-3 pt-xl-4">
+                    <a href="#" class="btn btn-icon btn-secondary btn-facebook me-3">
+                      <i class="bx bxl-facebook"></i>
+                    </a>
+                    <a href="#" class="btn btn-icon btn-secondary btn-linkedin me-3">
+                      <i class="bx bxl-linkedin"></i>
+                    </a>
+                    <a href="#" class="btn btn-icon btn-secondary btn-twitter me-3">
+                      <i class="bx bxl-twitter"></i>
+                    </a>
+                    <!-- <a href="#" class="btn btn-icon btn-secondary btn-youtube">
+                      <i class="bx bxl-youtube"></i>
+                    </a> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+          <!-- Content -->
+          <div class="col-xl-7 col-lg-8 col-md-7 order-md-1 mb-5 pb-5">
+            <p class="fs-lg pb-4 mb-1 mb-md-2 mb-lg-3">Alhaji (Chief) A.B. Olaboopo's commitment to education and his vision for providing 
+              quality schooling led him to establish the Nurudeen Group of Schools in Iwo, Osun State. As the proprietor, 
+              he has created an educational institution that upholds the values of academic excellence, character 
+              development, and holistic growth. Through his dedication, leadership, and unwavering support, Alhaji 
+              (Chief) A.B. Olaboopo has played a pivotal role in shaping the educational landscape, providing countless 
+              students with opportunities to thrive academically and personally. His contributions to the field of education
+               have left an indelible mark on the lives of many, empowering them to pursue their dreams and make a positive 
+               impact in their communities.
+            </p>
+
+            <h2 class="h1 pb-md-2 pb-lg-3">Education</h2>
+            <p class="fs-lg pb-4 mb-1 mb-md-2 mb-lg-3">Alhaji (Chief) A.B. Olaboopo's commitment to education and his vision for providing 
+              quality schooling led him to establish the Nurudeen Group of Schools in Iwo, Osun State. As the proprietor, 
+              he has created an educational institution that upholds the values of academic excellence, character 
+              development, and holistic growth. Through his dedication, leadership, and unwavering support, Alhaji 
+              (Chief) A.B. Olaboopo has played a pivotal role in shaping the educational landscape, providing countless 
+              students with opportunities to thrive academically and personally. His contributions to the field of education
+               have left an indelible mark on the lives of many, empowering them to pursue their dreams and make a positive 
+               impact in their communities.
+            </p>
+            <div class="steps steps-sm">
+              <div class="step">
+                <div class="step-number">
+                  <div class="step-number-inner">1</div>
+                </div>
+                <div class="step-body">
+                  <h4 class="mb-2">Introduction. Getting started</h4>
+                  <p class="fs-lg mb-0">Nulla faucibus mauris pellentesque blandit faucibus non. Sit ut et at suspendisse gravida hendrerit tempus placerat.</p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step-number">
+                  <div class="step-number-inner">2</div>
+                </div>
+                <div class="step-body">
+                  <h4 class="mb-2">The ultimate HTML developer: advanced HTML</h4>
+                  <p class="fs-lg mb-0">Lobortis diam elit id nibh ultrices sed penatibus donec. Nibh iaculis eu sit cras ultricies. Nam eu eget etiam egestas donec scelerisque ut ac enim. Vitae ac nisl, enim nec accumsan vitae est.</p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step-number">
+                  <div class="step-number-inner">3</div>
+                </div>
+                <div class="step-body">
+                  <h4 class="mb-2">CSS &amp; CSS3: basic</h4>
+                  <p class="fs-lg mb-0">Duis euismod enim, facilisis risus tellus pharetra lectus diam neque. Nec ultrices mi faucibus est. Magna ullamcorper potenti elementum ultricies auctor.</p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step-number">
+                  <div class="step-number-inner">4</div>
+                </div>
+                <div class="step-body">
+                  <h4 class="mb-2">JavaScript basics for beginners</h4>
+                  <p class="fs-lg mb-0">Morbi porttitor risus imperdiet a, nisl mattis. Amet, faucibus eget in platea vitae, velit, erat eget velit. At lacus ut proin erat.</p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step-number">
+                  <div class="step-number-inner">5</div>
+                </div>
+                <div class="step-body">
+                  <h4 class="mb-2">Understanding APIs</h4>
+                  <p class="fs-lg mb-0">Risus morbi euismod in congue scelerisque fusce pellentesque diam consequat. Nisi mauris nibh sed est morbi amet arcu urna. Malesuada feugiat quisque consectetur elementum diam vitae. Dictumst facilisis odio eu quis maecenas risus odio fames bibendum ullamcorper.</p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step-number">
+                  <div class="step-number-inner">6</div>
+                </div>
+                <div class="step-body">
+                  <h4 class="mb-2">Python from beginner to advanced</h4>
+                  <p class="fs-lg mb-0">Quis risus quisque diam diam. Volutpat neque eget eu faucibus sed urna fermentum risus. Est, mauris morbi nibh massa.</p>
+                </div>
+              </div>
+            </div>
+
+            <h2 class="h1 pb-md-2 pb-lg-3 pt-4 mt-1 mt-md-2 mt-lg-3">Experience</h2>
+            <div class="steps steps-sm">
+              <div class="step">
+                <div class="step-number">
+                  <div class="step-number-inner">1</div>
+                </div>
+                <div class="step-body">
+                  <h4 class="mb-2">Introduction. Getting started</h4>
+                  <p class="fs-lg mb-0">Nulla faucibus mauris pellentesque blandit faucibus non. Sit ut et at suspendisse gravida hendrerit tempus placerat.</p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step-number">
+                  <div class="step-number-inner">2</div>
+                </div>
+                <div class="step-body">
+                  <h4 class="mb-2">The ultimate HTML developer: advanced HTML</h4>
+                  <p class="fs-lg mb-0">Lobortis diam elit id nibh ultrices sed penatibus donec. Nibh iaculis eu sit cras ultricies. Nam eu eget etiam egestas donec scelerisque ut ac enim. Vitae ac nisl, enim nec accumsan vitae est.</p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step-number">
+                  <div class="step-number-inner">3</div>
+                </div>
+                <div class="step-body">
+                  <h4 class="mb-2">CSS &amp; CSS3: basic</h4>
+                  <p class="fs-lg mb-0">Duis euismod enim, facilisis risus tellus pharetra lectus diam neque. Nec ultrices mi faucibus est. Magna ullamcorper potenti elementum ultricies auctor.</p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step-number">
+                  <div class="step-number-inner">4</div>
+                </div>
+                <div class="step-body">
+                  <h4 class="mb-2">JavaScript basics for beginners</h4>
+                  <p class="fs-lg mb-0">Morbi porttitor risus imperdiet a, nisl mattis. Amet, faucibus eget in platea vitae, velit, erat eget velit. At lacus ut proin erat.</p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step-number">
+                  <div class="step-number-inner">5</div>
+                </div>
+                <div class="step-body">
+                  <h4 class="mb-2">Understanding APIs</h4>
+                  <p class="fs-lg mb-0">Risus morbi euismod in congue scelerisque fusce pellentesque diam consequat. Nisi mauris nibh sed est morbi amet arcu urna. Malesuada feugiat quisque consectetur elementum diam vitae. Dictumst facilisis odio eu quis maecenas risus odio fames bibendum ullamcorper.</p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step-number">
+                  <div class="step-number-inner">6</div>
+                </div>
+                <div class="step-body">
+                  <h4 class="mb-2">Python from beginner to advanced</h4>
+                  <p class="fs-lg mb-0">Quis risus quisque diam diam. Volutpat neque eget eu faucibus sed urna fermentum risus. Est, mauris morbi nibh massa.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="container pb-5 mb-1 mb-md-4 mb-lg-5">
+        <div class="row pb-xl-3">
+          <div class="col-md-6 pb-2 pb-md-0 mb-4 mb-md-0">
+            <div class="d-flex flex-column h-100 shadow-sm rounded-3 overflow-hidden">
+              <iframe class="d-block h-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5020.057277316842!2d-122.40737351959179!3d37.73986147046842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd5ce6be90058bc85!2sOur%20Planet%20Recycling%20S.F.!5e0!3m2!1sen!2sua!4v1653946944869!5m2!1sen!2sua" style="border: 0; min-height: 300px;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+          </div>
+          <div class="col-xl-5 col-md-6 offset-xl-1">
+            <h2 class="h1 mb-1 mb-lg-3">Need more information about our school?</h2>
+            <ul class="list-unstyled pb-3 mb-0 mb-lg-3">
+              <li class="d-flex mb-3">
+                <i class="bx bx-map text-muted fs-xl mt-1 me-2"></i>
+                Noe Valley Bakery 24th Street, San Francisco, CA, USA
+              </li>
+              <li class="d-flex mb-3">
+                <i class="bx bx-phone-call text-muted fs-xl mt-1 me-2"></i>
+                (406) 555-0120
+              </li>
+              <li class="d-flex mb-3">
+                <i class="bx bx-time text-muted fs-xl mt-1 me-2"></i>
+                <div>
+                  <div><span class="text-dark fw-semibold me-1">Mon – Fri:</span>9:00 am – 22:00 pm</div>
+                  <div><span class="text-dark fw-semibold me-1">Sat – Sun:</span>9:00 am – 20:00 pm</div>
+                </div>
+              </li>
+              <li class="d-flex mb-3">
+                <i class="bx bx-envelope text-muted fs-xl mt-1 me-2"></i>
+                example@email.com
+              </li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary shadow-primary btn-lg">Contact us</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer dark-mode pt-5 pb-4 pb-lg-5" style="background-color: #521417;">
+      <div class="container pt-lg-4">
+        <div class="row pb-5">
+          <div class="col-lg-4 col-md-6">
+            <div class="navbar-brand text-dark p-0 me-0 mb-3 mb-lg-4">
+              <img src="assets/img/logo.png" width="40" alt="Crowe Schools">Crowe Int'l Schools
+            </div>
+            <p class="fs-lg text-light pb-lg-3 mb-4">Choose Crowe Schools, where academic excellence, values-based education, state-of-the-art facilities, and a supportive environment come together to provide students with the best possible education and prepare them for a successful future.</p>
+          </div>
+          <div class="fs-lg col-xl-6 col-lg-7 col-md-5 offset-xl-2 offset-md-1 pt-4 pt-md-1 pt-lg-0">
+            <div id="footer-links" class="row d-sm-flex">
+              <div class="col-lg-4">
+                <h6 class="mb-2">Useful Links</h6>
+                <div id="useful-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
+                  <ul class="nav flex-column pb-lg-1 mb-lg-3">
+                    <li class="nav-item"><a href="index-2.html" class="nav-link d-inline-block px-0 pt-1 pb-2">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link d-inline-block px-0 pt-1 pb-2">About School</a></li>
+                    <li class="nav-item"><a href="gallery.html" class="nav-link d-inline-block px-0 pt-1 pb-2">Gallery</a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link d-inline-block px-0 pt-1 pb-2">News &amp; Events</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-3">
+                <h6 class="mb-2">Socials</h6>
+                <div id="social-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
+                  <ul class="nav flex-column mb-2 mb-lg-0">
+                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Facebook</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">LinkedIn</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Twitter</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-5 pt-2 pt-lg-0">
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="nav d-block fs-xs text-center text-md-start pb-2 pb-lg-0 mb-0">
+          <span class="text-light opacity-50">&copy; All rights reserved.</span>
+          <a href="index-2.html" class="nav-link d-inline-block p-0" >Crowe Schools</a>
+        </p>
+      </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <a href="#top" class="btn-scroll-top" data-scroll>
+      <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
+      <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
+    </a>
+
+    <!-- Vendor Scripts -->
+    <script src="../cdn.jsdelivr.net/npm/bootstrap%405.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <!-- Form Scripts -->
+    <script src="../cdn.jsdelivr.net/npm/cleave.js%401.6.0/dist/cleave.min.js"></script>
+
+    <!-- Animation Scripts -->
+    <script src="assets/vendor/%40lottiefiles/lottie-player/dist/lottie-player.js"></script>
+
+    <!-- Slider and Gallery Scripts -->
+    <script src="../cdn.jsdelivr.net/npm/swiper%4010/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/lightgallery/lightgallery.min.js"></script>
+    <script src="assets/vendor/lightgallery/plugins/fullscreen/lg-fullscreen.min.js"></script>
+    <script src="assets/vendor/lightgallery/plugins/zoom/lg-zoom.min.js"></script>
+    <script src="assets/vendor/lightgallery/plugins/video/lg-video.min.js"></script>
+    <script src="assets/vendor/lightgallery/plugins/thumbnail/lg-thumbnail.min.js"></script>
+
+    <!-- Parallax and Animation Scripts -->
+    <script src="assets/vendor/parallax-js/dist/parallax.min.js"></script>
+    <script src="assets/vendor/rellax/rellax.min.js"></script>
+    <script src="assets/vendor/jarallax/dist/jarallax.min.js"></script>
+
+    <!-- Image and Animation Scripts -->
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/shufflejs/dist/shuffle.min.js"></script>
+
+    <!-- Main Theme Script -->
+    <script src="assets/js/theme.min.js"></script>
+  </body>
+
+<!-- Mirrored from croweschools.com/proprietress.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 24 Apr 2024 06:55:39 GMT -->
+</html>

@@ -1,0 +1,1460 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="utf-8">
+    <title>Crowe Schools</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Crowe Schools">
+    <meta name="keywords" content="Crowe Schools, School, Education, Learning, Students, Curriculum, Programs, Admissions, Faculty, Staff, Classes, Courses, 
+    Extracurricular activities, Facilities, Resources, Campus, Academic excellence, Scholarships, Community involvement, Parent involvement, Alumni network, 
+    Technology integration, Research opportunities, Study abroad, Career services, College preparation, International education">
+    <meta name="author" content="Aporaj Enterprise">
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon and Touch Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#6366f1">
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#080032">
+    <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Vendor Styles -->
+    <link rel="stylesheet" href="../cdn.jsdelivr.net/npm/boxicons%40latest/css/boxicons.min.css">
+    <link rel="stylesheet"  href="../cdn.jsdelivr.net/npm/swiper%4010/swiper-bundle.min.css"/>
+    <link rel="stylesheet" media="screen" href="assets/vendor/lightgallery/css/lightgallery-bundle.min.css">
+    <link rel="stylesheet" media="screen" href="assets/vendor/img-comparison-slider/dist/styles.css">
+
+    <!-- Main Theme Styles + Bootstrap -->
+    <link rel="stylesheet" media="screen" href="assets/css/theme.min.css">
+
+    <!-- Page loading styles -->
+    <style>
+      .page-loading {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all .4s .2s ease-in-out;
+        transition: all .4s .2s ease-in-out;
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9999;
+      }
+      .dark-mode .page-loading {
+        background-color: #0b0f19;
+      }
+      .page-loading.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .page-loading-inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: opacity .2s ease-in-out;
+        transition: opacity .2s ease-in-out;
+        opacity: 0;
+      }
+      .page-loading.active > .page-loading-inner {
+        opacity: 1;
+      }
+      .page-loading-inner > span {
+        display: block;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #9397ad;
+      }
+      .dark-mode .page-loading-inner > span {
+        color: #fff;
+        opacity: .6;
+      }
+      .page-spinner {
+        display: inline-block;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-bottom: .75rem;
+        vertical-align: text-bottom;
+        border: .15em solid #b4b7c9;
+        border-right-color: transparent;
+        border-radius: 50%;
+        -webkit-animation: spinner .75s linear infinite;
+        animation: spinner .75s linear infinite;
+      }
+      .dark-mode .page-spinner {
+        border-color: rgba(255,255,255,.4);
+        border-right-color: transparent;
+      }
+      @-webkit-keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      /* Add this CSS to your stylesheet */
+      .button-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+
+      .button-container span {
+          margin: 5px;
+      }
+    </style>
+
+    <!-- Theme mode -->
+    <script>
+      let mode = window.localStorage.getItem('mode'),
+          root = document.getElementsByTagName('html')[0];
+      if (mode !== null && mode === 'dark') {
+        root.classList.add('dark-mode');
+      } else {
+        root.classList.remove('dark-mode');
+      }
+    </script>
+
+    <!-- Page loading scripts -->
+    <script>
+      (function () {
+        window.onload = function () {
+          const preloader = document.querySelector('.page-loading');
+          preloader.classList.remove('active');
+          setTimeout(function () {
+            preloader.remove();
+          }, 1000);
+        };
+      })();
+    </script>
+  </head>
+
+<!-- grey background-color: #f5f5f5 -->
+  <!-- Body -->
+  <body>
+    
+    <!-- Page loading spinner -->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div>
+        <span>Loading...</span>
+      </div>
+    </div>
+
+
+    <!-- Page wrapper for sticky footer -->
+    <!-- Wraps everything except footer to push footer to the bottom of the page if there is little content -->
+    <main class="page-wrapper">
+
+      <!-- Large modal -->
+      <div class="modal fade" id="contactmodalId" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-xl" role="document">
+            <section class="container pb-5 mb-2 mb-md-4 mb-lg-5">
+            <div class="modal-content position-relative bg-secondary rounded-3 py-5 mb-2">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <div class="modal-body row pb-2 py-md-3 py-lg-5 px-4 px-lg-0 position-relative zindex-3">
+                <div class="col-xl-3 col-lg-4 col-md-5 offset-lg-1">
+                  <p class="lead mb-2 mb-md-3">Ready to get started?</p>
+                  <h2 class="h1 pb-3">Don’t Hesitate to Contact Us</h2>
+                </div>
+                <form onsubmit="sendEmail(); return false;" class="col-lg-6 col-md-7 offset-xl-1 needs-validation pb-3 pb-lg-4" novalidate>
+                  <div class="row pb-2">
+                    <div class="col-sm-6 mb-4">
+                      <label for="fn" class="form-label fs-base">First name</label>
+                      <input type="text" id="fn" class="form-control form-control-lg" required>
+                      <div class="invalid-feedback">Please enter your first name!</div>
+                    </div>
+                    <div class="col-sm-6 mb-4">
+                      <label for="sn" class="form-label fs-base">Second name</label>
+                      <input type="text" id="sn" class="form-control form-control-lg" required>
+                      <div class="invalid-feedback">Please enter your second name!</div>
+                    </div>
+                    <div class="col-sm-6 mb-4">
+                      <label for="email" class="form-label fs-base">Email address</label>
+                      <input type="email" id="email" class="form-control form-control-lg" required>
+                      <div class="invalid-feedback">Please provide a valid email address!</div>
+                    </div>
+                    <div class="col-sm-6 mb-4">
+                      <label for="phone" class="form-label fs-base">Phone <small class="text-muted">(optional)</small></label>
+                      <input type="text" id="phone" class="form-control form-control-lg" 
+                      data-format='{"numericOnly": true, "delimiters": ["+234 ", " ", " ", " "]}' 
+                      placeholder="+234 ___ ___ ____">
+                    </div>
+                    <div class="col-12 mb-4">
+                      <label for="message" class="form-label fs-base">Message</label>
+                      <textarea id="message" class="form-control form-control-lg" rows="4" required></textarea>
+                      <div class="invalid-feedback">Please enter your message!</div>
+                    </div>
+                  </div>
+                  <div class="d-flex mb-3">
+                    <button type="submit" class="btn btn-primary shadow-primary">Send message</button>
+                  </div>
+                </form>
+              </div>
+              <!-- Pattern -->
+              <div class="position-absolute end-0 bottom-0 text-primary">
+                <svg width="416" height="444" viewBox="0 0 416 444" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity="0.08" fill-rule="evenodd" clip-rule="evenodd" d="M240.875 615.746C389.471 695.311 562.783 640.474 631.69 504.818C700.597 369.163 645.201 191.864 496.604 112.299C348.007 32.7335 174.696 87.5709 105.789 223.227C36.8815 358.882 92.278 536.18 240.875 615.746ZM208.043 680.381C388.035 776.757 605.894 713.247 694.644 538.527C783.394 363.807 709.428 144.04 529.436 47.6636C349.443 -48.7125 131.584 14.7978 42.8343 189.518C-45.916 364.238 28.0504 584.005 208.043 680.381Z" fill="currentColor"/><path opacity="0.08" fill-rule="evenodd" clip-rule="evenodd" d="M262.68 572.818C382.909 637.194 526.686 594.13 584.805 479.713C642.924 365.295 595.028 219.601 474.799 155.224C354.57 90.8479 210.793 133.912 152.674 248.33C94.5545 362.747 142.45 508.442 262.68 572.818ZM253.924 590.054C382.526 658.913 538.182 613.536 601.593 488.702C665.004 363.867 612.156 206.847 483.554 137.988C354.953 69.129 199.296 114.506 135.886 239.341C72.4752 364.175 125.323 521.195 253.924 590.054Z" fill="currentColor"/></svg>
+              </div>
+            </div>
+            </section>
+        </div>
+      </div>
+
+      <!-- Navbar -->
+      <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page -->
+      <!-- Menu + Theme mode switch + Button -->
+      <header class="header navbar navbar-expand-lg bg-light navbar-sticky navbar-stuck">
+        <div class="container ">
+          <a href="index-2.html" class="navbar-brand pe-3">
+            <img src="assets/img/logo.png" width="40" alt="Crowe Schools">Crowe Int'l
+          </a>
+          <div id="navbarNav" class="offcanvas offcanvas-end">
+            <div class="offcanvas-header border-bottom">
+              <h5 class="offcanvas-title">Menu</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a href="index-2.html" class="nav-link">Home</a></li>
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">About</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="about.html" class="dropdown-item py-2">School</a></li>
+                    <li><a href="proprietor.html" class="dropdown-item py-2">Proprietor</a></li>
+                    <li><a href="proprietress.html" class="dropdown-item py-2">Proprietress</a></li>
+                    <li><a href="principal.html" class="dropdown-item py-2">Principal</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item"> <a href="gallery.html" class="nav-link">Gallery</a> </li>
+                <li class="nav-item dropdown"> 
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Portal</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="https://portal.croweschools.com/student-login.php" class="dropdown-item py-2">Student Portal</a></li>
+                    <li><a href="https://portal.croweschools.com/staff-login.php" class="dropdown-item py-2">Staff Portal</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item"><a href="blog.html" class="nav-link">News & Events</a></li>
+                <li class="nav-item"><a href="admission.html" class="nav-link">Admission</a></li>
+              </ul>
+            </div>
+            <div class="offcanvas-header border-top">
+              <a href="contact.html" class="btn btn-primary shadow-primary w-100" >
+                <i class="bx bx-bx bx-mail-send fs-4 lh-1 me-1"></i>
+                &nbsp;Contacts Us
+              </a>
+            </div>      
+          </div>
+          <div class="form-check form-switch mode-switch pe-lg-1 ms-auto me-4" data-bs-toggle="mode">
+            <input type="checkbox" class="form-check-input" id="theme-mode">
+            <label class="form-check-label d-none d-sm-block" for="theme-mode">Light</label>
+            <label class="form-check-label d-none d-sm-block" for="theme-mode">Dark</label>
+          </div>
+          <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a href="contact.html" class="btn btn-primary shadow-primary btn-sm fs-sm rounded d-none d-lg-inline-flex" >
+            &nbsp;Contact Us
+          </a>
+        </div>
+      </header>
+
+      <!-- Hero slider + BG parallax -->
+      <section class="jarallax dark-mode bg-dark pt-5 py-xxl-5" data-jarallax data-speed="0.4">
+        <span class="position-absolute top-0 start-0 w-100 h-100 bg-gradient-dark-translucent"></span>
+        <div class="jarallax-img" style="background-image: url(assets/img/Crowe-with-Students-2.jpg);"></div>
+        <div class="position-relative text-center zindex-5 overflow-hidden pt-5 py-md-5">
+
+          <!-- Slider controls (Prev / next) -->
+          <button type="button" id="hero-prev" class="btn btn-prev btn-icon btn-xl bg-transparent shadow-none position-absolute top-50 start-0 translate-middle-y d-none d-md-inline-flex ms-n3 ms-lg-2">
+            <i class="bx bx-chevron-left fs-1"></i>
+          </button>
+          <button type="button" id="hero-next" class="btn btn-next btn-icon btn-xl bg-transparent shadow-none position-absolute top-50 end-0 translate-middle-y d-none d-md-inline-flex me-n3 me-lg-2">
+            <i class="bx bx-chevron-right fs-1"></i>
+          </button>
+
+          <!-- Slider -->
+          <div class="container text-center py-xl-5">
+            <div class="row justify-content-center pt-lg-5">
+              <div class="col-xl-8 col-lg-9 col-md-10 col-12">
+                <div class="swiper pt-5 pb-4 py-md-5" data-swiper-options='{
+                  "effect": "fade",
+                  "speed": 1000,
+                  "autoplay": {
+                    "delay": 7000,
+                    "disableOnInteraction": false
+                  },
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "clickable": true
+                  },
+                  "navigation": {
+                    "prevEl": "#hero-prev",
+                    "nextEl": "#hero-next"
+                  }
+                }'>
+                  <div class="swiper-wrapper">
+
+                    <!-- Item 1 -->
+                    <div class="swiper-slide" data-background="url(assets/img/Crowe-with-Students-2.jpg)">
+                      <h4 class="display-2 from-start mb-lg-4">Welcome to</h4>
+                      <h2 class="display-2 from-start mb-lg-4">Crowe Int'l School</h2>
+                      <div class="from-end">
+                        <p class="fs-xl text-white pb-2 mb-lg-5">
+                          MOTTO: Leading With Cognition.                        
+                        </p>
+                      </div>
+                      <div class="button-container scale-up delay-1">
+                        <span>
+                          <a href="about.html" class="btn btn-primary shadow-primary btn-lg">
+                            <i class="bx bx-bulb me-2"></i>Learn More
+                          </a>
+                        </span> 
+                        <span>
+                          <a  href="contact.html" class="btn btn-primary shadow-primary btn-lg">
+                            <i class="bx bx-mail-send me-2"></i>Contact
+                          </a>
+                        </span>
+                      </div>
+                    <!-- </div> -->
+
+                    <!-- Item 2 -->
+                    <!-- <div class="swiper-slide" data-background="url(assets/img/Crowe-with-Students-2.jpg)"> -->
+                      <!-- <h4 class="display-2 from-start mb-lg-4">Welcome to</h4> -->
+                      <h2 class="display-2 from-start mb-lg-4">Path to Excellence and Growth.</h2>
+                      <div class="from-end">
+                        <p class="fs-xl text-white pb-2 mb-lg-5">
+                          MOTTO: Leading With Cognition.
+                        </p>
+                      </div>
+                      <div class="button-container scale-up delay-1">
+                        <span>
+                          <a href="about.html" class="btn btn-primary shadow-primary btn-lg">
+                            <i class="bx bx-bulb me-2"></i>Learn More
+                          </a>
+                        </span> 
+                        <span>
+                          <a  href="contact.html" class="btn btn-primary shadow-primary btn-lg">
+                            <i class="bx bx-mail-send me-2"></i>Contact
+                          </a>
+                        </span>
+                      </div>
+                    <!-- </div> -->
+
+                  </div>
+
+                  <!-- Pagination (bullets) -->
+                  <div class="swiper-pagination position-relative d-md-none pt-2 mt-5"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container d-flex flex-column flex-sm-row align-items-center justify-content-between position-relative zindex-5 pb-5">
+          <div class="d-flex mb-4 mb-sm-0">
+            <a href="#" class="btn btn-icon btn-secondary btn-linkedin rounded-circle me-2">
+              <i class="bx bxl-linkedin"></i>
+            </a>
+            <a href="#" class="btn btn-icon btn-secondary btn-facebook rounded-circle me-2">
+              <i class="bx bxl-facebook"></i>
+            </a>
+            <a href="#" class="btn btn-icon btn-secondary btn-twitter rounded-circle me-2">
+              <i class="bx bxl-twitter"></i>
+            </a>
+            <!-- <a href="#" class="btn btn-icon btn-secondary btn-youtube rounded-circle me-2">
+              <i class="bx bxl-youtube"></i>
+            </a> -->
+          </div>
+          <a href="#eventhome" class="nav-link text-white">
+            Our School Events
+            <i class="bx bx-right-arrow-circle fs-4 ms-2"></i>
+          </a>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="container pt-5 mt-2 mt-md-4 mt-lg-5">
+        <div class="row pt-xl-3">
+          <div class="col-md-6 text-center text-black text-md-start pb-5">
+            <h1 class="mb-4">Welcome Message</h1>
+            <p class="fs-lg pb-lg-3 mb-4">Welcome to Crowe International Schools, we are a private Nursery, Primary and Secondary School located in Iwo, Osun State of Nigeria.
+              Over the years we have continued to facilitate the development of young minds and our academic success is recognised nationally.
+              We are a place where students thrive knowing that they are loved, here they develop a thirst for learning and a sincere love for God.
+              At Crowe International Schools, we inspire each child to achieve their God given individual personal excellence.
+              As a result, they grow to become valuable members of our global community.
+              Guided by the Nigerian Education Curriculum, we cater for children aged 18 months to young adults aged 18 years.</p>
+
+            <!-- <p class="fs-lg pb-lg-3 mb-4">Founded by Alhaji S.O. Ogunremi, the institution provides a holistic education with multiple branches and comprehensive programs. Parents favor it for its emphasis on honesty, dedication to quality education, and exceptional facilities. Honesty Model Schools continues to play a significant role in the intellectual and personal development of its students, making it the preferred choice for education in the region.</p> -->
+            <a href="about.html" class="btn btn-primary shadow-primary btn-lg">More About Us</a>
+          </div>
+          <div class="col-xl-5 col-md-6 offset-xl-1 pb-4 pb-sm-3 pb-lg-0 mb-4 mb-sm-5 mb-lg-0">
+            <img src="assets/img/Director-1.jpg" class="rounded-3 shadow-sm" alt="Image">
+          </div>
+        </div>
+      </section>
+
+      <!-- Core Values -->
+      <section class="bg-secondary pb-md-2 pb-lg-5">
+        <div class="d-none d-lg-block" style="margin-top: -60px; padding-top: 60px;"></div>
+        <div class="container pb-4 pt-5">
+          <h2 class="h1 text-center text-md-center mb-lg-4 pt-1 pt-md-4">Crowe Schools Core Values.</h2>
+          <div class="row align-items-center pb-5 mb-lg-2">
+            <div class="col-md-12 text-center text-md-start">
+              <p class="fs-lg pb-4 mb-1 mb-md-2 mb-lg-3 text-center ">Where Excellence Meets Innovation: Crowe Schools, Where Discipline, Respect, Leadership, and Integrity Drive Success.</p>
+            </div>
+          </div>
+          <div class="row row-cols-1 row-cols-md-3">
+
+            <!-- Item -->
+            <div class="col py-4 my-2 my-sm-3">
+              <a href="#" class="card card-hover h-100 border-0 shadow-sm text-decoration-none pt-5 px-sm-3 px-md-0 px-lg-3 pb-sm-3 pb-md-0 pb-lg-3 me-xl-2">
+                <div class="card-body pt-3">
+                  <div class="d-inline-block bg-primary shadow-primary rounded-3 position-absolute top-0 translate-middle-y p-3">
+                    <img src="assets/img/icons/values/medal.png" class="d-block m-1" width="40" alt="Icon">
+                  </div>
+                  <h2 class="h4 d-inline-flex align-items-center">Academic Excellence
+                  </h2>
+                  <p class="fs-lg text-body mb-0">Crowe Schools strives for academic excellence, fostering a culture of high achievement and promoting intellectual growth among its students.
+                </div>
+              </a>
+            </div>
+  
+            <!-- Item -->
+            <div class="col py-4 my-2 my-sm-3">
+              <a href="#" class="card card-hover h-100 border-0 shadow-sm text-decoration-none pt-5 px-sm-3 px-md-0 px-lg-3 pb-sm-3 pb-md-0 pb-lg-3 ms-xl-2">
+                <div class="card-body pt-3">
+                  <div class="d-inline-block bg-primary shadow-primary rounded-3 position-absolute top-0 translate-middle-y p-3">
+                    <img src="assets/img/icons/values/time.png" class="d-block m-1" width="40" alt="Icon">
+                  </div>
+                  <h2 class="h4 d-inline-flex align-items-center">Discipline
+                  </h2>
+                  <p class="fs-lg text-body mb-0">The school emphasizes discipline as a core value, teaching students the importance of self-control, responsibility, and perseverance in their academic and personal pursuits.</p>
+                </div>
+              </a>
+            </div>
+  
+            <!-- Item -->
+            <div class="col py-4 my-2 my-sm-3">
+              <a href="#" class="card card-hover h-100 border-0 shadow-sm text-decoration-none pt-5 px-sm-3 px-md-0 px-lg-3 pb-sm-3 pb-md-0 pb-lg-3 ms-xl-2">
+                <div class="card-body pt-3">
+                  <div class="d-inline-block bg-primary shadow-primary rounded-3 position-absolute top-0 translate-middle-y p-3">
+                    <img src="assets/img/icons/values/light-bulb.png" class="d-block m-1" width="40" alt="Icon">
+                  </div>
+                  <h2 class="h4 d-inline-flex align-items-center">Innovation
+                  </h2>
+                  <p class="fs-lg text-body mb-0">Crowe Schools values innovation and creativity, inspiring students to think critically, solve problems, and embrace new ideas to adapt to a rapidly changing world.
+                  </p>
+                </div>
+              </a>
+            </div>
+  
+            <!-- Item -->
+            <div class="col py-4 my-2 my-sm-3">
+              <a href="#" class="card card-hover h-100 border-0 shadow-sm text-decoration-none pt-5 px-sm-3 px-md-0 px-lg-3 pb-sm-3 pb-md-0 pb-lg-3 ms-xl-2">
+                <div class="card-body pt-3">
+                  <div class="d-inline-block bg-primary shadow-primary rounded-3 position-absolute top-0 translate-middle-y p-3">
+                    <img src="assets/img/icons/values/value.png" class="d-block m-1" width="40" alt="Icon">
+                  </div>
+                  <h2 class="h4 d-inline-flex align-items-center">Integrity
+                  </h2>
+                  <p class="fs-lg text-body mb-0">The school upholds the values of honesty, integrity, and ethical conduct, instilling these principles in students to develop strong character and moral values.
+                  </p>
+                </div>
+              </a>
+            </div>
+  
+            <!-- Item -->
+            <div class="col py-4 my-2 my-sm-3">
+              <a href="#" class="card card-hover h-100 border-0 shadow-sm text-decoration-none pt-5 px-sm-3 px-md-0 px-lg-3 pb-sm-3 pb-md-0 pb-lg-3 ms-xl-2">
+                <div class="card-body pt-3">
+                  <div class="d-inline-block bg-primary shadow-primary rounded-3 position-absolute top-0 translate-middle-y p-3">
+                    <img src="assets/img/icons/values/people.png" class="d-block m-1" width="40" alt="Icon">
+                  </div>
+                  <h2 class="h4 d-inline-flex align-items-center">Respect
+                  </h2>
+                  <p class="fs-lg text-body mb-0">Crowe Schools promotes a culture of respect, where students learn to appreciate and value diversity, treating others with kindness, empathy, and understanding.
+                  </p>
+                </div>
+              </a>
+            </div>
+  
+            <!-- Item -->
+            <div class="col py-4 my-2 my-sm-3">
+              <a href="#" class="card card-hover h-100 border-0 shadow-sm text-decoration-none pt-5 px-sm-3 px-md-0 px-lg-3 pb-sm-3 pb-md-0 pb-lg-3 ms-xl-2">
+                <div class="card-body pt-3">
+                  <div class="d-inline-block bg-primary shadow-primary rounded-3 position-absolute top-0 translate-middle-y p-3">
+                    <img src="assets/img/icons/values/confidence.png" class="d-block m-1" width="40" alt="Icon">
+                  </div>
+                  <h2 class="h4 d-inline-flex align-items-center">Leardership
+                  </h2>
+                  <p class="fs-lg text-body mb-0">Crowe Schools nurtures leadership qualities in its students, empowering them to become responsible and visionary leaders who make positive contributions to society.
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- School Event Highlights -->
+      <section class="bg-secondary pt-1">
+        <div class="container" id="eventhome">
+            <div class="d-flex align-items-center justify-content-between pb-4 mb-2">
+              <h2 class="h1 mb-0">School Event Highlights</h2>
+              <a href="blog.html" class="btn btn-primary shadow-primary btn-lg">
+                <i class="fs-4 lh-1 me-2"></i>
+                View all events
+              </a>  
+            </div>
+            <p class="fs-lg mb-0 pb-3 mb-3 mb-lg-4">At Crowe School, we believe that education extends far beyond the classroom. That's why we're proud to host a wide range of engaging events and activities that enrich the educational experience of our students and foster a sense of community.</p>
+        </div>
+
+        <div class="position-relative py-lg-4 py-xl-5">
+
+          <!-- Swiper tabs -->
+          <div class="swiper-tabs position-absolute top-0 start-0 w-100 h-100">
+            <div id="image-1" class="jarallax position-absolute top-0 start-0 w-100 h-100 swiper-tab active" data-jarallax data-speed="0.4">
+              <span class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-35"></span>
+              <div class="jarallax-img" style="background-image: url(assets/img/boxing.html\ competition.jpg);"></div>
+            </div>
+            <div id="image-2" class="jarallax position-absolute top-0 start-0 w-100 h-100 swiper-tab" data-jarallax data-speed="0.4">
+              <span class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-35"></span>
+              <div class="jarallax-img" style="background-image: url(assets/img/crowe.html\ admission.png);"></div>
+            </div>
+          </div>
+
+          <!-- Swiper slider -->
+          <div class="container position-relative zindex-5 py-5">
+            <div class="row py-2 py-md-3">
+              <div class="col-xl-5 col-lg-7 col-md-9">
+
+                <!-- Slider controls (Prev / next) -->
+                <div class="d-flex justify-content-center justify-content-md-start pb-3 mb-3">
+                  <button type="button" id="case-study-prev" class="btn btn-prev btn-icon btn-sm bg-white me-2">
+                    <i class="bx bx-chevron-left"></i>
+                  </button>
+                  <button type="button" id="case-study-next" class="btn btn-next btn-icon btn-sm bg-white ms-2">
+                    <i class="bx bx-chevron-right"></i>
+                  </button>
+                </div>
+
+                <!-- Card -->
+                <div class="card bg-white shadow-sm p-3">
+                  <div class="card-body">
+                    <div class="swiper" data-swiper-options='{
+                      "spaceBetween": 30,
+                      "loop": true,
+                      "tabs": true,
+                      "speed": 1000,
+                      "autoplay": {
+                        "delay": 5000,
+                        "disableOnInteraction": false
+                      },
+                      "pagination": {
+                        "el": "#case-study-pagination",
+                        "clickable": true
+                      },
+                      "navigation": {
+                        "prevEl": "#case-study-prev",
+                        "nextEl": "#case-study-next"
+                      }
+                    }'>
+                      <div class="swiper-wrapper">
+
+                        <!-- Item -->
+                        <div class="swiper-slide" data-swiper-tab="#image-1">
+                          <img src="assets/img/logo.png" class="d-block mb-3" width="72" alt="Logo">
+                          <h3 class="mb-2">Boxing competition</h3>
+                          <p class="fs-lg text-muted border-bottom pb-3 mb-3">Crowe Int'l School</p>
+                          <p class="pb-2 pb-lg-3 mb-3 fs-lg">Aenean dolor elit tempus tellus imperdiet. Elementum, ac convallis morbi sit est feugiat ultrices. Cras tortor maecenas pulvinar nec ac justo. Massa sem eget semper...</p>
+                          <a href="boxing-competition.html" class="btn btn-primary shadow-primary">Read More</a>
+                        </div>
+
+                        <!-- Item -->
+                        <div class="swiper-slide" data-swiper-tab="#image-2">
+                          <img src="assets/img/logo.png" class="d-block mb-3" width="72" alt="Logo">
+                          <h3 class="mb-2">2023/2024 Admission</h3>
+                          <p class="fs-sm text-muted border-bottom pb-3 mb-3">Crowe Int'l School</p>
+                          <p class="pb-2 pb-lg-3 mb-3 fs-lg">Adipiscing quis a at ligula. Gravida gravida diam rhoncus cursus in. Turpis sagittis tempor gravida phasellus sapien. Faucibus donec consectetur sed id sit nisl.</p>
+                          <a href="crowe-admission.html" class="btn btn-primary shadow-primary">Read More</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Pagination (bullets) -->
+                <div class="dark-mode pt-4 mt-3">
+                  <div id="case-study-pagination" class="swiper-pagination position-relative bottom-0"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Us -->
+      <section class="container py-5 my-2 my-md-4 my-lg-5">
+        <h2 class="h1 text-center pt-1 pt-xl-2 mb-4">Why Choose Crowe Schools?</h2>
+        <p class="fs-lg text-center text-black pb-4 mb-2 mb-lg-3">Crowe International Schools, Iwo, Osun State is a Government Approved Elementary, Middle and High School Committed to Building and Grooming Future Leaders, Facilitating Creative and Innovative Ideas, Promoting Religious and Ethnic Tolerance and Setting the Pace for others to model.
+          It is not just an Institution excellent in Learning but also in Character.</p>
+
+        <!-- <p class="fs-lg text-center text-black pb-4 mb-2 mb-lg-3">We believe in preparing students for a successful future. Our supportive environment fosters collaboration and critical thinking, equipping students with the skills needed to tackle modern challenges. By choosing Crowe Schools, parents and students embark on an educational journey that goes beyond academics, shaping well-rounded individuals with the knowledge, values, and confidence to make a positive impact on society. Join us for a transformative educational experience.</p> -->
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4 pb-xl-3">
+          <div class="col text-center border-end">
+            <div class="card d-table border-0 rounded-circle shadow-sm p-3 mx-auto mb-4">
+              <img src="assets/img/icons/counter/family.png" width="32" alt="Icon">
+            </div>
+            <h3 class="h5 mb-2 mb-lg-0">100% Satisfied Parents</h3>
+          </div>
+          <div class="col text-center border-end">
+            <div class="card d-table border-0 rounded-circle shadow-sm p-3 mx-auto mb-4">
+              <img src="assets/img/icons/counter/teacher.png" width="32" alt="Icon">
+            </div>
+            <h3 class="h5 mb-2 mb-lg-0">20+ Experienced Teachers</h3>
+          </div>
+          <div class="col text-center border-end">
+            <div class="card d-table border-0 rounded-circle shadow-sm p-3 mx-auto mb-4">
+              <img src="assets/img/icons/counter/graduated.png" width="32" alt="Icon">
+            </div>
+            <h3 class="h5 mb-2 mb-lg-0">500+ Enrolled Students</h3>
+          </div>
+          <div class="col text-center">
+            <div class="card d-table border-0 rounded-circle shadow-sm p-3 mx-auto mb-4">
+              <img src="assets/img/icons/counter/university.png" width="32" alt="Icon">
+            </div>
+            <h3 class="h5 mb-2 mb-lg-0">99% Pass Rate to Universities</h3>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials (Slider) -->
+      <section class="container pb-5 mb-md-2 mb-xl-4">
+        <div class="row pb-lg-2">
+          <h2 class="h1 text-center pt-1 pt-xl-2 mb-4">What Parents and Students have to say about us</h2>
+          <p class="fs-lg text-muted text-center text-black pb-4 mb-2 mb-lg-3">Testimonies about Crowe International Schools. You can also be part of the family.</p>
+            <div class="col-md-4 d-none d-md-block">
+              <!-- Swiper tabs (Author images) -->
+              <div class="swiper-tabs">
+    
+                <!-- Author 1 image -->
+                <div id="author-1" class="card bg-transparent border-0 swiper-tab active">
+                  <div class="card-body p-0 rounded-3 bg-size-contain bg-repeat-0 bg-position-top-center" style="background-image: url(assets/img/user.png);"></div>
+                  <div class="card-footer d-flex w-100 border-0 pb-0">
+                    <div class="ps-xl-4 ms-xl-2">
+                      <h5 class="fw-semibold lh-base mb-0">Mr. Mathew Ajibade</h5>
+                      <span class="fs-sm text-muted">Parent<span class="d-xl-none d-inline"></span></span>
+                    </div>
+                  </div>
+                </div>
+    
+                <!-- Author 2 image -->
+                <div id="author-2" class="card bg-transparent border-0 swiper-tab">
+                  <div class="card-body p-0 rounded-3 bg-size-contain bg-repeat-0 bg-position-top-center" style="background-image: url(assets/img/user.png);"></div>
+                  <div class="card-footer d-flex w-100 border-0 pb-0">
+                    <div class="ps-xl-4 ms-xl-2">
+                      <h5 class="fw-semibold lh-base mb-0">Mr. Ismail Adewale</h5>
+                      <span class="fs-sm text-muted">Parentt<span class="d-xl-none d-inline"></span></span>
+                    </div>
+                  </div>
+                </div>
+    
+                <!-- Author 3 image -->
+                <div id="author-3" class="card bg-transparent border-0 swiper-tab">
+                  <div class="card-body p-0 rounded-3 bg-size-contain bg-repeat-0 bg-position-top-center" style="background-image: url(assets/img/user.png);"></div>
+                  <div class="card-footer d-flex w-100 border-0 pb-0">
+                    <div class="ps-xl-4 ms-xl-2">
+                      <h5 class="fw-semibold lh-base mb-0">Mrs. Comfort Adedeji</h5>
+                      <span class="fs-sm text-muted">Parent<span class="d-xl-none d-inline"></span></span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Author 4 image -->
+                <div id="author-4" class="card bg-transparent border-0 swiper-tab">
+                  <div class="card-body p-0 rounded-3 bg-size-contain bg-repeat-0 bg-position-top-center" style="background-image: url(assets/img/user.png);"></div>
+                  <div class="card-footer d-flex w-100 border-0 pb-0">
+                    <div class="ps-xl-4 ms-xl-2">
+                      <h5 class="fw-semibold lh-base mb-0">Alabi Yetunde</h5>
+                      <span class="fs-sm text-muted">Parent<span class="d-xl-none d-inline"></span></span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Author 5 image -->
+                <!-- <div id="author-5" class="card bg-transparent border-0 swiper-tab">
+                  <div class="card-body p-0 rounded-3 bg-size-cover bg-repeat-0 bg-position-top-center" style="background-image: url(assets/img/team/07.jpg);"></div>
+                  <div class="card-footer d-flex w-100 border-0 pb-0">
+                    <div class="ps-xl-4 ms-xl-2">
+                      <h5 class="fw-semibold lh-base mb-0">Student's Name</h5>
+                      <span class="fs-sm text-muted">Current Student<span class="d-xl-none d-inline"></span></span>
+                    </div>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="card border-0 shadow-sm p-4 p-xxl-5 ms-xxl-5">
+    
+                <!-- Slider prev/next buttons + Quotation mark -->
+                <div class="d-flex justify-content-between pb-4 mb-2">
+                  <span class="btn btn-icon btn-primary btn-lg shadow-primary pe-none">
+                    <i class="bx bxs-quote-left"></i>
+                  </span>
+                  <div class="d-flex">
+                    <button type="button" id="prev2" class="btn btn-prev btn-icon btn-sm me-2">
+                      <i class="bx bx-chevron-left"></i>
+                    </button>
+                    <button type="button" id="next2" class="btn btn-next btn-icon btn-sm ms-2">
+                      <i class="bx bx-chevron-right"></i>
+                    </button>
+                  </div>
+                </div>   
+                
+                <!-- Slider -->
+                <div class="swiper mx-0 mb-md-n2 mb-xxl-n3" data-swiper-options='{
+                  "spaceBetween": 24,
+                  "loop": true,
+                  "tabs": true,
+                  "speed": 1000,
+                  "autoplay": {
+                    "delay": 5000,
+                    "disableOnInteraction": false
+                  },
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "clickable": true
+                  },
+                  "navigation": {
+                    "prevEl": "#prev2",
+                    "nextEl": "#next2"
+                  }
+                }'>
+                  <div class="swiper-wrapper">
+    
+                    <!-- Item -->
+                    <div class="swiper-slide h-auto" data-swiper-tab="#author-1">
+                      <figure class="card h-100 position-relative border-0 bg-transparent">
+                        <blockquote class="card-body p-0 mb-0">
+                          <p class="fs-lg mb-0">
+        
+                            Crowe Schools is a place where dreams take flight. The specialists and tutors here have been instrumental in our child's educational journey. Their diligent and close supervision ensures that our child's core competencies are not just acknowledged but also enhanced. We've witnessed our child's academic and personal growth soar under their guidance. Crowe School's commitment to proper growth and holistic development is truly inspiring, and we couldn't be happier with the results. It's more than a school; it's a place where children thrive.
+                        </p>
+                        </blockquote>
+                        <figcaption class="card-footer border-0 d-sm-flex d-md-none w-100 pb-2">
+                          <div class="d-flex align-items-center pe-sm-4 me-sm-2">
+                            <img src="assets/img/user.png" width="48" class="rounded-circle" alt="">
+                            <div class="ps-3">
+                              <h5 class="fw-semibold lh-base mb-0">Mr. Mathew Ajibade</h5>
+                              <span class="fs-sm text-muted">Parent</span>
+                            </div>
+                          </div>
+                        </figcaption>
+                      </figure>
+                    </div>
+    
+                    <!-- Item -->
+                    <div class="swiper-slide h-auto" data-swiper-tab="#author-2">
+                      <figure class="card h-100 position-relative border-0 bg-transparent">
+                        <blockquote class="card-body p-0 mb-0">
+                          <p class="fs-lg mb-0">
+                            Crowe Schools is a place where every child's unique potential is not just recognized but also harnessed for success. The specialists and tutors here are exceptional in their commitment to diligently and closely supervise our child's educational journey. They take the time to understand our child's strengths and areas for growth, and their personalized support has led to significant improvements. Our child's core competencies have flourished under their guidance, and the results speak for themselves. Crowe School's emphasis on proper growth and holistic development is what sets it apart as a truly outstanding institution.
+                          </p>
+                        </blockquote>
+                        <figcaption class="card-footer border-0 d-sm-flex d-md-none w-100 pb-2">
+                          <div class="d-flex align-items-center pe-sm-4 me-sm-2">
+                            <img src="assets/img/user.png" width="48" class="rounded-circle" alt="">
+                            <div class="ps-3">
+                              <h5 class="fw-semibold lh-base mb-0">Mr. Ismail Adewale</h5>
+                              <span class="fs-sm text-muted">Parent</span>
+                            </div>
+                          </div>
+                        </figcaption>
+                      </figure>
+                    </div>
+    
+                    <!-- Item -->
+                    <div class="swiper-slide h-auto" data-swiper-tab="#author-3">
+                      <figure class="card h-100 position-relative border-0 bg-transparent">
+                        <blockquote class="card-body p-0 mb-0">
+                          <p class="fs-lg mb-0">
+                            Crowe Schools has been a true gem for our family. Our child is not just another student; they're an individual with unique talents and abilities. The school's dedicated team of specialists and tutors diligently and closely supervise our child's educational journey. They have an incredible knack for harnessing core competencies and tailoring the learning experience to suit our child's needs. Their personalized attention has led to a remarkable transformation in our child's academic performance and overall growth. We can't thank Crowe School enough for the care and support they provide, ensuring our child's proper growth and development.
+                          </p>
+                        </blockquote>
+                        <figcaption class="card-footer border-0 d-sm-flex d-md-none w-100 pb-2">
+                          <div class="d-flex align-items-center pe-sm-4 me-sm-2">
+                            <img src="assets/img/user.png" width="48" class="rounded-circle" alt="">
+                            <div class="ps-3">
+                              <h5 class="fw-semibold lh-base mb-0">Mrs. Comfort Adedeji</h5>
+                              <span class="fs-sm text-muted">Parent</span>
+                            </div>
+                          </div>
+                        </figcaption>
+                      </figure>
+                    </div>
+
+                    <!-- Item -->
+                    <div class="swiper-slide h-auto" data-swiper-tab="#author-4">
+                      <figure class="card h-100 position-relative border-0 bg-transparent">
+                        <blockquote class="card-body p-0 mb-0">
+                          <p class="fs-lg mb-0">
+                            At Crowe Schools, our child has found a second home where they are diligently and closely supervised by a team of specialists and tutors who genuinely care. This school goes beyond traditional education; it's a place where individual growth is a top priority. The specialists and tutors here have a unique ability to harness our child's core competencies and help them excel. Our child's journey at Crowe School has been transformative, and we credit this to the nurturing environment created by the school's staff. We're grateful for the proper growth and development our child is experiencing.
+                          </p>
+                        </blockquote>
+                        <figcaption class="card-footer border-0 d-sm-flex d-md-none w-100 pb-2">
+                          <div class="d-flex align-items-center pe-sm-4 me-sm-2">
+                            <img src="assets/img/user.png" width="48" class="rounded-circle" alt="">
+                            <div class="ps-3">
+                              <h5 class="fw-semibold lh-base mb-0">Alabi Yetunde</h5>
+                              <span class="fs-sm text-muted">Parent</span>
+                            </div>
+                          </div>
+                        </figcaption>
+                      </figure>
+                    </div>
+
+                    <!-- Item -->
+                    <!-- <div class="swiper-slide h-auto" data-swiper-tab="#author-5">
+                      <figure class="card h-100 position-relative border-0 bg-transparent">
+                        <blockquote class="card-body p-0 mb-0">
+                          <p class="fs-lg mb-0"></p>
+                        </blockquote>
+                        <figcaption class="card-footer border-0 d-sm-flex d-md-none w-100 pb-2">
+                          <div class="d-flex align-items-center pe-sm-4 me-sm-2">
+                            <img src="assets/img/avatar/01.jpg" width="48" class="rounded-circle" alt="">
+                            <div class="ps-3">
+                              <h5 class="fw-semibold lh-base mb-0">Student's Name</h5>
+                              <span class="fs-sm text-muted">Current Student</span>
+                            </div>
+                          </div>
+                        </figcaption>
+                      </figure>
+                    </div> -->
+                  </div>
+    
+                  <!-- Pagination (bullets) -->
+                  <div class="swiper-pagination position-relative pt-3 mt-4 d-none d-md-flex"></div>
+                </div>        
+              </div>
+            </div>
+      </section>
+
+      <!-- Facilities -->
+      <section class="container pb-5">
+        <h2 class="h1 text-center pt-1 pb-3 mb-3 mb-lg-4">School Facilities</h2>
+        <p class="text-center fs-lg mb-0 pb-3 mb-3 mb-lg-4">Experience top-notch facilities that enrich your educational journey and promote personal and academic growth.</p>
+          <!-- Gallery grid no gutters -->
+          <div class="tab-pane fade show active" id="preview8" role="tabpanel">
+            <div class="position-relative px-md-5">
+              <button type="button" id="prev" class="btn btn-prev btn-icon btn-sm position-absolute top-50 translate-middle-y start-0 d-none d-md-inline-flex mt-n4" tabindex="0" aria-label="Previous slide" aria-controls="swiper-wrapper-6104213cdbb7d000d">
+                <i class="bx bx-chevron-left"></i>
+              </button>
+              <button type="button" id="next" class="btn btn-next btn-icon btn-sm position-absolute top-50 translate-middle-y end-0 d-none d-md-inline-flex mt-n4" tabindex="0" aria-label="Next slide" aria-controls="swiper-wrapper-6104213cdbb7d000d">
+                <i class="bx bx-chevron-right"></i>
+              </button>
+              <div class="swiper swiper-nav-onhover pt-1 swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden" data-swiper-options="{
+                &quot;slidesPerView&quot;: 1,
+                &quot;spaceBetween&quot;: 20,
+                &quot;loop&quot;: true,
+                &quot;speed&quot;: 1000,
+                &quot;autoplay&quot;: {
+                  &quot;delay&quot;: 7000,
+                  &quot;disableOnInteraction&quot;: false
+                },
+                &quot;pagination&quot;: {
+                  &quot;el&quot;: &quot;.swiper-pagination&quot;,
+                  &quot;clickable&quot;: true
+                },
+                &quot;navigation&quot;: {
+                  &quot;prevEl&quot;: &quot;#prev&quot;,
+                  &quot;nextEl&quot;: &quot;#next&quot;
+                },
+                &quot;breakpoints&quot;: {
+                  &quot;500&quot;: {
+                    &quot;slidesPerView&quot;: 2,
+                    &quot;spaceBetween&quot;: 16
+                  },
+                  &quot;1200&quot;: {
+                    &quot;slidesPerView&quot;: 2,
+                    &quot;spaceBetween&quot;: 16
+                  },
+                  &quot;1650&quot;: {
+                    &quot;slidesPerView&quot;: 3,
+                    &quot;spaceBetween&quot;: 24
+                  }
+                }
+              }">
+              <div class="swiper-wrapper gallery" data-video="true" id="swiper-wrapper-6104213cdbb7d000d" aria-live="polite" style="transform: translate3d(-2613px, 0px, 0px); transition-duration: 0ms;"><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2" style="width: 419.5px; margin-right: 16px;" role="group" aria-label="3 / 4">
+                  <a href="assets/img/portfolio/courses/03.jpg" class="gallery-item rounded-3" data-sub-html="<h6 class=&quot;fs-sm text-light&quot;>Gallery image caption</h6>" data-lg-id="57115426-f6c8-4f67-b8f2-b1af18b1300a">
+                    <img src="assets/img/portfolio/courses/03.jpg" alt="Gallery thumbnail">
+                    <div class="gallery-item-caption fs-sm fw-medium">Gallery image caption</div>
+                  </a>
+                </div><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="3" style="width: 419.5px; margin-right: 16px;" role="group" aria-label="4 / 4">
+                  <a href="assets/img/portfolio/courses/07.jpg" class="gallery-item rounded-3" data-sub-html="<h6 class=&quot;fs-sm text-light&quot;>Gallery image caption</h6>" data-lg-id="9488fd02-b938-45e2-8b41-74e76c8a385d">
+                    <img src="assets/img/portfolio/courses/07.jpg" alt="Gallery thumbnail">
+                    <div class="gallery-item-caption fs-sm fw-medium">Gallery image caption</div>
+                  </a>
+                </div>
+                <div class="swiper-slide swiper-slide-duplicate-active" data-swiper-slide-index="0" style="width: 419.5px; margin-right: 16px;" role="group" aria-label="1 / 4">
+                  <a href="assets/img/portfolio/courses/08.jpg" class="gallery-item rounded-3" data-sub-html="<h6 class=&quot;fs-sm text-light&quot;>Gallery image caption</h6>" data-lg-id="d6aa7034-b177-424a-bf90-32738fdb67ee">
+                    <img src="assets/img/portfolio/courses/08.jpg" alt="Gallery thumbnail">
+                    <div class="gallery-item-caption fs-sm fw-medium">Gallery image caption</div>
+                  </a>    
+                </div>
+                <div class="swiper-slide swiper-slide-duplicate-next" data-swiper-slide-index="1" style="width: 419.5px; margin-right: 16px;" role="group" aria-label="2 / 4">
+                  <a href="https://www.youtube.com/watch?v=8KaJRw-rfn8" class="gallery-item video-item rounded-3" data-sub-html="<h6 class=&quot;fs-sm text-light&quot;>Gallery image caption</h6>" data-lg-id="11f3bf90-3b1d-4d16-b607-826451e79729">
+                    <img src="assets/img/portfolio/courses/01.jpg" alt="Gallery thumbnail">
+                    <div class="gallery-item-caption fs-sm fw-medium">Gallery video caption</div>
+                  </a>
+                </div>
+                <div class="swiper-slide" data-swiper-slide-index="2" style="width: 419.5px; margin-right: 16px;" role="group" aria-label="3 / 4">
+                  <a href="assets/img/portfolio/courses/03.jpg" class="gallery-item rounded-3" data-sub-html="<h6 class=&quot;fs-sm text-light&quot;>Gallery image caption</h6>" data-lg-id="9301ed2b-b973-4e9b-922a-7906387bde82">
+                    <img src="assets/img/portfolio/courses/03.jpg" alt="Gallery thumbnail">
+                    <div class="gallery-item-caption fs-sm fw-medium">Gallery image caption</div>
+                  </a>
+                </div>
+                <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="3" style="width: 419.5px; margin-right: 16px;" role="group" aria-label="4 / 4">
+                  <a href="assets/img/portfolio/courses/07.jpg" class="gallery-item rounded-3" data-sub-html="<h6 class=&quot;fs-sm text-light&quot;>Gallery image caption</h6>" data-lg-id="ffa3e59c-2c36-4533-baa9-7c5a9d896ba3">
+                    <img src="assets/img/portfolio/courses/07.jpg" alt="Gallery thumbnail">
+                    <div class="gallery-item-caption fs-sm fw-medium">Gallery image caption</div>
+                  </a>
+                </div>
+              <div class="swiper-slide swiper-slide-duplicate swiper-slide-active" data-swiper-slide-index="0" style="width: 419.5px; margin-right: 16px;" role="group" aria-label="1 / 4">
+                  <a href="assets/img/portfolio/courses/08.jpg" class="gallery-item rounded-3" data-sub-html="<h6 class=&quot;fs-sm text-light&quot;>Gallery image caption</h6>" data-lg-id="4fcdf930-4c5a-4ffc-8c74-9cd526f54571">
+                    <img src="assets/img/portfolio/courses/08.jpg" alt="Gallery thumbnail">
+                    <div class="gallery-item-caption fs-sm fw-medium">Gallery image caption</div>
+                  </a>    
+                </div><div class="swiper-slide swiper-slide-duplicate swiper-slide-next" data-swiper-slide-index="1" role="group" aria-label="2 / 4" style="width: 419.5px; margin-right: 16px;">
+                  <a href="https://www.youtube.com/watch?v=8KaJRw-rfn8" class="gallery-item video-item rounded-3" data-sub-html="<h6 class=&quot;fs-sm text-light&quot;>Gallery image caption</h6>" data-lg-id="87f80895-4275-461e-9ab2-8f7ed94b0056">
+                    <img src="assets/img/portfolio/courses/01.jpg" alt="Gallery thumbnail">
+                    <div class="gallery-item-caption fs-sm fw-medium">Gallery video caption</div>
+                  </a>
+                </div></div>
+              <div class="swiper-pagination position-relative pt-3 pt-sm-4 mt-4 swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1" aria-current="true"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4"></span></div>
+            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery -->
+      <section class="container pb-5 my-md-3 my-lg-5">
+        <div class="d-flex align-items-center justify-content-between pb-4 mb-2">
+          <h2 class="h1 mb-0">School Gallery</h2>
+          <a href="gallery.html" class="btn btn-primary shadow-primary btn-lg">
+            <i class="bx bx-images fs-4 lh-1 me-2"></i>
+            View More
+          </a>  
+        </div>
+        <p class="fs-lg mb-0 pb-3 mb-3 mb-lg-4">Explore our captivating gallery showcasing memorable moments, achievements, and vibrant school life.</p>
+
+          <!-- Gallery grid no gutters -->
+          <div class="tab-pane fade active show" id="preview6" role="tabpanel">
+            <div class="gallery row g-4" data-video="true" data-thumbnails="true">
+              
+              <div class="col-md-4">
+                <a href="assets/img/Crowe-with-Students-2.jpg"class="gallery-item rounded-3 mb-4" data-sub-html='<h6 class="fs-sm text-light">Students of Crowe International Schools</h6>'>
+                  <img src="assets/img/Crowe-with-Students-2.jpg" alt="Gallery thumbnail">
+                  <div class="gallery-item-caption fs-sm fw-medium">Students of Crowe Int'l Schools</div>
+                </a>
+                <a href="assets/img/Physics-Lab-Students-2.jpg" class="gallery-item rounded-3" data-sub-html='<h6 class="fs-sm text-light">Group of Students in front of our Physics Laboratory</h6>'>
+                  <img src="assets/img/Physics-Lab-Students-2.jpg" alt="Gallery thumbnail">
+                  <div class="gallery-item-caption fs-sm fw-medium">Group of Students in front of our Physics Laboratory</div>
+                </a>
+              </div>
+              <div class="col-md-4">
+                <a href="assets/img/Students-Assemly.jpg" class="gallery-item rounded-3 mb-4" data-sub-html='<h6 class="fs-sm text-light">Students at Crowe International Schools on Assemly Grounds</h6>'>
+                  <img src="assets/img/Students-Assemly.jpg" alt="Gallery thumbnail">
+                  <div class="gallery-item-caption fs-sm fw-medium">Students at Crowe Int'l Schools on Assemly Ground</div>
+                </a>
+                <a href="assets/img/Female-Students-Group-1.jpg" class="gallery-item rounded-3" data-sub-html='<h6 class="fs-sm text-light">Group of Female Students at Crowe International Schools</h6>'>
+                  <img src="assets/img/Female-Students-Group-1.jpg" alt="Gallery thumbnail">
+                  <div class="gallery-item-caption fs-sm fw-medium">Group of Female Students at Crowe Int'l Schools</div>
+                </a>
+              </div>
+              <div class="col-md-4">
+                <a href="assets/img/Male-Students-Group-2.jpg" class="gallery-item rounded-3 mb-4" data-sub-html='<h6 class="fs-sm text-light">Group of Male Students at Crowe International Schools</h6>'>
+                  <img src="assets/img/Male-Students-Group-2.jpg" alt="Gallery thumbnail">
+                  <div class="gallery-item-caption fs-sm fw-medium">Group of Male Students at Crowe Int'l Schoolss</div>
+                </a>
+                <a href="assets/img/Physics-Lab-Students-2.jpg" class="gallery-item rounded-3" data-sub-html='<h6 class="fs-sm text-light">Group of Students in front of our Physics Laboratory</h6>'>
+                  <img src="assets/img/Physics-Lab-Students-2.jpg" alt="Gallery thumbnail">
+                  <div class="gallery-item-caption fs-sm fw-medium">Group of Students in front of our Physics Laboratory</div>
+                </a>
+              </div>
+            </div>
+          </div>
+      </section>
+      <!-- FAQ -->
+      <section class="container py-5 mb-lg-2">
+        <div class="row py-2 py-md-4 py-lg-5">
+          <div class="col-xl-4 col-md-5 text-center text-md-start pt-md-2 pb-2 pb-md-0 mb-4 mb-md-0">
+            <h4 class="mb-4">Frequently Asked Questions <br class="d-none d-md-inline"></h4>
+            <p class="fs-lg pb-3 mb-2 mb-lg-3">We understand that parents/caretakers who are new to our school will have several questions.
+              Staff at the school are often asked questions in relation to your child’s education, school timings, procedures and a myriad of other topics.
+              If your question is not answered here, please do contact the school via the information provided below.</p>
+            <div class="row row-cols-1 row-cols-sm-2 g-3 g-sm-4">
+              <div class="col">
+                <div class="card card-hover">
+                  <div class="card-body pb-3">
+                    <i class="bx bxs-phone-call d-block fs-2 text-primary mb-2 py-1"></i>
+                    <p class="fs-sm mb-2">Still have  questions?</p>
+                    <a href="tel:+123 806 708 9949" class="btn btn-link stretched-link px-0">
+                      Call us
+                      <i class="bx bx-right-arrow-alt fs-xl ms-2"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card card-hover">
+                  <div class="card-body pb-3">
+                    <i class="bx bx-envelope d-block fs-2 text-primary mb-2 py-1"></i>
+                    <p class="fs-sm mb-2">Still have  questions?</p>
+                    <a href="contact.html" class="btn btn-link text-primary stretched-link px-0" data-bs-toggle="modal" data-bs-target="#contactmodalId">
+                      Email us
+                      <i class="bx bx-right-arrow-alt fs-xl ms-2"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-7 offset-xl-1">
+            <div class="accordion" id="faq">
+              <div class="accordion-item border-0 rounded-3 shadow-sm mb-3">
+                <h2 class="accordion-header" id="q1-heading">
+                  <button class="fs-lg accordion-button shadow-none rounded-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q1" aria-expanded="false" aria-controls="q1">
+                    What are school opening and closing times ?
+                  </button>
+                </h2>
+                <div id="q1" class="accordion-collapse collapse" aria-labelledby="q1-heading" data-bs-parent="#faq">
+                  <div class="accordion-body pt-0">
+                    <p class="fs-lg">School starts at 7:30 AM each day for the nursery/primary and high school and all pupils will be ready to be picked up in the afternoon at 2:00 PM each day.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item border-0 rounded-3 shadow-sm mb-3">
+                <h2 class="accordion-header" id="q2-heading">
+                  <button class="fs-lg accordion-button shadow-none rounded-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q2" aria-expanded="false" aria-controls="q2">
+                    Can I send someone else to pick up my child ?
+                  </button>
+                </h2>
+                <div id="q2" class="accordion-collapse collapse" aria-labelledby="q2-heading" data-bs-parent="#faq">
+                  <div class="accordion-body pt-0">
+                    <p class="fs-lg">If you need someone else to come to school to collect your children, please speak to the class teacher in the morning. Each child has a data overview sheet with people who are allowed to collect them.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item border-0 rounded-3 shadow-sm mb-3">
+                <h2 class="accordion-header" id="q3-heading">
+                  <button class="fs-lg accordion-button shadow-none rounded-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q3" aria-expanded="false" aria-controls="q3">
+                    How do I report my child's absence from school ?
+                  </button>
+                </h2>
+                <div id="q3" class="accordion-collapse collapse" aria-labelledby="q3-heading" data-bs-parent="#faq">
+                  <div class="accordion-body pt-0">
+                    <p class="fs-lg">Telephone school on the day of the absence before 9.30am and inform our administrator. A text message could also be sent to this effect.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item border-0 rounded-3 shadow-sm mb-3">
+                <h2 class="accordion-header" id="q4-heading">
+                  <button class="fs-lg accordion-button shadow-none rounded-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q4" aria-expanded="false" aria-controls="q4">
+                    How do I get to Crowe Int'l School?
+                  </button>
+                </h2>
+                <div id="q4" class="accordion-collapse collapse" aria-labelledby="q4-heading" data-bs-parent="#faq">
+                  <div class="accordion-body pt-0">
+                    <p class="fs-lg">
+                      KM 3, Iwo-Ejigbo Road, Agbowo Area, Iwara (394.57 km) Iwo, Nigeria. You can contact us or send us a message for more information.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item border-0 rounded-3 shadow-sm mb-3">
+                <h2 class="accordion-header" id="q5-heading">
+                  <button class="fs-lg accordion-button shadow-none rounded-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q5" aria-expanded="false" aria-controls="q5">
+                    How will I be informed if there's an enforced school closure ?
+                  </button>
+                </h2>
+                <div id="q5" class="accordion-collapse collapse" aria-labelledby="q5-heading" data-bs-parent="#faq">
+                  <div class="accordion-body pt-0">
+                    <p class="fs-lg">On the very rare occasion that the school needs to close we will inform all parents via text.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item border-0 rounded-3 shadow-sm">
+                <h2 class="accordion-header" id="q6-heading">
+                  <button class="fs-lg accordion-button shadow-none rounded-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q6" aria-expanded="false" aria-controls="q6">
+                    Where can I buy branded school uniforms from ?
+                  </button>
+                </h2>
+                <div id="q6" class="fs-lg accordion-collapse collapse" aria-labelledby="q6-heading" data-bs-parent="#faq">
+                  <div class="accordion-body pt-0">
+                    <p>Branded school uniforms are available within the school.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- News & EVents -->
+      <section class="bg-secondary border-bottom border-light py-3">
+        <div class="container py-md-3 py-lg-5">
+          <h2 class="h1 text-center pb-2">School News &amp; Events</h2>
+          <div class="position-relative mx-md-2 px-md-5">
+
+            <!-- Slider controls (Prev / next) -->
+            <button type="button" id="news-prev" class="btn btn-prev btn-icon btn-sm position-absolute top-50 start-0 translate-middle-y mt-n4 d-none d-md-inline-flex">
+              <i class="bx bx-chevron-left"></i>
+            </button>
+            <button type="button" id="news-next" class="btn btn-next btn-icon btn-sm position-absolute top-50 end-0 translate-middle-y mt-n4 d-none d-md-inline-flex">
+              <i class="bx bx-chevron-right"></i>
+            </button>
+
+            <!-- Swiper slider -->
+            <div class="swiper swiper-nav-onhover mx-n2" data-swiper-options='{
+              "slidesPerView": 2,
+              "loop": true,
+              "spaceBetween": 8,
+              "speed": 1000,
+              "autoplay": {
+                "delay": 5000,
+                "disableOnInteraction": false
+              },
+              "pagination": {
+                "el": ".swiper-pagination",
+                "clickable": true
+              },
+              "navigation": {
+                "prevEl": "#news-prev",
+                "nextEl": "#news-next"
+              },
+              "breakpoints": {
+                "0": {
+                  "slidesPerView": 1
+                },
+                "560": {
+                  "slidesPerView": 2
+                },
+                "992": {
+                  "slidesPerView": 3
+                }
+              }
+            }'>
+              <div class="swiper-wrapper">
+                <!-- Item -->
+                <div class="swiper-slide h-auto py-3">
+                  <article class="card border-0 shadow-sm rounded-3">
+                    <div class="position-relative overflow-hidden">
+                      <a href="#" class="position-absolute top-0 start-0 w-100 h-100" aria-label="Read more"></a>
+                      <a href="#" class="btn btn-icon btn-light bg-white border-white btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later">
+                        <i class="bx bx-bookmark"></i>
+                      </a>
+                      <img src="assets/img/Crowe-Director%20-%20edited.jpg" alt="Image">
+                    </div>
+                    <div class="card-body p-md-4 p-sm-4 px-0 h-100">
+                      <a href="blog.html" class="badge fs-sm text-white bg-primary shadow-primary text-decoration-none mb-3">NEWS</a>
+                      <h3 class="h4">
+                        <a href="a-day-director.html">More on A-Day Director</a>
+                      </h3>
+                      <p class="mb-4">A DAY DIRECTOR: Crowe SchoolsS Trailblazing, Setting the Pace, Raising the Bar.</p>
+                      <div class="d-flex align-items-center text-muted">
+                        <div class="fs-sm border-end pe-3 me-3">Mar 11, 2023</div>
+                  
+                        <div class="d-flex align-items-center me-3">
+                          <i class="bx bx-like fs-lg me-1"></i>
+                          <span class="fs-sm">8</span>
+                        </div>
+                        <div class="d-flex align-items-center me-3">
+                          <i class="bx bx-comment fs-lg me-1"></i>
+                          <span class="fs-sm">7</span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <i class="bx bx-share-alt fs-lg me-1"></i>
+                          <span class="fs-sm">4</span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                
+                <!-- Item -->
+                <div class="swiper-slide h-auto py-3">
+                  <article class="card border-0 shadow-sm rounded-3">
+                    <div class="position-relative overflow-hidden">
+                      <a href="#" class="position-absolute top-0 start-0 w-100 h-100" aria-label="Read more"></a>
+                      <a href="#" class="btn btn-icon btn-light bg-white border-white btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later">
+                        <i class="bx bx-bookmark"></i>
+                      </a>
+                      <img src="assets/img/A-Day-Director-Speech.jpg" alt="Image">
+                    </div>
+                    <div class="card-body p-md-4 p-sm-4 px-0 h-100">
+                      <a href="blog.html" class="badge fs-sm text-white bg-primary shadow-primary text-decoration-none mb-3">NEWS</a>
+                      <h3 class="h4">
+                        <a href="a-day-director-student.html">A-Day Director</a>
+                      </h3>
+                      <p class="mb-4">A speech meant to address the school on my nomination as A-Day Director, CROWE INTERNATIONAL SCHOOLS, today Thursday 11th of March, 2023.</p>
+                      <div class="d-flex align-items-center text-muted">
+                        <div class="fs-sm border-end pe-3 me-3">Mar 11, 2023</div>
+                  
+                        <div class="d-flex align-items-center me-3">
+                          <i class="bx bx-like fs-lg me-1"></i>
+                          <span class="fs-sm">8</span>
+                        </div>
+                        <div class="d-flex align-items-center me-3">
+                          <i class="bx bx-comment fs-lg me-1"></i>
+                          <span class="fs-sm">7</span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <i class="bx bx-share-alt fs-lg me-1"></i>
+                          <span class="fs-sm">4</span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                
+                <!-- Item -->
+                <div class="swiper-slide h-auto py-3">
+                  <article class="card border-0 shadow-sm rounded-3">
+                    <div class="position-relative overflow-hidden">
+                      <a href="#" class="position-absolute top-0 start-0 w-100 h-100" aria-label="Read more"></a>
+                      <a href="#" class="btn btn-icon btn-light bg-white border-white btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later">
+                        <i class="bx bx-bookmark"></i>
+                      </a>
+                      <img src="assets/img/crowe%20admission.png" alt="Image">
+                    </div>
+                    <div class="card-body p-md-4 p-sm-4 px-0 h-100">
+                      <a href="blog.html" class="badge fs-sm text-white bg-primary shadow-primary text-decoration-none mb-3">NEWS</a>
+                      <h3 class="h4">
+                        <a href="crowe-admission.html">2023/2024 Admission</a>
+                      </h3>
+                      <p class="mb-4">2023/2024 Admission</p>
+                      <div class="d-flex align-items-center text-muted">
+                        <div class="fs-sm border-end pe-3 me-3">Feb 26, 2023</div>
+                  
+                        <div class="d-flex align-items-center me-3">
+                          <i class="bx bx-like fs-lg me-1"></i>
+                          <span class="fs-sm">8</span>
+                        </div>
+                        <div class="d-flex align-items-center me-3">
+                          <i class="bx bx-comment fs-lg me-1"></i>
+                          <span class="fs-sm">7</span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <i class="bx bx-share-alt fs-lg me-1"></i>
+                          <span class="fs-sm">4</span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                
+                <!-- Item -->
+                <div class="swiper-slide h-auto py-3">
+                  <article class="card border-0 shadow-sm rounded-3">
+                    <div class="position-relative overflow-hidden">
+                      <a href="#" class="position-absolute top-0 start-0 w-100 h-100" aria-label="Read more"></a>
+                      <a href="#" class="btn btn-icon btn-light bg-white border-white btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later">
+                        <i class="bx bx-bookmark"></i>
+                      </a>
+                      <img src="assets/img/Independence%20Break.jpg" alt="Image">
+                    </div>
+                    <div class="card-body p-md-4 p-sm-4 px-0 h-100">
+                      <a href="blog.html" class="badge fs-sm text-white bg-primary shadow-primary text-decoration-none mb-3">NEWS</a>
+                      <h3 class="h4">
+                        <a href="independence.html">Independence Break</a>
+                      </h3>
+                      <p class="mb-4">Independence Break</p>
+                      <div class="d-flex align-items-center text-muted">
+                        <div class="fs-sm border-end pe-3 me-3">Oct 10, 2022</div>
+                  
+                        <div class="d-flex align-items-center me-3">
+                          <i class="bx bx-like fs-lg me-1"></i>
+                          <span class="fs-sm">8</span>
+                        </div>
+                        <div class="d-flex align-items-center me-3">
+                          <i class="bx bx-comment fs-lg me-1"></i>
+                          <span class="fs-sm">7</span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <i class="bx bx-share-alt fs-lg me-1"></i>
+                          <span class="fs-sm">4</span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                
+                <!-- Item -->
+                <div class="swiper-slide h-auto py-3">
+                  <article class="card border-0 shadow-sm rounded-3">
+                    <div class="position-relative overflow-hidden">
+                      <a href="#" class="position-absolute top-0 start-0 w-100 h-100" aria-label="Read more"></a>
+                      <a href="#" class="btn btn-icon btn-light bg-white border-white btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later">
+                        <i class="bx bx-bookmark"></i>
+                      </a>
+                      <img src="assets/img/boxing%20competition.jpg" alt="Image">
+                    </div>
+                    <div class="card-body p-md-4 p-sm-4 px-0 h-100">
+                      <a href="blog.html" class="badge fs-sm text-white bg-primary shadow-primary text-decoration-none mb-3">EVENTS</a>
+                      <h3 class="h4">
+                        <a href="boxing-competition.html">Boxing Competition</a>
+                      </h3>
+                      <p class="mb-4">Boxing Competition 2022</p>
+                      <div class="d-flex align-items-center text-muted">
+                        <div class="fs-sm border-end pe-3 me-3">Sept 28, 2022</div>
+                  
+                        <div class="d-flex align-items-center me-3">
+                          <i class="bx bx-like fs-lg me-1"></i>
+                          <span class="fs-sm">8</span>
+                        </div>
+                        <div class="d-flex align-items-center me-3">
+                          <i class="bx bx-comment fs-lg me-1"></i>
+                          <span class="fs-sm">7</span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <i class="bx bx-share-alt fs-lg me-1"></i>
+                          <span class="fs-sm">4</span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+    
+              <!-- Pagination (bullets) -->
+              <div class="swiper-pagination position-relative pt-2 pt-sm-3 mt-4"></div>
+            </div>
+          </div>
+          <div class="col-12 mt-4 pt-lg-4 pt-3 text-center">
+            <a href="blog.html" class="btn btn-lg btn-primary shadow-primary w-sm-auto w-100">View more</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer dark-mode pt-5 pb-4 pb-lg-5" style="background-color: #521417;">
+      <div class="container pt-lg-4">
+        <div class="row pb-5">
+          <div class="col-lg-4 col-md-6">
+            <div class="navbar-brand text-dark p-0 me-0 mb-3 mb-lg-4">
+              <img src="assets/img/logo.png" width="40" alt="Crowe Schools">Crowe Int'l Schools
+            </div>
+            <p class="fs-lg text-light pb-lg-3 mb-4">Choose Crowe Schools, where academic excellence, values-based education, state-of-the-art facilities, and a supportive environment come together to provide students with the best possible education and prepare them for a successful future.</p>
+          </div>
+          <div class="fs-lg col-xl-6 col-lg-7 col-md-5 offset-xl-2 offset-md-1 pt-4 pt-md-1 pt-lg-0">
+            <div id="footer-links" class="row d-sm-flex">
+              <div class="col-lg-4">
+                <h6 class="mb-2">Useful Links</h6>
+                <div id="useful-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
+                  <ul class="nav flex-column pb-lg-1 mb-lg-3">
+                    <li class="nav-item"><a href="index-2.html" class="nav-link d-inline-block px-0 pt-1 pb-2">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link d-inline-block px-0 pt-1 pb-2">About School</a></li>
+                    <li class="nav-item"><a href="gallery.html" class="nav-link d-inline-block px-0 pt-1 pb-2">Gallery</a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link d-inline-block px-0 pt-1 pb-2">News &amp; Events</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-3">
+                <h6 class="mb-2">Socials</h6>
+                <div id="social-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
+                  <ul class="nav flex-column mb-2 mb-lg-0">
+                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Facebook</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">LinkedIn</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Twitter</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-5 pt-2 pt-lg-0">
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="nav d-block fs-xs text-center text-md-start pb-2 pb-lg-0 mb-0">
+          <span class="text-light opacity-50">&copy; All rights reserved.</span>
+          <a href="index-2.html" class="nav-link d-inline-block p-0" >Crowe Schools</a>
+        </p>
+      </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <a href="#top" class="btn-scroll-top" data-scroll>
+      <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
+      <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
+    </a>
+
+    <!-- Vendor Scripts -->
+    <script src="../cdn.jsdelivr.net/npm/bootstrap%405.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <!-- Form Scripts -->
+    <script src="../cdn.jsdelivr.net/npm/cleave.js%401.6.0/dist/cleave.min.js"></script>
+    <script src="../smtpjs.com/v3/smtp.js"></script>
+    <script> 
+      function sendEmail(){
+        Email.send({
+            SecureToken : "7c557e5f-7410-46b6-ae35-234dda714f48",
+            To : 'hakandejoshua03@gmail.com',
+            From : 'hakandejoshua03@gmail.com',
+            Subject : "School Website Contact Form Enquiry",
+            Body : "Name: " + document.getElementById("fn").value 
+                   + document.getElementById("sn").value
+                   + "<br> Email: " + document.getElementById("email").value
+                   + "<br> Phone Number: " + document.getElementById("phone").value
+                   + "<br> Message: " + document.getElementById("message").value
+        }).then(
+          message => alert("Message sent successfully")
+        );
+      }
+    </script>
+
+    <!-- Animation Scripts -->
+    <script src="assets/vendor/%40lottiefiles/lottie-player/dist/lottie-player.js"></script>
+
+    <!-- Slider and Gallery Scripts -->
+    <script src="../cdn.jsdelivr.net/npm/swiper%4010/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/lightgallery/lightgallery.min.js"></script>
+    <script src="assets/vendor/lightgallery/plugins/fullscreen/lg-fullscreen.min.js"></script>
+    <script src="assets/vendor/lightgallery/plugins/zoom/lg-zoom.min.js"></script>
+    <script src="assets/vendor/lightgallery/plugins/video/lg-video.min.js"></script>
+    <script src="assets/vendor/lightgallery/plugins/thumbnail/lg-thumbnail.min.js"></script>
+
+    <!-- Parallax and Animation Scripts -->
+    <script src="assets/vendor/parallax-js/dist/parallax.min.js"></script>
+    <script src="assets/vendor/rellax/rellax.min.js"></script>
+    <script src="assets/vendor/jarallax/dist/jarallax.min.js"></script>
+
+    <!-- Image and Animation Scripts -->
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/shufflejs/dist/shuffle.min.js"></script>
+
+    <!-- Main Theme Script -->
+    <script src="assets/js/theme.min.js"></script>
+  </body>
+
+<!-- Mirrored from croweschools.com/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 24 Apr 2024 06:55:32 GMT -->
+</html>

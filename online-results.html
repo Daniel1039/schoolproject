@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from croweschools.com/online-results.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 24 Apr 2024 06:55:53 GMT -->
+<head>
+    <meta charset="utf-8">
+    <title>Crowe Schools</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="School Name">
+    <meta name="keywords" content="School Name, School, Education, Learning, Students, Curriculum, Programs, Admissions, Faculty, Staff, Classes, Courses, 
+    Extracurricular activities, Facilities, Resources, Campus, Academic excellence, Scholarships, Community involvement, Parent involvement, Alumni network, 
+    Technology integration, Research opportunities, Study abroad, Career services, College preparation, International education">
+    <meta name="author" content="Aporaj Enterprise">
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon and Touch Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#6366f1">
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#080032">
+    <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Vendor Styles -->
+    <link rel="stylesheet" href="../cdn.jsdelivr.net/npm/boxicons%40latest/css/boxicons.min.css">
+    <link rel="stylesheet"  href="../cdn.jsdelivr.net/npm/swiper%4010/swiper-bundle.min.css"/>
+    <link rel="stylesheet" media="screen" href="assets/vendor/lightgallery/css/lightgallery-bundle.min.css">
+    <link rel="stylesheet" media="screen" href="assets/vendor/img-comparison-slider/dist/styles.css">
+
+    <!-- Main Theme Styles + Bootstrap -->
+    <link rel="stylesheet" media="screen" href="assets/css/theme.min.css">
+
+    <!-- Page loading styles -->
+    <style>
+      .page-loading {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all .4s .2s ease-in-out;
+        transition: all .4s .2s ease-in-out;
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9999;
+      }
+      .dark-mode .page-loading {
+        background-color: #0b0f19;
+      }
+      .page-loading.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .page-loading-inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: opacity .2s ease-in-out;
+        transition: opacity .2s ease-in-out;
+        opacity: 0;
+      }
+      .page-loading.active > .page-loading-inner {
+        opacity: 1;
+      }
+      .page-loading-inner > span {
+        display: block;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #9397ad;
+      }
+      .dark-mode .page-loading-inner > span {
+        color: #fff;
+        opacity: .6;
+      }
+      .page-spinner {
+        display: inline-block;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-bottom: .75rem;
+        vertical-align: text-bottom;
+        border: .15em solid #b4b7c9;
+        border-right-color: transparent;
+        border-radius: 50%;
+        -webkit-animation: spinner .75s linear infinite;
+        animation: spinner .75s linear infinite;
+      }
+      .dark-mode .page-spinner {
+        border-color: rgba(255,255,255,.4);
+        border-right-color: transparent;
+      }
+      @-webkit-keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+
+    <!-- Theme mode -->
+    <script>
+      let mode = window.localStorage.getItem('mode'),
+          root = document.getElementsByTagName('html')[0];
+      if (mode !== null && mode === 'dark') {
+        root.classList.add('dark-mode');
+      } else {
+        root.classList.remove('dark-mode');
+      }
+    </script>
+
+    <!-- Page loading scripts -->
+    <script>
+      (function () {
+        window.onload = function () {
+          const preloader = document.querySelector('.page-loading');
+          preloader.classList.remove('active');
+          setTimeout(function () {
+            preloader.remove();
+          }, 1000);
+        };
+      })();
+    </script>
+  </head>
+
+<!-- grey background-color: #f5f5f5 -->
+  <!-- Body -->
+  <body>
+    
+    <!-- Page loading spinner -->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div>
+        <span>Loading...</span>
+      </div>
+    </div>
+
+
+    <!-- Page wrapper for sticky footer -->
+    <!-- Wraps everything except footer to push footer to the bottom of the page if there is little content -->
+    <main class="page-wrapper">
+
+      <!-- Navbar -->
+      <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page -->
+      <!-- Menu + Theme mode switch + Button -->
+      <header class="header navbar navbar-expand-lg bg-light navbar-sticky navbar-stuck">
+        <div class="container ">
+          <a href="index-2.html" class="navbar-brand pe-3">
+            <img src="assets/img/logo.png" width="40" alt="Crowe Schools">Crowe Int'l
+          </a>
+          <div id="navbarNav" class="offcanvas offcanvas-end">
+            <div class="offcanvas-header border-bottom">
+              <h5 class="offcanvas-title">Menu</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a href="index-2.html" class="nav-link">Home</a></li>
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">About</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="about.html" class="dropdown-item py-2">School</a></li>
+                    <li><a href="proprietor.html" class="dropdown-item py-2">Proprietor</a></li>
+                    <li><a href="proprietress.html" class="dropdown-item py-2">Proprietress</a></li>
+                    <li><a href="principal.html" class="dropdown-item py-2">Principal</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item"> <a href="gallery.html" class="nav-link">Gallery</a> </li>
+                <li class="nav-item dropdown"> 
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Portal</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="https://portal.croweschools.com/student-login.php" class="dropdown-item py-2">Student Portal</a></li>
+                    <li><a href="https://portal.croweschools.com/staff-login.php" class="dropdown-item py-2">Staff Portal</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item"><a href="blog.html" class="nav-link">News & Events</a></li>
+                <li class="nav-item"><a href="admission.html" class="nav-link">Admission</a></li>
+              </ul>
+            </div>
+            <div class="offcanvas-header border-top">
+              <a href="contact.html" class="btn btn-primary shadow-primary w-100" target="_blank" rel="noopener">
+                <i class="bx bx-bx bx-mail-send fs-4 lh-1 me-1"></i>
+                &nbsp;Contacts Us
+              </a>
+            </div>      
+          </div>
+          <div class="form-check form-switch mode-switch pe-lg-1 ms-auto me-4" data-bs-toggle="mode">
+            <input type="checkbox" class="form-check-input" id="theme-mode">
+            <label class="form-check-label d-none d-sm-block" for="theme-mode">Light</label>
+            <label class="form-check-label d-none d-sm-block" for="theme-mode">Dark</label>
+          </div>
+          <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a href="contact.html" class="btn btn-primary shadow-primary btn-sm fs-sm rounded d-none d-lg-inline-flex" target="_blank" rel="noopener">
+            &nbsp;Contact Us
+          </a>
+        </div>
+      </header>
+
+      <!-- Breadcrumb -->
+      <nav class="container pt-4 mt-lg-3" aria-label="breadcrumb">
+        <ol class="breadcrumb mb-0">
+          <li class="breadcrumb-item">
+            <a href="index-2.html"><i class="bx bx-home-alt fs-lg me-1"></i>Home</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="blog.html">Blog</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">Results Online</li>
+        </ol> 
+      </nav>
+
+      <!-- Post title + Meta  -->
+      <section class="container mt-4 mb-2 pt-2 pb-lg-2">
+        <div class="row gy-4">
+          <div class="col-lg-7 col-md-6">
+            <img src="assets/img/Parading-with-Guns.jpg" alt="Director" class="rounded-3">
+          </div>
+          <div class="col-lg-5 col-md-6 p-lg-4">
+            <div class="ms-xl-2 ms-lg-3 ps-xxl-34">
+              <h1 class="display-5 pb-md-3">You Can Now Check Results Online</h1>
+              <div class="d-flex align-items-center flex-wrap text-muted mb-lg-5 mb-md-4 mb-3">
+                <!-- <div class="fs-xs border-end pe-3 me-3 mb-2">
+                  <span class="badge bg-faded-primary text-primary fs-base">Startups</span>
+                </div> -->
+                <div class="fs-sm border-end pe-3 me-3 mb-2">September-28-2022</div>
+                <div class="d-flex mb-2">
+                  <div class="d-flex align-items-center me-3">
+                    <i class="bx bx-like fs-base me-1"></i>
+                    <span class="fs-sm">18</span>
+                  </div>
+                  <div class="d-flex align-items-center me-3">
+                    <i class="bx bx-comment fs-base me-1"></i>
+                    <span class="fs-sm">4</span>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <i class="bx bx-share-alt fs-base me-1"></i>
+                    <span class="fs-sm">2</span>
+                  </div>
+                </div>
+              </div>
+              <p class="mb-4 fs-lg"><b>Lorem ipsum dolor sit amet consectetur adipisicing elit. In aut exercitationem at, autem aperiam earum ipsum suscipit qui a similique porro odit. Voluptatem possimus officiis accusamus dolorem recusandae nulla optio!</b>
+              </p>
+              <!-- <p class="mb-4 pb-2">“I got the inspiration from one of the past Governors of Lagos State” – <b>Mr. Alli Adetayo.</b></p>
+            <p class="mb-4 pb-2">
+              Thursday, the 9th of March 2023, was a great moment and a great event for all who witnessed and participated in the glorification of <b>Mr Adebiyi Isreal,</b> the pioneer “One Day Director” of Crowe International Schools, Iwo.
+            </p>
+            <p class="mb-4 pb-2">
+              The idea of <b>‘A Day Director‘</b> having being discussed at one of the school’s PTA meetings, was to help awaken and discover the “latent” leadership quality in student. It was also aimed at creating a positive and constructive competition among the students.   After a thorough screening and assessment process where nine (9) outstanding students were involved, <b>Adebiyi Isreal</b> emerged the overall winner.
+            </p> -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Post content + Sharing -->
+      <section class="container mb-5 pt-4 pb-2 py-mg-4">
+        <div class="row gy-4">
+
+          <!-- Content -->
+          <div class="col-lg-9">
+
+             <p class="mb-4 pb-2">
+              Quisque velit nisi, pretium ut lacinia in, elementum id enim. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec rutrum congue leo eget malesuada. Proin eget tortor risus. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Sed porttitor lectus nibh. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam id dui posuere blandit.
+            </p>
+
+             <p class="mb-4 pb-2">
+              Curabitur aliquet quam id dui posuere blandit. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Proin eget tortor risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Cras ultricies ligula sed magna dictum porta. Vivamus suscipit tortor eget felis porttitor volutpat. Nulla porttitor accumsan tincidunt.
+            </p>
+            
+            <i class="mb-4 pb-2">A Publication of Crowe International Schools,</i>
+            <i class="mb-4 pb-2">Km 3, Iwo-Ejigbo Road, Iwara, Agboowo Area, Iwo, Osun State, Nigeria.</i>
+
+            <ul style="margin-top: 20px;" class="mb-4 pb-2 ps-4">
+              <li class="mb-1">Telephone: +2348067089949, +2347067279632</li>
+              <li class="mb-1"><a href="#">Email: croweschoolsng@gmail.com</a></li>
+              <li class="mb-1"><a href="#">www.croweschools.com.ng</a></li>
+              <li class="mb-1">Social Media Handles: @croweschoolsng</li>
+            </ul>
+
+            
+            <!-- Tags -->
+            <hr class="mb-4">
+            <div class="d-flex flex-sm-row flex-column pt-2">
+              <h6 class="mt-sm-1 mb-sm-2 mb-3 me-2 text-nowrap">Related Tags:</h6>
+              <div>
+                <a href="new-session.html" class="btn btn-sm btn-outline-secondary me-2 mb-2">New Session</a>
+                <!-- <a href="#" class="btn btn-sm btn-outline-secondary me-2 mb-2">#tech</a>
+                <a href="#" class="btn btn-sm btn-outline-secondary me-2 mb-2">#business</a> -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Sharing -->
+          <div class="col-lg-3 position-relative">
+            <div class="sticky-top ms-xl-5 ms-lg-4 ps-xxl-4" style="top: 105px !important;">
+              <span class="d-block mb-3">5 min read</span>
+              <h6>Share this post:</h6>
+              <div class="mb-4 pb-lg-3">
+                <a href="#" class="btn btn-icon btn-secondary btn-linkedin me-2 mb-2">
+                  <i class="bx bxl-linkedin"></i>
+                </a>
+                <a href="#" class="btn btn-icon btn-secondary btn-facebook me-2 mb-2">
+                  <i class="bx bxl-facebook"></i>
+                </a>
+                <a href="#" class="btn btn-icon btn-secondary btn-twitter me-2 mb-2">
+                  <i class="bx bxl-twitter"></i>
+                </a>
+                <a href="#" class="btn btn-icon btn-secondary btn-instagram me-2 mb-2">
+                  <i class="bx bxl-instagram"></i>
+                </a>
+              </div>
+              <button id="like-button" class="btn btn-lg btn-outline-secondary">
+                <i id="like-icon" class="bx bx-like me-2 lead"></i>
+                Like it
+                <span id="like-count" class="badge bg-primary shadow-primary mt-n1 ms-3">16</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Post comments -->
+      <section class="container mb-4 pt-lg-4 pb-lg-3">
+        <h2 class="h1 text-center text-sm-start">Comments</h2>
+        <div class="row">
+
+          <!-- Comments -->
+          <div class="col-lg-9" id="comments-container">
+            <!-- Comment -->
+            <div class="py-4">
+              <div class="d-flex align-items-center justify-content-between pb-2 mb-1">
+                <div class="d-flex align-items-center me-3">
+                  <img src="assets/img/avatar/03.jpg" class="rounded-circle" width="48" alt="Avatar">
+                  <div class="ps-3">
+                    <h6 class="fw-semibold mb-0">Esther Howard</h6>
+                    <span class="fs-sm text-muted">4 mins ago</span>
+                  </div>
+                </div>
+                <a href="#" class="nav-link fs-sm px-0">
+                  <i class="bx bx-share fs-lg me-2"></i>
+                  Reply
+                </a>
+              </div>
+              <p class="mb-0">Nibh enim porta ut augue felis, donec sit luctus. Quis ullamcorper dolor sit mauris. Hendrerit eu libero, eu tristique sodales ultrices etiam adipiscing. Donec viverra sodales arcu gravida nibh at. Neque lobortis quis porta integer et placerat lectus scelerisque. Velit eget malesuada morbi faucibus at sed euismod. Tortor, eu ut id tincidunt leo placerat luctus.</p>
+            </div>
+
+            <hr class="my-2">
+
+            <!-- Comment -->
+            <div class="py-4">
+              <div class="d-flex align-items-center justify-content-between pb-2 mb-1">
+                <div class="d-flex align-items-center me-3">
+                  <img src="assets/img/avatar/02.jpg" class="rounded-circle" width="48" alt="Avatar">
+                  <div class="ps-3">
+                    <h6 class="fw-semibold mb-0">Ralph Edwards</h6>
+                    <span class="fs-sm text-muted">September 9 at 12:48</span>
+                  </div>
+                </div>
+                <a href="#" class="nav-link fs-sm px-0">
+                  <i class="bx bx-share fs-lg me-2"></i>
+                  Reply
+                </a>
+              </div>
+              <p class="mb-0 pb-2">Eget amet, ac scelerisque tellus sed. Sapien duis sit neque pulvinar. Est sit aenean nisl etiam donec mattis ut diam. Luctus massa eu nunc aliquam viverra tempus, eu amet, luctus. Ac faucibus vestibulum eu lacus. Ullamcorper sem ultrices tincidunt pharetra?</p>
+
+              <!-- Comment reply -->
+              <div class="position-relative ps-4 mt-4">
+                <span class="position-absolute top-0 start-0 w-1 h-100 bg-primary"></span>
+                <div class="d-flex align-items-center justify-content-between ps-3 pb-2 mb-1">
+                  <div class="d-flex align-items-center me-3">
+                    <img src="assets/img/avatar/05.jpg" class="rounded-circle" width="48" alt="Avatar">
+                    <div class="ps-3">
+                      <h6 class="fw-semibold mb-0">Albert Flores</h6>
+                      <span class="fs-sm text-muted">16 hours ago</span>
+                    </div>
+                  </div>
+                  <a href="#" class="nav-link fs-sm px-0">
+                    <i class="bx bx-share fs-lg me-2"></i>
+                    Reply
+                  </a>
+                </div>
+                <p class="ps-3 mb-0"><a href="#" class="fw-semibold text-decoration-none">@Ralph Edwards</a> Vulputate malesuada amet, consequat ullamcorper. Orci, cras maecenas in sit purus pellentesque. Ridiculus blandit pellentesque eget arcu morbi nisl. Morbi volutpat adipiscing sapien sed ut tempor.</p>
+              </div>
+            </div>
+
+            <hr class="my-2">
+
+            <!-- Comment -->
+            <div class="py-4">
+              <div class="d-flex align-items-center justify-content-between pb-2 mb-1">
+                <div class="d-flex align-items-center me-3">
+                  <img src="assets/img/avatar/07.jpg" class="rounded-circle" width="48" alt="Avatar">
+                  <div class="ps-3">
+                    <h6 class="fw-semibold mb-0">Cameron Williamson</h6>
+                    <span class="fs-sm text-muted">March 24 at 8:20</span>
+                  </div>
+                </div>
+                <a href="#" class="nav-link fs-sm px-0">
+                  <i class="bx bx-share fs-lg me-2"></i>
+                  Reply
+                </a>
+              </div>
+              <p class="mb-0">Mattis id ut sed arcu metus elit faucibus condimentum aliquam. Nam adipiscing diam et suspendisse. Sagittis massa maecenas laoreet nulla amet nunc sagittis, pulvinar neque. Duis imperdiet ipsum suspendisse massa lectus habitasse. Id ante volutpat hendrerit augue parturient eget. Ac vitae posuere leo morbi vitae at hac lectus. Nibh neque quam quis amet mattis sit. Faucibus risus at sit tempus ut.</p>
+            </div>
+
+            <!-- Comments will be dynamically added here using JavaScript -->
+          </div>
+          <!-- Comment form -->
+          <div class="col-lg-9">
+            <div class="card p-md-5 p-4 border-0 bg-secondary">
+              <div class="card-body w-100 mx-auto px-0" style="max-width: 746px;">
+                <h2 class="mb-4 pb-3">Leave a Comment</h2>
+                <form id="comment-form" class="row gy-4 needs-validation" novalidate>
+                  <div class="col-sm-6 col-12">
+                    <label for="c-name" class="form-label fs-base">Name</label>
+                    <input id="c-name" type="text" class="form-control form-control-lg" required>
+                    <span class="invalid-tooltip">Please, enter your name.</span>
+                  </div>
+                  <div class="col-sm-6 col-12">
+                    <label for="c-email" class="form-label fs-base">Email</label>
+                    <input id="c-email" type="email" class="form-control form-control-lg" required>
+                    <span class="invalid-tooltip">Please, provide a valid email address.</span>
+                  </div>
+                  <div class="col-12">
+                    <label for="c-comment" class="form-label fs-base">Comment</label>
+                    <textarea id="c-comment" class="form-control form-control-lg" rows="3" placeholder="Type your comment here..." required></textarea>
+                    <span class="invalid-tooltip">Please, enter your comment.</span>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-check">
+                      <input id="c-save" type="checkbox" class="form-check-input">
+                      <label for="c-save" class="form-check-label">Save my name and email in this browser for the next time I comment.</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-lg btn-primary w-sm-auto w-100 mt-2">Post comment</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>      
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer dark-mode pt-5 pb-4 pb-lg-5" style="background-color: #521417;">
+      <div class="container pt-lg-4">
+        <div class="row pb-5">
+          <div class="col-lg-4 col-md-6">
+            <div class="navbar-brand text-dark p-0 me-0 mb-3 mb-lg-4">
+              <img src="assets/img/logo.png" width="40" alt="Crowe Schools">Crowe Int'l Schools
+            </div>
+            <p class="fs-lg text-light pb-lg-3 mb-4">Choose Crowe Schools, where academic excellence, values-based education, state-of-the-art facilities, and a supportive environment come together to provide students with the best possible education and prepare them for a successful future.</p>
+          </div>
+          <div class="fs-lg col-xl-6 col-lg-7 col-md-5 offset-xl-2 offset-md-1 pt-4 pt-md-1 pt-lg-0">
+            <div id="footer-links" class="row d-sm-flex">
+              <div class="col-lg-4">
+                <h6 class="mb-2">Useful Links</h6>
+                <div id="useful-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
+                  <ul class="nav flex-column pb-lg-1 mb-lg-3">
+                    <li class="nav-item"><a href="index-2.html" class="nav-link d-inline-block px-0 pt-1 pb-2">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link d-inline-block px-0 pt-1 pb-2">About School</a></li>
+                    <li class="nav-item"><a href="gallery.html" class="nav-link d-inline-block px-0 pt-1 pb-2">Gallery</a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link d-inline-block px-0 pt-1 pb-2">News &amp; Events</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-3">
+                <h6 class="mb-2">Socials</h6>
+                <div id="social-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
+                  <ul class="nav flex-column mb-2 mb-lg-0">
+                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Facebook</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">LinkedIn</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Twitter</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-5 pt-2 pt-lg-0">
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="nav d-block fs-xs text-center text-md-start pb-2 pb-lg-0 mb-0">
+          <span class="text-light opacity-50">&copy; All rights reserved.</span>
+          <a href="index-2.html" class="nav-link d-inline-block p-0" >Crowe Schools</a>
+        </p>
+      </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <a href="#top" class="btn-scroll-top" data-scroll>
+      <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
+      <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
+    </a>
+
+    <!-- Vendor Scripts -->
+    <script src="../cdn.jsdelivr.net/npm/bootstrap%405.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <!-- Form Scripts -->
+    <script src="../cdn.jsdelivr.net/npm/cleave.js%401.6.0/dist/cleave.min.js"></script>
+    <script src="../smtpjs.com/v3/smtp.js"></script>
+    <script> 
+      // Function to add a new comment
+      function addComment(name, email, comment) {
+        const commentsContainer = document.getElementById("comments-container");
+        const commentDiv = document.createElement("div");
+        commentDiv.classList.add("py-4");
+
+        const commentHTML = `
+          <div class="d-flex align-items-center justify-content-between pb-2 mb-1">
+            <div class="d-flex align-items-center me-3">
+              <img src="assets/img/avatar/46.png" class="rounded-circle" width="48" alt="Avatar">
+              <div class="ps-3">
+                <h6 class="fw-semibold mb-0">${name}</h6>
+                <span class="fs-sm text-muted">Just now</span>
+              </div>
+            </div>
+            <a href="#" class="nav-link fs-sm px-0">
+              <i class="bx bx-share fs-lg me-2"></i>
+              Reply
+            </a>
+          </div>
+          <p class="mb-0">${comment}</p>
+          <hr class="my-2">
+        `;
+
+        commentDiv.innerHTML = commentHTML;
+        commentsContainer.appendChild(commentDiv);
+      }
+
+      // Event listener for comment form submission
+      document.getElementById("comment-form").addEventListener("submit", function (e) {
+        e.preventDefault();
+        const name = document.getElementById("c-name").value;
+        const email = document.getElementById("c-email").value;
+        const comment = document.getElementById("c-comment").value;
+
+        // Add the comment to the comment section
+        addComment(name, email, comment);
+
+        // Clear the comment form
+        document.getElementById("c-name").value = "";
+        document.getElementById("c-email").value = "";
+        document.getElementById("c-comment").value = "";
+
+        // You can also save name and email in a cookie here if the checkbox is checked
+      });
+
+      // Initialize variables for like button and count
+      const likeButton = document.getElementById("like-button");
+      const likeIcon = document.getElementById("like-icon");
+      const likeCount = document.getElementById("like-count");
+
+      let likes = 16;
+      let liked = false;
+
+      // Function to update the like count and button state
+      function updateLikes() {
+        likeCount.textContent = likes;
+        likeIcon.classList.toggle("text-primary", liked);
+      }
+
+      // Event listener for the like button
+      likeButton.addEventListener("click", function () {
+        if (!liked) {
+          likes++;
+        } else {
+          likes--;
+        }
+
+        liked = !liked;
+        updateLikes();
+      });
+    </script>
+
+    <!-- Animation Scripts -->
+    <script src="assets/vendor/%40lottiefiles/lottie-player/dist/lottie-player.js"></script>
+
+    <!-- Slider and Gallery Scripts -->
+    <script src="../cdn.jsdelivr.net/npm/swiper%4010/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/lightgallery/lightgallery.min.js"></script>
+    <script src="assets/vendor/lightgallery/plugins/fullscreen/lg-fullscreen.min.js"></script>
+    <script src="assets/vendor/lightgallery/plugins/zoom/lg-zoom.min.js"></script>
+    <script src="assets/vendor/lightgallery/plugins/video/lg-video.min.js"></script>
+    <script src="assets/vendor/lightgallery/plugins/thumbnail/lg-thumbnail.min.js"></script>
+
+    <!-- Parallax and Animation Scripts -->
+    <script src="assets/vendor/parallax-js/dist/parallax.min.js"></script>
+    <script src="assets/vendor/rellax/rellax.min.js"></script>
+    <script src="assets/vendor/jarallax/dist/jarallax.min.js"></script>
+
+    <!-- Image and Animation Scripts -->
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/shufflejs/dist/shuffle.min.js"></script>
+
+    <!-- Main Theme Script -->
+    <script src="assets/js/theme.min.js"></script>
+  </body>
+
+<!-- Mirrored from croweschools.com/online-results.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 24 Apr 2024 06:55:53 GMT -->
+</html>

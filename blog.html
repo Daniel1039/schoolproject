@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from croweschools.com/blog.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 24 Apr 2024 06:55:42 GMT -->
+<head>
+    <meta charset="utf-8">
+    <title>Crowe Schools</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Crowe Schools">
+    <meta name="keywords" content="Crowe Schools, School, Education, Learning, Students, Curriculum, Programs, Admissions, Faculty, Staff, Classes, Courses, 
+    Extracurricular activities, Facilities, Resources, Campus, Academic excellence, Scholarships, Community involvement, Parent involvement, Alumni network, 
+    Technology integration, Research opportunities, Study abroad, Career services, College preparation, International education">
+    <meta name="author" content="Aporaj Enterprise">
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon and Touch Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#6366f1">
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#080032">
+    <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Vendor Styles -->
+    <link rel="stylesheet" href="../cdn.jsdelivr.net/npm/boxicons%40latest/css/boxicons.min.css">
+    <link rel="stylesheet"  href="../cdn.jsdelivr.net/npm/swiper%4010/swiper-bundle.min.css"/>
+    <link rel="stylesheet" media="screen" href="assets/vendor/lightgallery/css/lightgallery-bundle.min.css">
+    <link rel="stylesheet" media="screen" href="assets/vendor/img-comparison-slider/dist/styles.css">
+
+    <!-- Main Theme Styles + Bootstrap -->
+    <link rel="stylesheet" media="screen" href="assets/css/theme.min.css">
+
+    <!-- Page loading styles -->
+    <style>
+      .page-loading {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all .4s .2s ease-in-out;
+        transition: all .4s .2s ease-in-out;
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9999;
+      }
+      .dark-mode .page-loading {
+        background-color: #0b0f19;
+      }
+      .page-loading.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .page-loading-inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: opacity .2s ease-in-out;
+        transition: opacity .2s ease-in-out;
+        opacity: 0;
+      }
+      .page-loading.active > .page-loading-inner {
+        opacity: 1;
+      }
+      .page-loading-inner > span {
+        display: block;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #9397ad;
+      }
+      .dark-mode .page-loading-inner > span {
+        color: #fff;
+        opacity: .6;
+      }
+      .page-spinner {
+        display: inline-block;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-bottom: .75rem;
+        vertical-align: text-bottom;
+        border: .15em solid #b4b7c9;
+        border-right-color: transparent;
+        border-radius: 50%;
+        -webkit-animation: spinner .75s linear infinite;
+        animation: spinner .75s linear infinite;
+      }
+      .dark-mode .page-spinner {
+        border-color: rgba(255,255,255,.4);
+        border-right-color: transparent;
+      }
+      @-webkit-keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+
+    <!-- Theme mode -->
+    <script>
+      let mode = window.localStorage.getItem('mode'),
+          root = document.getElementsByTagName('html')[0];
+      if (mode !== null && mode === 'dark') {
+        root.classList.add('dark-mode');
+      } else {
+        root.classList.remove('dark-mode');
+      }
+    </script>
+
+    <!-- Page loading scripts -->
+    <script>
+      (function () {
+        window.onload = function () {
+          const preloader = document.querySelector('.page-loading');
+          preloader.classList.remove('active');
+          setTimeout(function () {
+            preloader.remove();
+          }, 1000);
+        };
+      })();
+    </script>
+  </head>
+
+
+  <!-- Body -->
+  <body>
+    
+    <!-- Page loading spinner -->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div><span>Loading...</span>
+      </div>
+    </div>
+
+
+    <!-- Page wrapper for sticky footer -->
+    <!-- Wraps everything except footer to push footer to the bottom of the page if there is little content -->
+    <main class="page-wrapper">
+
+      <!-- Navbar -->
+      <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page -->
+      <header class="header navbar navbar-expand-lg bg-light navbar-sticky navbar-stuck">
+        <div class="container ">
+          <a href="index-2.html" class="navbar-brand pe-3">
+            <img src="assets/img/logo.png" width="40" alt="Crowe Schools">Crowe Int'l
+          </a>
+          <div id="navbarNav" class="offcanvas offcanvas-end">
+            <div class="offcanvas-header border-bottom">
+              <h5 class="offcanvas-title">Menu</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a href="index-2.html" class="nav-link">Home</a></li>
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">About</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="about.html" class="dropdown-item py-2">School</a></li>
+                    <li><a href="proprietor.html" class="dropdown-item py-2">Proprietor</a></li>
+                    <li><a href="proprietress.html" class="dropdown-item py-2">Proprietress</a></li>
+                    <li><a href="principal.html" class="dropdown-item py-2">Principal</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item"> <a href="gallery.html" class="nav-link">Gallery</a> </li>
+                <li class="nav-item dropdown"> 
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Portal</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="https://portal.croweschools.com/student-login.php" class="dropdown-item py-2">Student Portal</a></li>
+                    <li><a href="https://portal.croweschools.com/staff-login.php" class="dropdown-item py-2">Staff Portal</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item"><a href="blog.html" class="nav-link">News & Events</a></li>
+                <li class="nav-item"><a href="admission.html" class="nav-link">Admission</a></li>
+              </ul>
+            </div>
+            <div class="offcanvas-header border-top">
+              <a href="contact.html" class="btn btn-primary shadow-primary w-100" >
+                <i class="bx bx bx bx-mail-send fs-4 lh-1 me-1"></i>
+                &nbsp;Contacts Us
+              </a>
+            </div>      
+          </div>
+          <div class="form-check form-switch mode-switch pe-lg-1 ms-auto me-4" data-bs-toggle="mode">
+            <input type="checkbox" class="form-check-input" id="theme-mode">
+            <label class="form-check-label d-none d-sm-block" for="theme-mode">Light</label>
+            <label class="form-check-label d-none d-sm-block" for="theme-mode">Dark</label>
+          </div>
+          <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a href="contact.html" class="btn btn-primary shadow-primary btn-sm fs-sm rounded d-none d-lg-inline-flex" >
+            &nbsp;Contact Us
+          </a>
+        </div>
+      </header>
+
+      <!-- Hero -->
+      <section class="dark-mode position-relative jarallax pb-xl-3" data-jarallax data-speed="0.4">
+
+        <!-- Parallax img -->
+        <div class="jarallax-img bg-dark bg-size-contain bg-repeat-0 bg-position-top-center opacity-90" style="background-image: url(assets/img/Crowe-Director.jpg);"></div>
+
+        <!-- Overlay bg -->
+        <span class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-70 zindex-1"></span>
+
+        <!-- Overlay content -->
+        <div class="container position-relative pb-5 zindex-5">
+
+          <!-- Breadcrumb -->
+          <nav class="py-4" aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0 py-3">
+              <li class="breadcrumb-item">
+                <a href="index-2.html"><i class="bx bx-home-alt fs-lg me-1"></i>Home</a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">Blog Homepage</li>
+            </ol>
+          </nav>
+
+          <!-- Featured article -->
+          <div class="row mb-xxl-5 py-md-4 py-lg-5">
+            <div class="col-lg-6 col-md-7 pb-3 pb-md-0 mb-4 mb-md-5">
+              <div class="mb-3 fs-lg text-light">
+                <img src="assets/img/logo.png" width="24" alt="Flame icon" class="mt-n1 me-1">
+                Hot Topic
+              </div>
+              <h1 class="display-5 pb-md-3">More on A-Day Director</h1>
+              <div class="d-flex flex-wrap mb-md-5 mb-4 pb-md-2 text-white">
+                <div class="border-end border-light h-100 mb-2 pe-3 me-3">
+                  <span class="badge bg-faded-light fs-baprimary se">NEWS</spprimary an>
+                </div>
+                <div class="border-end border-light mb-2 pe-3 me-3 opacity-70">12 hours ago</div>
+                <div class="d-flex align-items-center mb-2 text-nowrap">
+                  <div class="d-flex align-items-center me-3 opacity-70">
+                    <i class="bx bx-like fs-lg me-1"></i>
+                    <span class="fs-sm">8</span>
+                  </div>
+                  <div class="d-flex align-items-center me-3 opacity-70">
+                    <i class="bx bx-comment fs-lg me-1"></i>
+                    <span class="fs-sm">4</span>
+                  </div>
+                  <div class="d-flex align-items-center opacity-70">
+                    <i class="bx bx-share-alt fs-lg me-1"></i>
+                    <span class="fs-sm">2</span>
+                  </div>
+                </div>
+              </div>
+              <a href="a-day-director.html" class="btn btn-lg btn-primary">
+                Read article
+                <i class="bx bx-right-arrow-alt ms-2 me-n1 lead"></i>
+              </a>
+            </div>
+
+            <!-- Articles slider -->
+            <div class="col-lg-4 offset-lg-2 col-md-5">
+              <div class="swiper overflow-hidden w-100 ms-n2 ms-md-0 pe-3 pe-sm-4" style="max-height: 405px;" data-swiper-options='{
+                "direction": "vertical",
+                "slidesPerView": "auto",
+                "speed": 1000,
+                "autoplay": {
+                  "delay": 5000,
+                  "disableOnInteraction": false
+                },
+                "freeMode": true,
+                "scrollbar": {
+                  "el": ".swiper-scrollbar"
+                },
+                "mousewheel": true
+              }'>
+                <div class="swiper-wrapper pe-md-2">
+                  <div class="swiper-slide h-auto px-2">
+
+                    <div class="row row-cols-md-1 row-cols-sm-2 row-cols-1 g-md-4 g-3">
+
+                      <!-- Article -->
+                      <div class="col">
+                        <article class="card h-100 border-0 shadow-sm card-hover-primary">
+                          <div class="card-body pb-0">
+                            <div class="d-flex align-items-center justify-content-between mb-3">
+                              <a href="a-day-director-student.html" class="badge fs-sm text-nav bg-white text-decoration-none position-relative zindex-2">NEWS</a>
+                              <span class="fs-sm text-muted">1 day ago</span>
+                            </div>
+                            <h3 class="h5 mb-0">
+                              <a href="a-day-director-student.html" class="stretched-link">Being a speech meant to address the school on my Nomination as A-Day Director</a>
+                            </h3>
+                          </div>
+                          <div class="card-footer d-flex align-items-center py-4 text-muted border-top-0">
+                            <div class="d-flex align-items-center me-3">
+                              <i class="bx bx-like fs-lg me-1"></i>
+                              <span class="fs-sm">8</span>
+                            </div>
+                            <div class="d-flex align-items-center me-3">
+                              <i class="bx bx-comment fs-lg me-1"></i>
+                              <span class="fs-sm">4</span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                              <i class="bx bx-share-alt fs-lg me-1"></i>
+                              <span class="fs-sm">2</span>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+
+                      <!-- Article -->
+                      <div class="col">
+                        <article class="card h-100 border-0 shadow-sm card-hover-primary">
+                          <div class="card-body pb-0">
+                            <div class="d-flex align-items-center justify-content-between mb-3">
+                              <a href="crowe-admission.html" class="badge fs-sm text-nav bg-white text-decoration-none position-relative zindex-2">NEWS</a>
+                              <span class="fs-sm text-muted">Feb 26, 2023</span>
+                            </div>
+                            <h3 class="h5 mb-0">
+                              <a href="crowe-admission.html" class="stretched-link">2023/2024 Admission</a>
+                            </h3>
+                          </div>
+                          <div class="card-footer d-flex align-items-center py-4 text-muted border-top-0">
+                            <div class="d-flex align-items-center me-3">
+                              <i class="bx bx-like fs-lg me-1"></i>
+                              <span class="fs-sm">2</span>
+                            </div>
+                            <div class="d-flex align-items-center me-3">
+                              <i class="bx bx-comment fs-lg me-1"></i>
+                              <span class="fs-sm">0</span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                              <i class="bx bx-share-alt fs-lg me-1"></i>
+                              <span class="fs-sm">3</span>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+
+                      <!-- Article -->
+                      <div class="col">
+                        <article class="card h-100 border-0 shadow-sm card-hover-primary">
+                          <div class="card-body pb-0">
+                            <div class="d-flex align-items-center justify-content-between mb-3">
+                              <a href="independence.html" class="badge fs-sm text-nav bg-white text-decoration-none position-relative zindex-2">NEWS</a>
+                              <span class="fs-sm text-muted">Oct 10, 2022</span>
+                            </div>
+                            <h3 class="h5 mb-0">
+                              <a href="independence.html" class="stretched-link">Independence Break</a>
+                            </h3>
+                          </div>
+                          <div class="card-footer d-flex align-items-center py-4 text-muted border-top-0">
+                            <div class="d-flex align-items-center me-3">
+                              <i class="bx bx-like fs-lg me-1"></i>
+                              <span class="fs-sm">5</span>
+                            </div>
+                            <div class="d-flex align-items-center me-3">
+                              <i class="bx bx-comment fs-lg me-1"></i>
+                              <span class="fs-sm">0</span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                              <i class="bx bx-share-alt fs-lg me-1"></i>
+                              <span class="fs-sm">2</span>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-scrollbar"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container mt-4 mb-lg-5 pt-lg-2 pb-5">
+
+        <!-- Page title + Layout switcher + Search form -->
+        <div class="row align-items-end gy-3 mb-4 pb-lg-3 pb-1">
+          <div class="col-lg-6 col-md-4">
+            <h1 class="mb-2 mb-md-0">Blogs</h1>
+          </div>
+          <div class="col-lg-6 col-md-8">
+            <form class="row gy-2">
+              <div class="col-lg-2 col-sm-3">
+                <div class="d-flex align-items-center">
+                  <div class="d-flex align-items-center me-sm-4 me-3">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs-alit" role="tablist">
+                      <li class="nav-item py-2">
+                        <a href="#bloggrid" class="nav-link active me-2 p-0" data-bs-toggle="tab" role="tab">
+                          <i class="bx bx-grid-alt fs-4"></i>
+                        </a>
+                      </li>
+                      <li class="nav-item py-2">
+                        <a href="#bloglist" class="nav-link p-0" data-bs-toggle="tab" role="tab">
+                          <i class="bx bx-list-ul fs-4"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-10 col-sm-9">
+                <div class="input-group">
+                  <input type="text" id="searchInput" class="form-control pe-5 rounded" placeholder="Search the blog...">
+                  <i class="bx bx-search position-absolute top-50 end-0 translate-middle-y me-3 zindex-5 fs-lg"></i>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        
+        <div class="tab-content">
+          <!-- Blog grid -->
+          <div class=" grid-view-container tab-pane fade show active" id="bloggrid" role="tabpanel">
+            <div class="row row-cols-lg-3 row-cols-sm-1 row-cols-1 gy-md-4 gy-2">
+              <!-- Item -->
+              <div class="col h-auto pb-3 card border-0">
+                <article class="shadow-sm rounded-3">
+                  <div class="position-relative overflow-hidden rounded-3">
+                    <a href="a-day-director-student.html" class="position-absolute top-0 start-0 w-100 h-100" aria-label="Read more"></a>
+                    <a href="a-day-director-student.html" class="btn btn-icon btn-light bg-white border-white btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later">
+                      <i class="bx bx-bookmark"></i>
+                    </a>
+                    <img src="assets/img/A-Day-Director-Speech.jpg" alt="Image">
+                  </div>
+                  <div class="card-body p-md-4 p-sm-4 px-0 h-100">
+                    <a href="a-day-director-student.html" class="badge fs-sm text-white bg-primary shadow-primary text-decoration-none mb-3">EVENTS</a>
+                    <h3 class="h4">
+                      <a href="a-day-director-student.html">A speech meant to address the school on my Nomination as A-Day Director</a>
+                    </h3>
+                    <p class="mb-4">A speech meant to address the school on my Nomination as A-Day Director</p>
+                    <div class="d-flex align-items-center text-muted">
+                      <div class="fs-sm border-end pe-3 me-3">Sept 28, 2022</div>
+                
+                      <div class="d-flex align-items-center me-3">
+                        <i class="bx bx-like fs-lg me-1"></i>
+                        <span class="fs-sm">8</span>
+                      </div>
+                      <div class="d-flex align-items-center me-3">
+                        <i class="bx bx-comment fs-lg me-1"></i>
+                        <span class="fs-sm">7</span>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <i class="bx bx-share-alt fs-lg me-1"></i>
+                        <span class="fs-sm">4</span>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              
+              <!-- Item -->
+              <div class="col h-auto pb-3 card border-0">
+                <article class="shadow-sm rounded-3">
+                  <div class="position-relative overflow-hidden rounded-3">
+                    <a href="crowe-admission.html" class="position-absolute top-0 start-0 w-100 h-100" aria-label="Read more"></a>
+                    <a href="crowe-admission.html" class="btn btn-icon btn-light bg-white border-white btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later">
+                      <i class="bx bx-bookmark"></i>
+                    </a>
+                    <img src="assets/img/crowe%20admission.png" alt="Image">
+                  </div>
+                  <div class="card-body p-md-4 p-sm-4 px-0 h-100">
+                    <a href="crowe-admission.html" class="badge fs-sm text-white bg-primary shadow-primary text-decoration-none mb-3">EVENTS</a>
+                    <h3 class="h4">
+                      <a href="crowe-admission.html">2023/2024 Admission</a>
+                    </h3>
+                    <p class="mb-4">2023/2024 Admission</p>
+                    <div class="d-flex align-items-center text-muted">
+                      <div class="fs-sm border-end pe-3 me-3">Sept 28, 2022</div>
+                
+                      <div class="d-flex align-items-center me-3">
+                        <i class="bx bx-like fs-lg me-1"></i>
+                        <span class="fs-sm">8</span>
+                      </div>
+                      <div class="d-flex align-items-center me-3">
+                        <i class="bx bx-comment fs-lg me-1"></i>
+                        <span class="fs-sm">7</span>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <i class="bx bx-share-alt fs-lg me-1"></i>
+                        <span class="fs-sm">4</span>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              
+              <!-- Item -->
+              <div class="col h-auto pb-3 card border-0">
+                <article class="shadow-sm rounded-3">
+                  <div class="position-relative overflow-hidden rounded-3">
+                    <a href="independence.html" class="position-absolute top-0 start-0 w-100 h-100" aria-label="Read more"></a>
+                    <a href="independence.html" class="btn btn-icon btn-light bg-white border-white btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later">
+                      <i class="bx bx-bookmark"></i>
+                    </a>
+                    <img src="assets/img/Independence%20Break.jpg" alt="Image">
+                  </div>
+                  <div class="card-body p-md-4 p-sm-4 px-0 h-100">
+                    <a href="independence.html" class="badge fs-sm text-white bg-primary shadow-primary text-decoration-none mb-3">EVENTS</a>
+                    <h3 class="h4">
+                      <a href="independence.html">Independence Break</a>
+                    </h3>
+                    <p class="mb-4">Independence Break</p>
+                    <div class="d-flex align-items-center text-muted">
+                      <div class="fs-sm border-end pe-3 me-3">Sept 28, 2022</div>
+                
+                      <div class="d-flex align-items-center me-3">
+                        <i class="bx bx-like fs-lg me-1"></i>
+                        <span class="fs-sm">8</span>
+                      </div>
+                      <div class="d-flex align-items-center me-3">
+                        <i class="bx bx-comment fs-lg me-1"></i>
+                        <span class="fs-sm">7</span>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <i class="bx bx-share-alt fs-lg me-1"></i>
+                        <span class="fs-sm">4</span>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              
+              <!-- Item -->
+              <div class="col h-auto pb-3 card border-0">
+                <article class="shadow-sm rounded-3">
+                  <div class="position-relative overflow-hidden rounded-3">
+                    <a href="boxing-competition.html" class="position-absolute top-0 start-0 w-100 h-100" aria-label="Read more"></a>
+                    <a href="boxing-competition.html" class="btn btn-icon btn-light bg-white border-white btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later">
+                      <i class="bx bx-bookmark"></i>
+                    </a>
+                    <img src="assets/img/boxing%20competition.jpg" alt="Image">
+                  </div>
+                  <div class="card-body p-md-4 p-sm-4 px-0 h-100">
+                    <a href="boxing-competition.html" class="badge fs-sm text-white bg-primary shadow-primary text-decoration-none mb-3">EVENTS</a>
+                    <h3 class="h4">
+                      <a href="boxing-competition.html">Boxing Competition 2022</a>
+                    </h3>
+                    <p class="mb-4">Boxing Competition 2022</p>
+                    <div class="d-flex align-items-center text-muted">
+                      <div class="fs-sm border-end pe-3 me-3">Sept 28, 2022</div>
+                
+                      <div class="d-flex align-items-center me-3">
+                        <i class="bx bx-like fs-lg me-1"></i>
+                        <span class="fs-sm">8</span>
+                      </div>
+                      <div class="d-flex align-items-center me-3">
+                        <i class="bx bx-comment fs-lg me-1"></i>
+                        <span class="fs-sm">7</span>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <i class="bx bx-share-alt fs-lg me-1"></i>
+                        <span class="fs-sm">4</span>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              
+              <!-- Item -->
+              <div class="col h-auto pb-3 card border-0">
+                <article class="shadow-sm rounded-3">
+                  <div class="position-relative overflow-hidden rounded-3">
+                    <a href="cultural-day.html" class="position-absolute top-0 start-0 w-100 h-100" aria-label="Read more"></a>
+                    <a href="cultural-day.html" class="btn btn-icon btn-light bg-white border-white btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later">
+                      <i class="bx bx-bookmark"></i>
+                    </a>
+                    <img src="assets/img/Students-Dancing.jpg" alt="Image">
+                  </div>
+                  <div class="card-body p-md-4 p-sm-4 px-0 h-100">
+                    <a href="cultural-day.html" class="badge fs-sm text-white bg-primary shadow-primary text-decoration-none mb-3">EVENTS</a>
+                    <h3 class="h4">
+                      <a href="cultural-day.html">Crowe Schoolss Cultural Day</a>
+                    </h3>
+                    <p class="mb-4">Cultural Day 2022</p>
+                    <div class="d-flex align-items-center text-muted">
+                      <div class="fs-sm border-end pe-3 me-3">Sept 28, 2022</div>
+                
+                      <div class="d-flex align-items-center me-3">
+                        <i class="bx bx-like fs-lg me-1"></i>
+                        <span class="fs-sm">8</span>
+                      </div>
+                      <div class="d-flex align-items-center me-3">
+                        <i class="bx bx-comment fs-lg me-1"></i>
+                        <span class="fs-sm">7</span>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <i class="bx bx-share-alt fs-lg me-1"></i>
+                        <span class="fs-sm">4</span>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              
+              <!-- Item -->
+              <div class="col h-auto pb-3 card border-0">
+                <article class="shadow-sm rounded-3">
+                  <div class="position-relative overflow-hidden rounded-3">
+                    <a href="online-results.html" class="position-absolute top-0 start-0 w-100 h-100" aria-label="Read more"></a>
+                    <a href="online-results.html" class="btn btn-icon btn-light bg-white border-white btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later">
+                      <i class="bx bx-bookmark"></i>
+                    </a>
+                    <img src="assets/img/Parading-with-Guns.jpg" alt="Image">
+                  </div>
+                  <div class="card-body p-md-4 p-sm-4 px-0 h-100">
+                    <a href="online-results.html" class="badge fs-sm text-white bg-primary shadow-primary text-decoration-none mb-3">NEWS</a>
+                    <h3 class="h4">
+                      <a href="online-results.html">You Can Now Check Results Online</a>
+                    </h3>
+                    <p class="mb-4">Crowe is Online</p>
+                    <div class="d-flex align-items-center text-muted">
+                      <div class="fs-sm border-end pe-3 me-3">Sept 28, 2022</div>
+                
+                      <div class="d-flex align-items-center me-3">
+                        <i class="bx bx-like fs-lg me-1"></i>
+                        <span class="fs-sm">8</span>
+                      </div>
+                      <div class="d-flex align-items-center me-3">
+                        <i class="bx bx-comment fs-lg me-1"></i>
+                        <span class="fs-sm">7</span>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <i class="bx bx-share-alt fs-lg me-1"></i>
+                        <span class="fs-sm">4</span>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              
+              <!-- Item -->
+              <div class="col h-auto pb-3 card border-0">
+                <article class="shadow-sm rounded-3">
+                  <div class="position-relative overflow-hidden rounded-3">
+                    <a href="new-session.html" class="position-absolute top-0 start-0 w-100 h-100" aria-label="Read more"></a>
+                    <a href="new-session.html" class="btn btn-icon btn-light bg-white border-white btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later">
+                      <i class="bx bx-bookmark"></i>
+                    </a>
+                    <img src="assets/img/Students-Strolling-2.jpg" alt="Image">
+                  </div>
+                  <div class="card-body p-md-4 p-sm-4 px-0 h-100">
+                    <a href="new-session.html" class="badge fs-sm text-white bg-primary shadow-primary text-decoration-none mb-3">NEWS</a>
+                    <h3 class="h4">
+                      <a href="new-session.html">Welcome to 2022/2023 Academic Session</a>
+                    </h3>
+                    <p class="mb-4">New Session</p>
+                    <div class="d-flex align-items-center text-muted">
+                      <div class="fs-sm border-end pe-3 me-3">Sept 28, 2022</div>
+                
+                      <div class="d-flex align-items-center me-3">
+                        <i class="bx bx-like fs-lg me-1"></i>
+                        <span class="fs-sm">8</span>
+                      </div>
+                      <div class="d-flex align-items-center me-3">
+                        <i class="bx bx-comment fs-lg me-1"></i>
+                        <span class="fs-sm">7</span>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <i class="bx bx-share-alt fs-lg me-1"></i>
+                        <span class="fs-sm">4</span>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>    
+            </div>
+          </div>
+          
+          <!-- Blog list -->
+          <div class="list-view-container tab-pane fade" id="bloglist" role="tabpanel">
+            <div class="row">
+              <!-- Item -->
+              <article class="card shadow-sm rounded-3 me-xl-5 mb-4 ">
+                <div class="row">
+                  <div class="col-sm-5 position-relative bg-position-center bg-repeat-0 bg-size-cover rounded-3" style="background-image: url(assets/img/A-Day-Director-Speech.jpg); min-height: 15rem;">
+                    <a href="a-day-director-student.html" class="position-absolute top-0 start-0 w-100 h-100" aria-label="Read more"></a>
+                    <a href="a-day-director-student.html" class="btn btn-icon btn-light bg-white border-white btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" aria-label="Read later" data-bs-original-title="Read later">
+                      <i class="bx bx-bookmark"></i>
+                    </a>
+                  </div>
+                  <div class="col-sm-7 pt-5 pb-5">
+                    <div class="card-body px-0 pt-sm-0 ps-sm-4 pb-0 pb-sm-4">
+                      <a href="a-day-director-student.html" class="badge fs-sm text-white bg-primary shadow-primary text-decoration-none mb-3">EVENTS</a>
+                      <h3 class="h4">
+                        <a href="a-day-director-student.html">A speech meant to address the school on my Nomination as A-Day Director</a>
+                      </h3>
+                      <p class="fs-lg">A speech meant to address the school on my Nomination as A-Day Director</p>
+                      <div class="d-flex align-items-center text-muted">
+                        <div class="fs-sm border-end pe-3 me-3">Sept 28, 2022</div>
+                        <div class="d-flex align-items-center me-3">
+                          <i class="bx bx-like fs-lg me-1"></i>
+                          <span class="fs-sm">5</span>
+                        </div>
+                        <div class="d-flex align-items-center me-3">
+                          <i class="bx bx-comment fs-lg me-1"></i>
+                          <span class="fs-sm">0</span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <i class="bx bx-share-alt fs-lg me-1"></i>
+                          <span class="fs-sm">2</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+    
+              <div class="pb-2 pb-lg-3"></div>
+    
+              <!-- Item -->
+              <article class="card shadow-sm rounded-3 me-xl-5 mb-4 ">
+                <div class="row">
+                  <div class="col-sm-5 position-relative bg-position-center bg-repeat-0 bg-size-cover rounded-3" style="background-image: url(assets/img/crowe.html\ admission.png); min-height: 15rem;">
+                    <a href="crowe-admission.html" class="position-absolute top-0 start-0 w-100 h-100" aria-label="Read more"></a>
+                    <a href="crowe-admission.html" class="btn btn-icon btn-light bg-white border-white btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" aria-label="Read later" data-bs-original-title="Read later">
+                      <i class="bx bx-bookmark"></i>
+                    </a>
+                  </div>
+                  <div class="col-sm-7 pt-5 pb-5">
+                    <div class="card-body px-0 pt-sm-0 ps-sm-4 pb-0 pb-sm-4">
+                      <a href="crowe-admission.html" class="badge fs-sm text-white bg-primary shadow-primary text-decoration-none mb-3">EVENTS</a>
+                      <h3 class="h4">
+                        <a href="crowe-admission.html">2023/2024 Admission</a>
+                      </h3>
+                      <p class="fs-lg">2023/2024 Admission</p>
+                      <div class="d-flex align-items-center text-muted">
+                        <div class="fs-sm border-end pe-3 me-3">Sept 28, 2022</div>
+                        <div class="d-flex align-items-center me-3">
+                          <i class="bx bx-like fs-lg me-1"></i>
+                          <span class="fs-sm">5</span>
+                        </div>
+                        <div class="d-flex align-items-center me-3">
+                          <i class="bx bx-comment fs-lg me-1"></i>
+                          <span class="fs-sm">0</span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <i class="bx bx-share-alt fs-lg me-1"></i>
+                          <span class="fs-sm">2</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+    
+              <div class="pb-2 pb-lg-3"></div>
+    
+              <!-- Item -->
+              <article class="card shadow-sm rounded-3 me-xl-5 mb-4 ">
+                <div class="row">
+                  <div class="col-sm-5 position-relative bg-position-center bg-repeat-0 bg-size-cover rounded-3" style="background-image: url(assets/img/Independence.html\ Break.jpg); min-height: 15rem;">
+                    <a href="independence.html" class="position-absolute top-0 start-0 w-100 h-100" aria-label="Read more"></a>
+                    <a href="independence.html" class="btn btn-icon btn-light bg-white border-white btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" aria-label="Read later" data-bs-original-title="Read later">
+                      <i class="bx bx-bookmark"></i>
+                    </a>
+                  </div>
+                  <div class="col-sm-7 pt-5 pb-5">
+                    <div class="card-body px-0 pt-sm-0 ps-sm-4 pb-0 pb-sm-4">
+                      <a href="independence.html" class="badge fs-sm text-white bg-primary shadow-primary text-decoration-none mb-3">EVENTS</a>
+                      <h3 class="h4">
+                        <a href="independence.html">Independence Break</a>
+                      </h3>
+                      <p class="fs-lg">Independence Break</p>
+                      <div class="d-flex align-items-center text-muted">
+                        <div class="fs-sm border-end pe-3 me-3">Sept 28, 2022</div>
+                        <div class="d-flex align-items-center me-3">
+                          <i class="bx bx-like fs-lg me-1"></i>
+                          <span class="fs-sm">5</span>
+                        </div>
+                        <div class="d-flex align-items-center me-3">
+                          <i class="bx bx-comment fs-lg me-1"></i>
+                          <span class="fs-sm">0</span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <i class="bx bx-share-alt fs-lg me-1"></i>
+                          <span class="fs-sm">2</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+    
+              <div class="pb-2 pb-lg-3"></div>
+    
+             <!-- Item -->
+             <article class="card shadow-sm rounded-3 me-xl-5 mb-4 ">
+               <div class="row">
+                 <div class="col-sm-5 position-relative bg-position-center bg-repeat-0 bg-size-cover rounded-3" style="background-image: url(assets/img/boxing.html\ competition.jpg); min-height: 15rem;">
+                   <a href="boxing-competition.html" class="position-absolute top-0 start-0 w-100 h-100" aria-label="Read more"></a>
+                   <a href="boxing-competition.html" class="btn btn-icon btn-light bg-white border-white btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" aria-label="Read later" data-bs-original-title="Read later">
+                     <i class="bx bx-bookmark"></i>
+                   </a>
+                 </div>
+                 <div class="col-sm-7 pt-5 pb-5">
+                   <div class="card-body px-0 pt-sm-0 ps-sm-4 pb-0 pb-sm-4">
+                     <a href="boxing-competition.html" class="badge fs-sm text-white bg-primary shadow-primary text-decoration-none mb-3">EVENTS</a>
+                     <h3 class="h4">
+                       <a href="boxing-competition.html">Boxing Competition 2022</a>
+                     </h3>
+                     <p class="fs-lg">Boxing Competition 2022</p>
+                     <div class="d-flex align-items-center text-muted">
+                       <div class="fs-sm border-end pe-3 me-3">Sept 28, 2022</div>
+                       <div class="d-flex align-items-center me-3">
+                         <i class="bx bx-like fs-lg me-1"></i>
+                         <span class="fs-sm">5</span>
+                       </div>
+                       <div class="d-flex align-items-center me-3">
+                         <i class="bx bx-comment fs-lg me-1"></i>
+                         <span class="fs-sm">0</span>
+                       </div>
+                       <div class="d-flex align-items-center">
+                         <i class="bx bx-share-alt fs-lg me-1"></i>
+                         <span class="fs-sm">2</span>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </article>
+   
+             <div class="pb-2 pb-lg-3"></div>
+   
+             <!-- Item -->
+             <article class="card shadow-sm rounded-3 me-xl-5 mb-4 ">
+               <div class="row">
+                 <div class="col-sm-5 position-relative bg-position-center bg-repeat-0 bg-size-cover rounded-3" style="background-image: url(assets/img/Students-Dancing.jpg); min-height: 15rem;">
+                   <a href="cultural-day.html" class="position-absolute top-0 start-0 w-100 h-100" aria-label="Read more"></a>
+                   <a href="cultural-day.html" class="btn btn-icon btn-light bg-white border-white btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" aria-label="Read later" data-bs-original-title="Read later">
+                     <i class="bx bx-bookmark"></i>
+                   </a>
+                 </div>
+                 <div class="col-sm-7 pt-5 pb-5">
+                   <div class="card-body px-0 pt-sm-0 ps-sm-4 pb-0 pb-sm-4">
+                     <a href="cultural-day.html" class="badge fs-sm text-white bg-primary shadow-primary text-decoration-none mb-3">EVENTS</a>
+                     <h3 class="h4">
+                       <a href="cultural-day.html">Crowe Schoolss Cultural Day</a>
+                     </h3>
+                     <p class="fs-lg mb-4">Cultural Day 2022</p>
+                       <div class="d-flex align-items-center text-muted">
+                       <div class="fs-sm border-end pe-3 me-3">Sept 28, 2022</div>
+                       <div class="d-flex align-items-center me-3">
+                         <i class="bx bx-like fs-lg me-1"></i>
+                         <span class="fs-sm">5</span>
+                       </div>
+                       <div class="d-flex align-items-center me-3">
+                         <i class="bx bx-comment fs-lg me-1"></i>
+                         <span class="fs-sm">0</span>
+                       </div>
+                       <div class="d-flex align-items-center">
+                         <i class="bx bx-share-alt fs-lg me-1"></i>
+                         <span class="fs-sm">2</span>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </article>
+   
+             <div class="pb-2 pb-lg-3"></div>
+   
+             <!-- Item -->
+             <article class="card shadow-sm rounded-3 me-xl-5 mb-4">
+               <div class="row">
+                 <div class="col-sm-5 position-relative bg-position-center bg-repeat-0 bg-size-cover rounded-3" style="background-image: url(assets/img/Parading-with-Guns.jpg); min-height: 15rem;">
+                   <a href="online-results.html" class="position-absolute top-0 start-0 w-100 h-100" aria-label="Read more"></a>
+                   <a href="online-results.html" class="btn btn-icon btn-light bg-white border-white btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" aria-label="Read later" data-bs-original-title="Read later">
+                     <i class="bx bx-bookmark"></i>
+                   </a>
+                 </div>
+                 <div class="col-sm-7 pt-5 pb-5">
+                   <div class="card-body px-0 pt-sm-0 ps-sm-4 pb-0 pb-sm-4">
+                     <a href="online-results.html" class="badge fs-sm text-white bg-primary shadow-primary text-decoration-none mb-3">NEWS</a>
+                     <h3 class="h4">
+                       <a href="online-results.html">You Can Now Check Results Online</a>
+                     </h3>
+                     <p class="mb-4">Crowe is Online</p>
+                     <div class="d-flex align-items-center text-muted">
+                       <div class="fs-sm border-end pe-3 me-3">Sept 28, 2022</div>
+                       <div class="d-flex align-items-center me-3">
+                         <i class="bx bx-like fs-lg me-1"></i>
+                         <span class="fs-sm">5</span>
+                       </div>
+                       <div class="d-flex align-items-center me-3">
+                         <i class="bx bx-comment fs-lg me-1"></i>
+                         <span class="fs-sm">7</span>
+                       </div>
+                       <div class="d-flex align-items-center">
+                         <i class="bx bx-share-alt fs-lg me-1"></i>
+                         <span class="fs-sm">4</span>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </article>
+   
+             <div class="pb-2 pb-lg-3"></div>
+   
+             <!-- Item -->
+             <article class="card shadow-sm rounded-3 me-xl-5 mb-4">
+               <div class="row">
+                 <div class="col-sm-5 position-relative bg-position-center bg-repeat-0 bg-size-cover rounded-3" style="background-image: url(assets/img/Students-Strolling-2.jpg); min-height: 15rem;">
+                   <a href="new-session.html" class="position-absolute top-0 start-0 w-100 h-100" aria-label="Read more"></a>
+                   <a href="new-session.html" class="btn btn-icon btn-light bg-white border-white btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" aria-label="Read later" data-bs-original-title="Read later">
+                     <i class="bx bx-bookmark"></i>
+                   </a>
+                 </div>
+                 <div class="col-sm-7 pt-5 pb-5">
+                   <div class="card-body px-0 pt-sm-0 ps-sm-4 pb-0 pb-sm-4">
+                     <a href="new-session.html" class="badge fs-sm text-white bg-primary shadow-primary text-decoration-none mb-3">NEWS</a>
+                     <h3 class="h4">
+                       <a href="new-session.html">Welcome to 2022/2023 Academic Session</a>
+                     </h3>
+                     <p class="mb-4">New Session</p>
+                       <div class="d-flex align-items-center text-muted">
+                       <div class="fs-sm border-end pe-3 me-3">Sept 28, 2022</div>
+                       <div class="d-flex align-items-center me-3">
+                         <i class="bx bx-like fs-lg me-1"></i>
+                         <span class="fs-sm">5</span>
+                       </div>
+                       <div class="d-flex align-items-center me-3">
+                         <i class="bx bx-comment fs-lg me-1"></i>
+                         <span class="fs-sm">7</span>
+                       </div>
+                       <div class="d-flex align-items-center">
+                         <i class="bx bx-share-alt fs-lg me-1"></i>
+                         <span class="fs-sm">4</span>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </article>
+   
+             <div class="pb-2 pb-lg-3"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pagination -->
+        <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-center pt-md-4 pt-2" id="pagination">
+            <li class="page-item" id="prev-page">
+              <a href="#" class="page-link">
+                <i class="bx bx-chevron-left mx-n1"></i>
+              </a>
+            </li>
+            <!-- Page numbers will be dynamically added here -->
+            <li class="page-item" id="next-page">
+              <a href="#" class="page-link">
+                <i class="bx bx-chevron-right mx-n1"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer dark-mode pt-5 pb-4 pb-lg-5" style="background-color: #521417;">
+      <div class="container pt-lg-4">
+        <div class="row pb-5">
+          <div class="col-lg-4 col-md-6">
+            <div class="navbar-brand text-dark p-0 me-0 mb-3 mb-lg-4">
+              <img src="assets/img/logo.png" width="40" alt="Crowe Schools">Crowe Int'l Schools
+            </div>
+            <p class="fs-lg text-light pb-lg-3 mb-4">Choose Crowe Schools, where academic excellence, values-based education, state-of-the-art facilities, and a supportive environment come together to provide students with the best possible education and prepare them for a successful future.</p>
+          </div>
+          <div class="fs-lg col-xl-6 col-lg-7 col-md-5 offset-xl-2 offset-md-1 pt-4 pt-md-1 pt-lg-0">
+            <div id="footer-links" class="row d-sm-flex">
+              <div class="col-lg-4">
+                <h6 class="mb-2">Useful Links</h6>
+                <div id="useful-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
+                  <ul class="nav flex-column pb-lg-1 mb-lg-3">
+                    <li class="nav-item"><a href="index-2.html" class="nav-link d-inline-block px-0 pt-1 pb-2">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link d-inline-block px-0 pt-1 pb-2">About School</a></li>
+                    <li class="nav-item"><a href="gallery.html" class="nav-link d-inline-block px-0 pt-1 pb-2">Gallery</a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link d-inline-block px-0 pt-1 pb-2">News &amp; Events</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-3">
+                <h6 class="mb-2">Socials</h6>
+                <div id="social-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
+                  <ul class="nav flex-column mb-2 mb-lg-0">
+                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Facebook</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">LinkedIn</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Twitter</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-5 pt-2 pt-lg-0">
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="nav d-block fs-xs text-center text-md-start pb-2 pb-lg-0 mb-0">
+          <span class="text-light opacity-50">&copy; All rights reserved.</span>
+          <a href="index-2.html" class="nav-link d-inline-block p-0" >Crowe Schools</a>
+        </p>
+      </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <a href="#top" class="btn-scroll-top" data-scroll>
+      <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
+      <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
+    </a>
+
+    <!-- Vendor Scripts -->
+    <script src="../cdn.jsdelivr.net/npm/bootstrap%405.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <!-- Form Scripts -->
+    <script src="../cdn.jsdelivr.net/npm/cleave.js%401.6.0/dist/cleave.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        // Get references to the search input and all blog items (both grid and list)
+        const searchInput = document.getElementById('searchInput');
+        const allBlogItems = document.querySelectorAll('.card');
+
+        // Add an event listener to the search input
+        searchInput.addEventListener('input', () => {
+          const searchText = searchInput.value.toLowerCase();
+
+          // Loop through each blog item (both grid and list)
+          allBlogItems.forEach((item) => {
+            const title = item.querySelector('h3 a');
+            const content = item.querySelector('p');
+
+            if (title && content) {
+              const titleText = title.textContent.toLowerCase();
+              const contentText = content.textContent.toLowerCase();
+
+              // Check if the title or content contains the search text
+              if (titleText.includes(searchText) || contentText.includes(searchText)) {
+                item.style.display = 'block'; // Show the item
+              } else {
+                item.style.display = 'none'; // Hide the item
+              }
+            }
+          });
+        });
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+      const itemsPerPage = 6; // Number of items to show per page
+      const gridContainer = document.querySelector("#bloggrid .row");
+      const listContainer = document.querySelector("#bloglist .row");
+      const pagination = document.querySelector("#pagination");
+      const prevPageBtn = document.querySelector("#prev-page");
+      const nextPageBtn = document.querySelector("#next-page");
+
+      const items = Array.from(gridContainer.children); // Assuming grid and list have the same number of items
+
+      const totalPages = Math.ceil(items.length / itemsPerPage);
+      let currentPage = 1;
+
+      // Function to show items for the current page
+      function showItemsForPage(page) {
+        const startIndex = (page - 1) * itemsPerPage;
+        const endIndex = startIndex + itemsPerPage;
+        items.forEach((item, index) => {
+          if (index >= startIndex && index < endIndex) {
+            item.style.display = "block";
+          } else {
+            item.style.display = "none";
+          }
+        });
+      }
+
+      // Function to update pagination links
+      function updatePagination() {
+        // Remove existing page number links
+        const pageLinks = document.querySelectorAll("#pagination .page-number");
+        pageLinks.forEach((link) => link.remove());
+
+        // Add page number links dynamically
+        for (let i = 1; i <= totalPages; i++) {
+          const li = document.createElement("li");
+          li.classList.add("page-item", "page-number");
+          const a = document.createElement("a");
+          a.href = "#";
+          a.classList.add("page-link");
+          a.textContent = i;
+          li.appendChild(a);
+
+          if (i === currentPage) {
+            li.classList.add("active");
+          }
+
+          if (nextPageBtn) {
+            pagination.insertBefore(li, nextPageBtn); // Insert before the "Next" button
+          } else {
+            pagination.appendChild(li); // Append if there is no "Next" button
+          }
+        }
+      }
+      
+      // Initialize page 1
+      showItemsForPage(currentPage);
+      updatePagination();
+
+      // Event listener for clicking on page numbers
+      pagination.addEventListener("click", (event) => {
+        if (event.target.classList.contains("page-link")) {
+          currentPage = parseInt(event.target.textContent);
+          showItemsForPage(currentPage);
+          updatePagination();
+        }
+      });
+
+      // Event listener for previous page button
+      prevPageBtn.addEventListener("click", () => {
+        if (currentPage > 1) {
+          currentPage--;
+          showItemsForPage(currentPage);
+          updatePagination();
+        }
+      });
+
+      // Event listener for next page button
+      nextPageBtn.addEventListener("click", () => {
+        if (currentPage < totalPages) {
+          currentPage++;
+          showItemsForPage(currentPage);
+          updatePagination();
+        }
+      });
+    });
+    
+    </script>    
+    
+    <!-- Animation Scripts -->
+    <script src="assets/vendor/%40lottiefiles/lottie-player/dist/lottie-player.js"></script>
+
+    <!-- Slider and Gallery Scripts -->
+    <script src="../cdn.jsdelivr.net/npm/swiper%4010/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/lightgallery/lightgallery.min.js"></script>
+    <script src="assets/vendor/lightgallery/plugins/fullscreen/lg-fullscreen.min.js"></script>
+    <script src="assets/vendor/lightgallery/plugins/zoom/lg-zoom.min.js"></script>
+    <script src="assets/vendor/lightgallery/plugins/video/lg-video.min.js"></script>
+    <script src="assets/vendor/lightgallery/plugins/thumbnail/lg-thumbnail.min.js"></script>
+
+    <!-- Parallax and Animation Scripts -->
+    <script src="assets/vendor/parallax-js/dist/parallax.min.js"></script>
+    <script src="assets/vendor/rellax/rellax.min.js"></script>
+    <script src="assets/vendor/jarallax/dist/jarallax.min.js"></script>
+
+    <!-- Image and Animation Scripts -->
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/shufflejs/dist/shuffle.min.js"></script>
+
+    <!-- Main Theme Script -->
+    <script src="assets/js/theme.min.js"></script>
+  </body>
+
+<!-- Mirrored from croweschools.com/blog.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 24 Apr 2024 06:55:45 GMT -->
+</html>

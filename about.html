@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from croweschools.com/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 24 Apr 2024 06:55:32 GMT -->
+<head>
+    <meta charset="utf-8">
+    <title>Crowe Schools</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Crowe Schools">
+    <meta name="keywords" content="Crowe Schools, School, Education, Learning, Students, Curriculum, Programs, Admissions, Faculty, Staff, Classes, Courses, 
+    Extracurricular activities, Facilities, Resources, Campus, Academic excellence, Scholarships, Community involvement, Parent involvement, Alumni network, 
+    Technology integration, Research opportunities, Study abroad, Career services, College preparation, International education">
+    <meta name="author" content="Aporaj Enterprise">
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon and Touch Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#6366f1">
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#080032">
+    <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Vendor Styles -->
+    <link rel="stylesheet" href="../cdn.jsdelivr.net/npm/boxicons%40latest/css/boxicons.min.css">
+    <link rel="stylesheet"  href="../cdn.jsdelivr.net/npm/swiper%4010/swiper-bundle.min.css"/>
+    <link rel="stylesheet" media="screen" href="assets/vendor/lightgallery/css/lightgallery-bundle.min.css">
+    <link rel="stylesheet" media="screen" href="assets/vendor/img-comparison-slider/dist/styles.css">
+
+    <!-- Main Theme Styles + Bootstrap -->
+    <link rel="stylesheet" media="screen" href="assets/css/theme.min.css">
+
+    <!-- Page loading styles -->
+    <style>
+      .page-loading {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all .4s .2s ease-in-out;
+        transition: all .4s .2s ease-in-out;
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9999;
+      }
+      .dark-mode .page-loading {
+        background-color: #0b0f19;
+      }
+      .page-loading.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .page-loading-inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: opacity .2s ease-in-out;
+        transition: opacity .2s ease-in-out;
+        opacity: 0;
+      }
+      .page-loading.active > .page-loading-inner {
+        opacity: 1;
+      }
+      .page-loading-inner > span {
+        display: block;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #9397ad;
+      }
+      .dark-mode .page-loading-inner > span {
+        color: #fff;
+        opacity: .6;
+      }
+      .page-spinner {
+        display: inline-block;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-bottom: .75rem;
+        vertical-align: text-bottom;
+        border: .15em solid #b4b7c9;
+        border-right-color: transparent;
+        border-radius: 50%;
+        -webkit-animation: spinner .75s linear infinite;
+        animation: spinner .75s linear infinite;
+      }
+      .dark-mode .page-spinner {
+        border-color: rgba(255,255,255,.4);
+        border-right-color: transparent;
+      }
+      @-webkit-keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+
+    <!-- Theme mode -->
+    <script>
+      let mode = window.localStorage.getItem('mode'),
+          root = document.getElementsByTagName('html')[0];
+      if (mode !== null && mode === 'dark') {
+        root.classList.add('dark-mode');
+      } else {
+        root.classList.remove('dark-mode');
+      }
+    </script>
+
+    <!-- Page loading scripts -->
+    <script>
+      (function () {
+        window.onload = function () {
+          const preloader = document.querySelector('.page-loading');
+          preloader.classList.remove('active');
+          setTimeout(function () {
+            preloader.remove();
+          }, 1000);
+        };
+      })();
+    </script>
+  </head>
+
+
+  <!-- Body -->
+  <body>
+    
+    <!-- Page loading spinner -->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div><span>Loading...</span>
+      </div>
+    </div>
+
+
+    <!-- Page wrapper for sticky footer -->
+    <!-- Wraps everything except footer to push footer to the bottom of the page if there is little content -->
+    <main class="page-wrapper">
+
+      <!-- Navbar -->
+      <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page -->
+      <header class="header navbar navbar-expand-lg position-absolute navbar-sticky">
+        <div class="container ">
+          <a href="index-2.html" class="navbar-brand pe-3">
+            <img src="assets/img/logo.png" width="40" alt="Crowe Schools">Crowe Int'l
+          </a>
+          <div id="navbarNav" class="offcanvas offcanvas-end">
+            <div class="offcanvas-header border-bottom">
+              <h5 class="offcanvas-title">Menu</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a href="index-2.html" class="nav-link">Home</a></li>
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">About</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="about.html" class="dropdown-item py-2">School</a></li>
+                    <li><a href="proprietor.html" class="dropdown-item py-2">Proprietor</a></li>
+                    <li><a href="proprietress.html" class="dropdown-item py-2">Proprietress</a></li>
+                    <li><a href="principal.html" class="dropdown-item py-2">Principal</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item"> <a href="gallery.html" class="nav-link">Gallery</a> </li>
+                <li class="nav-item dropdown"> 
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Portal</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="https://portal.croweschools.com/student-login.php" class="dropdown-item py-2">Student Portal</a></li>
+                    <li><a href="https://portal.croweschools.com/staff-login.php" class="dropdown-item py-2">Staff Portal</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item"><a href="blog.html" class="nav-link">News & Events</a></li>
+                <li class="nav-item"><a href="admission.html" class="nav-link">Admission</a></li>
+              </ul>
+            </div>
+            <div class="offcanvas-header border-top">
+              <a href="contact.html" class="btn btn-primary shadow-primary w-100" >
+                <i class="bx bx bx bx-mail-send fs-4 lh-1 me-1"></i>
+                &nbsp;Contacts Us
+              </a>
+            </div>      
+          </div>
+          <div class="form-check form-switch mode-switch pe-lg-1 ms-auto me-4" data-bs-toggle="mode">
+            <input type="checkbox" class="form-check-input" id="theme-mode">
+            <label class="form-check-label d-none d-sm-block" for="theme-mode">Light</label>
+            <label class="form-check-label d-none d-sm-block" for="theme-mode">Dark</label>
+          </div>
+          <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a href="contact.html" class="btn btn-primary shadow-primary btn-sm fs-sm rounded d-none d-lg-inline-flex" >
+            &nbsp;Contact Us
+          </a>
+        </div>
+      </header>
+
+      <!-- Hero -->
+      <section class="position-relative pt-5">
+
+        <!-- Background -->
+        <div class="position-absolute top-0 start-0 w-100 bg-position-bottom-center bg-size-cover bg-repeat-0" style="background-image: url(assets/img/about/hero-bg.svg);">
+          <div class="d-lg-none" style="height: 960px;"></div>
+          <div class="d-none d-lg-block" style="height: 768px;"></div>
+        </div>
+
+        <!-- Content -->
+        <div class="container position-relative zindex-5 pt-5">
+          <div class="row">
+            <div class="col-lg-6">
+              
+              <!-- Breadcrumb -->
+              <nav class="pt-md-2 pt-lg-3 pb-4 pb-md-5 mb-xl-4" aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0">
+                  <li class="breadcrumb-item">
+                    <a href="index-2.html"><i class="bx bx-home-alt fs-lg me-1"></i>Home</a>
+                  </li>
+                  <li class="breadcrumb-item active" aria-current="page">About</li>
+                </ol>
+              </nav>
+
+              <!-- Text -->
+              <h3 class="pb-2 pb-md-3">Brief History</h3>
+              <p class="fs-lg pb-4 mb-1 mb-md-2 mb-lg-3">The name <b>‘CROWE‘</b> is derived from the name of a company registered as <b>Crown Worldwide Events Limited</b>, of which <b>Crowe Group of Schools</b> is a subsidiary.
+                The vision of the school came in the year <b>2000</b>. The school is located in <b>Iwo City in Osun State, Nigeria</b> and the exact venue is the current location KM3, Iwo Ejigbo Road. Foundations and construction began in 2002. The school started academic operation on the <b>26th of September, 2009.</b> <br><br>
+                Before this time, <b>(precisely in 2008)</b>, another portion of land was acquired in addition to the one that housed the school. About 4.5 hectares of land, which is 500 meters away from the school site. This land is to house an international football academy and the boarding students.
+                Crowe Schoolss are located in a beautiful and serene environment, conducive for teaching and learning in all ramifications. Amenities and infrastructural facilities are of international standard.</p>
+              
+            </div>
+
+            <!-- Images -->
+            <div class="col-lg-6 mt-xl-3 pt-5 pt-lg-4">
+              <div class="row row-cols-2 gx-3 gx-lg-4">
+                <div class="col pt-lg-5 mt-lg-1">
+                  <img src="assets/img/Students-Strolling-2.jpg" class="d-block rounded-3 mb-3 mb-lg-4" alt="Image">
+                  <img src="assets/img/Crowe-Director.jpg" class="d-block rounded-3" alt="Image">
+                </div>
+                <div class="col">
+                  <img src="assets/img/Physics-Lab-Students-2.jpg" class="d-block rounded-3 mb-3 mb-lg-4" alt="Image">
+                  <img src="assets/img/A-Day-Director-Speech.jpg" class="d-block rounded-3" alt="Image">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container pt-5 mb-md-2 mb-lg-4">
+        <div class="row pt-2 pt-md-3">
+          <div class="col-md-6">
+            <p class="fs-lg pb-4 mb-1 mb-md-2 mb-lg-3">However, the vision of the school was abrupted and brought to a halt, due to the painful demise of the principal founders in 2015 and 2016 respectively, This brought the school to a deteriorating state. After many years of poor management and reckless administration, the board of directors thought it good to lease the school in 2020. This decision pedaled in new season for the school.
+              The new management under the leadership of <b>Mr. Adetayo A. ALLI</b>, an educational consultant and an academic echelon, has brought about new look, restructuring, and an unprecedented awakening to the school.</p>
+          </div>
+          <div class="col-md-6">
+            <p class="fs-lg pb-4 mb-1 mb-md-2 mb-lg-3">The new management, among many other things done to reawaken the school is the rebranding of the school logo, a touch of change on the school uniform to give it a new look, creation of a continuous and relevant vision and mission statement for the school, renovation and revitalization of the school laboratories and ICT room, and hiring of highly effective and qualified teachers. Of which positive results have began to stream in.
+              <i>Within this short period of time under the new management, <b>Crowe SchoolsS</b> of today, now stands shoulder to shoulder with her counterparts on academic grounds globally…</i></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Benefits (features) -->
+      <section class="container mt-3 mb-5 pt-lg-5" id="benefits">
+        <div class="swiper pt-3 swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden" data-swiper-options="{
+          &quot;slidesPerView&quot;: 1,
+          &quot;centeredSlides&quot;: true,
+          &quot;loop&quot;: true,
+          &quot;speed&quot;: 1000,
+          &quot;autoplay&quot;: {
+            &quot;delay&quot;: 5000,
+            &quot;disableOnInteraction&quot;: false
+          },
+          &quot;pagination&quot;: {
+            &quot;el&quot;: &quot;.swiper-pagination&quot;,
+            &quot;clickable&quot;: true
+          },
+          &quot;breakpoints&quot;: {
+            &quot;500&quot;: {
+              &quot;slidesPerView&quot;: 2
+            },
+            &quot;650&quot;: {
+              &quot;slidesPerView&quot;: 2
+            },
+            &quot;900&quot;: {
+              &quot;slidesPerView&quot;: 2
+            },
+            &quot;1100&quot;: {
+              &quot;slidesPerView&quot;: 2
+            }
+          }
+        }">
+          <div class="swiper-wrapper pt-4" id="swiper-wrapper-357e8ef5821432c8" aria-live="polite" style="transform: translate3d(0px, 0px, 0px);">
+
+            <!-- Item -->
+            <div class="swiper-slide border-end-lg px-2 swiper-slide-active" style="width: 417.333px;" role="group" aria-label="1 / 4">
+              <div class="text-center">
+                <img src="assets/img/landing/digital-agency/icons/idea.svg" width="48" alt="Bulb icon" class="d-block mb-4 mx-auto">
+                <h4 class="mb-2 pb-1">100%</h4>
+                <p class="fs-lg mx-auto" style="max-width: 336px;">Satisfied Parents</p>
+              </div>
+            </div>
+
+            <!-- Item -->
+            <div class="swiper-slide border-end-lg px-2 swiper-slide-active" style="width: 417.333px;" role="group" aria-label="1 / 3">
+              <div class="text-center">
+                <img src="assets/img/landing/digital-agency/icons/idea.svg" width="48" alt="Bulb icon" class="d-block mb-4 mx-auto">
+                <h4 class="mb-2 pb-1">50+</h4>
+                <p class="fs-lg mx-auto" style="max-width: 336px;">Experienced Teachers</p>
+              </div>
+            </div>
+
+            <!-- Item -->
+            <div class="swiper-slide border-end-lg px-2 swiper-slide-next" style="width: 417.333px;" role="group" aria-label="2 / 3">
+              <div class="text-center">
+                <img src="assets/img/landing/digital-agency/icons/award.svg" width="48" alt="Award icon" class="d-block mb-4 mx-auto">
+                <h4 class="mb-2 pb-1">2000+</h4>
+                <p class="fs-lg mx-auto" style="max-width: 336px;">Enrolled Students</p>
+              </div>
+            </div>
+
+            <!-- Item -->
+            <div class="swiper-slide border-end-lg px-2" role="group" aria-label="4 / 4" style="width: 417.333px;">
+              <div class="text-center">
+                <img src="assets/img/landing/digital-agency/icons/team.svg" width="48" alt="Team icon" class="d-block mb-4 mx-auto">
+                <h4 class="mb-2 pb-1">99%</h4>
+                <p class="fs-lg mx-auto" style="max-width: 336px;">Universities Pass Rate</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pagination (bullets) -->
+          <div class="swiper-pagination position-relative pt-2 pt-sm-3 mt-4 swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal swiper-pagination-lock"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1" aria-current="true"></span></div>
+        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+      </section>
+      
+      <section class="container py-5 mt-5 mb-lg-5 pb-5">
+        <div class="row align-items-center">
+          <div class="col-md-6 pb-2 pb-md-0 mb-4 mb-md-0">
+            <div class="pe-lg-5">
+              <img src="assets/img/Physics-Lab-Students-2.jpg" class="rounded-3" alt="Image">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <!-- Nav tabs alternative style -->
+            <ul class="nav nav-tabs" role="tablist">
+              <li class="nav-item shadow-secondary">
+                <a href="#vision" class="nav-link active" data-bs-toggle="tab" role="tab">
+                  <i class="bx bx-bullseye me-2"></i>
+                  Vision
+                </a>
+              </li>
+              <li class="nav-item shadow-secondary">
+                <a href="#mission" class="nav-link" data-bs-toggle="tab" role="tab">
+                  <i class="bx bx-target-lock me-2"></i>
+                  Mission
+                </a>
+              </li>
+              <li class="nav-item shadow-secondary">
+                <a href="#anthem" class="nav-link" data-bs-toggle="tab" role="tab">
+                  <i class="bx bx-music me-2"></i>
+                  School Anthem
+                </a>
+              </li>
+            </ul>
+            <!-- Tabs content -->
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="vision" role="tabpanel">
+                <p class="fs-lg pb-4 mb-1 mb-md-2 mb-lg-3">
+                  Crowe Int'l Schools shall be an internationally recognized citadel of learning, that is committed to raising excellent and morally sound problem-solving scholars.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="mission" role="tabpanel">
+                <p class="fs-lg pb-4 mb-1 mb-md-2 mb-lg-3">To raise scholars with high level of excellence, through the dissemination of relevant and contemporary knowledge that will enhance their capacity to make the world a better place.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="anthem" role="tabpanel">
+                <p class="fs-lg pb-4 mb-1 mb-md-2 mb-lg-3">There's a rock solid learning Citadel With a solid base like a Gibraltar There's a school that stands out as a model And a future leader Alma mater There's a place to be fit as a fiddle Where physical and mental growth matters There's a place where moral never dwindles, but boost knowledge and make future brighter Crowe Schoolss will never fail To raise students that all hails Crowe Schoolss will ever pass Sound knowledge to students En Mass. ***Crowe Schoolss, Leading with Cognition!***
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+        <!-- Testimonials (Slider) -->
+        <section class="container pb-5 mb-md-2 mb-xl-4">
+          <div class="row pb-lg-2">
+            <h2 class="h1 text-center pt-1 pt-xl-2 mb-4">What Parents and Students have to say about us</h2>
+            <p class="fs-lg text-muted text-center text-black pb-4 mb-2 mb-lg-3">Testimonies about Crowe International Schools. You can also be part of the family.</p>
+              <div class="col-md-4 d-none d-md-block">
+                <!-- Swiper tabs (Author images) -->
+                <div class="swiper-tabs">
+      
+                  <!-- Author 1 image -->
+                  <div id="author-1" class="card bg-transparent border-0 swiper-tab active">
+                    <div class="card-body p-0 rounded-3 bg-size-contain bg-repeat-0 bg-position-top-center" style="background-image: url(assets/img/user.png);"></div>
+                    <div class="card-footer d-flex w-100 border-0 pb-0">
+                      <div class="ps-xl-4 ms-xl-2">
+                        <h5 class="fw-semibold lh-base mb-0">Mr. Mathew Ajibade</h5>
+                        <span class="fs-sm text-muted">Parent<span class="d-xl-none d-inline"></span></span>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <!-- Author 2 image -->
+                  <div id="author-2" class="card bg-transparent border-0 swiper-tab">
+                    <div class="card-body p-0 rounded-3 bg-size-contain bg-repeat-0 bg-position-top-center" style="background-image: url(assets/img/user.png);"></div>
+                    <div class="card-footer d-flex w-100 border-0 pb-0">
+                      <div class="ps-xl-4 ms-xl-2">
+                        <h5 class="fw-semibold lh-base mb-0">Mr. Ismail Adewale</h5>
+                        <span class="fs-sm text-muted">Parentt<span class="d-xl-none d-inline"></span></span>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <!-- Author 3 image -->
+                  <div id="author-3" class="card bg-transparent border-0 swiper-tab">
+                    <div class="card-body p-0 rounded-3 bg-size-contain bg-repeat-0 bg-position-top-center" style="background-image: url(assets/img/user.png);"></div>
+                    <div class="card-footer d-flex w-100 border-0 pb-0">
+                      <div class="ps-xl-4 ms-xl-2">
+                        <h5 class="fw-semibold lh-base mb-0">Mrs. Comfort Adedeji</h5>
+                        <span class="fs-sm text-muted">Parent<span class="d-xl-none d-inline"></span></span>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <!-- Author 4 image -->
+                  <div id="author-4" class="card bg-transparent border-0 swiper-tab">
+                    <div class="card-body p-0 rounded-3 bg-size-contain bg-repeat-0 bg-position-top-center" style="background-image: url(assets/img/user.png);"></div>
+                    <div class="card-footer d-flex w-100 border-0 pb-0">
+                      <div class="ps-xl-4 ms-xl-2">
+                        <h5 class="fw-semibold lh-base mb-0">Alabi Yetunde</h5>
+                        <span class="fs-sm text-muted">Parent<span class="d-xl-none d-inline"></span></span>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <!-- Author 5 image -->
+                  <!-- <div id="author-5" class="card bg-transparent border-0 swiper-tab">
+                    <div class="card-body p-0 rounded-3 bg-size-cover bg-repeat-0 bg-position-top-center" style="background-image: url(assets/img/team/07.jpg);"></div>
+                    <div class="card-footer d-flex w-100 border-0 pb-0">
+                      <div class="ps-xl-4 ms-xl-2">
+                        <h5 class="fw-semibold lh-base mb-0">Student's Name</h5>
+                        <span class="fs-sm text-muted">Current Student<span class="d-xl-none d-inline"></span></span>
+                      </div>
+                    </div>
+                  </div> -->
+                </div>
+              </div>
+              <div class="col-md-8">
+                <div class="card border-0 shadow-sm p-4 p-xxl-5 ms-xxl-5">
+      
+                  <!-- Slider prev/next buttons + Quotation mark -->
+                  <div class="d-flex justify-content-between pb-4 mb-2">
+                    <span class="btn btn-icon btn-primary btn-lg shadow-primary pe-none">
+                      <i class="bx bxs-quote-left"></i>
+                    </span>
+                    <div class="d-flex">
+                      <button type="button" id="prev2" class="btn btn-prev btn-icon btn-sm me-2">
+                        <i class="bx bx-chevron-left"></i>
+                      </button>
+                      <button type="button" id="next2" class="btn btn-next btn-icon btn-sm ms-2">
+                        <i class="bx bx-chevron-right"></i>
+                      </button>
+                    </div>
+                  </div>   
+                  
+                  <!-- Slider -->
+                  <div class="swiper mx-0 mb-md-n2 mb-xxl-n3" data-swiper-options='{
+                    "spaceBetween": 24,
+                    "loop": true,
+                    "tabs": true,
+                    "speed": 1000,
+                    "autoplay": {
+                      "delay": 5000,
+                      "disableOnInteraction": false
+                    },
+                    "pagination": {
+                      "el": ".swiper-pagination",
+                      "clickable": true
+                    },
+                    "navigation": {
+                      "prevEl": "#prev2",
+                      "nextEl": "#next2"
+                    }
+                  }'>
+                    <div class="swiper-wrapper">
+      
+                      <!-- Item -->
+                      <div class="swiper-slide h-auto" data-swiper-tab="#author-1">
+                        <figure class="card h-100 position-relative border-0 bg-transparent">
+                          <blockquote class="card-body p-0 mb-0">
+                            <p class="fs-lg mb-0">
+          
+                              Crowe Schools is a place where dreams take flight. The specialists and tutors here have been instrumental in our child's educational journey. Their diligent and close supervision ensures that our child's core competencies are not just acknowledged but also enhanced. We've witnessed our child's academic and personal growth soar under their guidance. Crowe School's commitment to proper growth and holistic development is truly inspiring, and we couldn't be happier with the results. It's more than a school; it's a place where children thrive.
+                          </p>
+                          </blockquote>
+                          <figcaption class="card-footer border-0 d-sm-flex d-md-none w-100 pb-2">
+                            <div class="d-flex align-items-center pe-sm-4 me-sm-2">
+                              <img src="assets/img/user.png" width="48" class="rounded-circle" alt="">
+                              <div class="ps-3">
+                                <h5 class="fw-semibold lh-base mb-0">Mr. Mathew Ajibade</h5>
+                                <span class="fs-sm text-muted">Parent</span>
+                              </div>
+                            </div>
+                          </figcaption>
+                        </figure>
+                      </div>
+      
+                      <!-- Item -->
+                      <div class="swiper-slide h-auto" data-swiper-tab="#author-2">
+                        <figure class="card h-100 position-relative border-0 bg-transparent">
+                          <blockquote class="card-body p-0 mb-0">
+                            <p class="fs-lg mb-0">
+                              Crowe Schools is a place where every child's unique potential is not just recognized but also harnessed for success. The specialists and tutors here are exceptional in their commitment to diligently and closely supervise our child's educational journey. They take the time to understand our child's strengths and areas for growth, and their personalized support has led to significant improvements. Our child's core competencies have flourished under their guidance, and the results speak for themselves. Crowe School's emphasis on proper growth and holistic development is what sets it apart as a truly outstanding institution.
+                            </p>
+                          </blockquote>
+                          <figcaption class="card-footer border-0 d-sm-flex d-md-none w-100 pb-2">
+                            <div class="d-flex align-items-center pe-sm-4 me-sm-2">
+                              <img src="assets/img/user.png" width="48" class="rounded-circle" alt="">
+                              <div class="ps-3">
+                                <h5 class="fw-semibold lh-base mb-0">Mr. Ismail Adewale</h5>
+                                <span class="fs-sm text-muted">Parent</span>
+                              </div>
+                            </div>
+                          </figcaption>
+                        </figure>
+                      </div>
+      
+                      <!-- Item -->
+                      <div class="swiper-slide h-auto" data-swiper-tab="#author-3">
+                        <figure class="card h-100 position-relative border-0 bg-transparent">
+                          <blockquote class="card-body p-0 mb-0">
+                            <p class="fs-lg mb-0">
+                              Crowe Schools has been a true gem for our family. Our child is not just another student; they're an individual with unique talents and abilities. The school's dedicated team of specialists and tutors diligently and closely supervise our child's educational journey. They have an incredible knack for harnessing core competencies and tailoring the learning experience to suit our child's needs. Their personalized attention has led to a remarkable transformation in our child's academic performance and overall growth. We can't thank Crowe School enough for the care and support they provide, ensuring our child's proper growth and development.
+                            </p>
+                          </blockquote>
+                          <figcaption class="card-footer border-0 d-sm-flex d-md-none w-100 pb-2">
+                            <div class="d-flex align-items-center pe-sm-4 me-sm-2">
+                              <img src="assets/img/user.png" width="48" class="rounded-circle" alt="">
+                              <div class="ps-3">
+                                <h5 class="fw-semibold lh-base mb-0">Mrs. Comfort Adedeji</h5>
+                                <span class="fs-sm text-muted">Parent</span>
+                              </div>
+                            </div>
+                          </figcaption>
+                        </figure>
+                      </div>
+  
+                      <!-- Item -->
+                      <div class="swiper-slide h-auto" data-swiper-tab="#author-4">
+                        <figure class="card h-100 position-relative border-0 bg-transparent">
+                          <blockquote class="card-body p-0 mb-0">
+                            <p class="fs-lg mb-0">
+                              At Crowe Schools, our child has found a second home where they are diligently and closely supervised by a team of specialists and tutors who genuinely care. This school goes beyond traditional education; it's a place where individual growth is a top priority. The specialists and tutors here have a unique ability to harness our child's core competencies and help them excel. Our child's journey at Crowe School has been transformative, and we credit this to the nurturing environment created by the school's staff. We're grateful for the proper growth and development our child is experiencing.
+                            </p>
+                          </blockquote>
+                          <figcaption class="card-footer border-0 d-sm-flex d-md-none w-100 pb-2">
+                            <div class="d-flex align-items-center pe-sm-4 me-sm-2">
+                              <img src="assets/img/user.png" width="48" class="rounded-circle" alt="">
+                              <div class="ps-3">
+                                <h5 class="fw-semibold lh-base mb-0">Alabi Yetunde</h5>
+                                <span class="fs-sm text-muted">Parent</span>
+                              </div>
+                            </div>
+                          </figcaption>
+                        </figure>
+                      </div>
+  
+                      <!-- Item -->
+                      <!-- <div class="swiper-slide h-auto" data-swiper-tab="#author-5">
+                        <figure class="card h-100 position-relative border-0 bg-transparent">
+                          <blockquote class="card-body p-0 mb-0">
+                            <p class="fs-lg mb-0"></p>
+                          </blockquote>
+                          <figcaption class="card-footer border-0 d-sm-flex d-md-none w-100 pb-2">
+                            <div class="d-flex align-items-center pe-sm-4 me-sm-2">
+                              <img src="assets/img/avatar/01.jpg" width="48" class="rounded-circle" alt="">
+                              <div class="ps-3">
+                                <h5 class="fw-semibold lh-base mb-0">Student's Name</h5>
+                                <span class="fs-sm text-muted">Current Student</span>
+                              </div>
+                            </div>
+                          </figcaption>
+                        </figure>
+                      </div> -->
+                    </div>
+      
+                    <!-- Pagination (bullets) -->
+                    <div class="swiper-pagination position-relative pt-3 mt-4 d-none d-md-flex"></div>
+                  </div>        
+                </div>
+              </div>
+        </section>
+
+      <!-- Team -->
+      <section class="container pt-5">
+        <h2 class="h1 text-center pt-1">Management Staff</h2>
+        <p class="text-center fs-lg pb-4 mb-1 mb-md-2 mb-lg-3">You will find our staff to be warm, friendly and committed when you visit our school. Don’t be surprised to see us being very strict, or laughing out loud! Both of these elements fit firmly within our values.</p>
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 row-cols-lg-4 g-4 justify-content-center">
+
+          <!-- Item -->
+          <div class="col">
+            <div class="card card-hover border-0 bg-transparent">
+              <div class="position-relative">
+                <img src="assets/img/director%20img.jpg" class="rounded-3" alt="Ralph Edwards">
+                <div class="card-img-overlay d-flex flex-column align-items-center justify-content-center rounded-3">
+                  <span class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-25 rounded-3"></span>
+                  <div class="position-relative d-flex zindex-2">
+                    <a href="#" class="btn btn-icon btn-secondary btn-facebook btn-sm bg-white me-2">
+                      <i class="bx bxl-facebook"></i>
+                    </a>
+                    <a href="#" class="btn btn-icon btn-secondary btn-linkedin btn-sm bg-white me-2">
+                      <i class="bx bxl-linkedin"></i>
+                    </a>
+                    <a href="#" class="btn btn-icon btn-secondary btn-twitter btn-sm bg-white">
+                      <i class="bx bxl-twitter"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body text-center p-3">
+                <h3 class="fs-lg fw-semibold pt-1 mb-2">Adetayo A. ALLI</h3>
+                <p class="fs-sm mb-0">Director</p>
+                <a class="btn btn-link btn-lg" href="proprietor.html"> Read more
+                  <i class="bx bx-right-arrow-alt lead ms-2"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="col">
+            <div class="card card-hover border-0 bg-transparent">
+              <div class="position-relative">
+                <img src="assets/img/Resgistrar.jpg" class="rounded-3" alt="Cameron Williamson">
+                <div class="card-img-overlay d-flex flex-column align-items-center justify-content-center rounded-3">
+                  <span class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-25 rounded-3"></span>
+                  <div class="position-relative d-flex zindex-2">
+                    <a href="#" class="btn btn-icon btn-secondary btn-facebook btn-sm bg-white me-2">
+                      <i class="bx bxl-facebook"></i>
+                    </a>
+                    <a href="#" class="btn btn-icon btn-secondary btn-twitter btn-sm bg-white me-2">
+                      <i class="bx bxl-twitter"></i>
+                    </a>
+                    <a href="#" class="btn btn-icon btn-secondary btn-linkedin btn-sm bg-white">
+                      <i class="bx bxl-linkedin"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body text-center p-3">
+                <h3 class="fs-lg fw-semibold pt-1 mb-2">Moses A. Jessey</h3>
+                <p class="fs-sm mb-0">Registrar & Head of ADMIN</p>
+                <a class="btn btn-link btn-lg" href="proprietress.html"> Read more
+                  <i class="bx bx-right-arrow-alt lead ms-2"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="col">
+            <div class="card card-hover border-0 bg-transparent">
+              <div class="position-relative">
+                <img src="assets/img/Bursar.jpg" class="rounded-3" alt="Jerome Bell">
+                <div class="card-img-overlay d-flex flex-column align-items-center justify-content-center rounded-3">
+                  <span class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-25 rounded-3"></span>
+                  <div class="position-relative d-flex zindex-2">
+                    <a href="#" class="btn btn-icon btn-secondary btn-facebook btn-sm bg-white me-2">
+                      <i class="bx bxl-facebook"></i>
+                    </a>
+                    <a href="#" class="btn btn-icon btn-secondary btn-twitter btn-sm bg-white me-2">
+                      <i class="bx bxl-twitter"></i>
+                    </a>
+                    <a href="#" class="btn btn-icon btn-secondary btn-linkedin btn-sm bg-white">
+                      <i class="bx bxl-linkedin"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body text-center p-3">
+                <h3 class="fs-lg fw-semibold pt-1 mb-2">Olalere P. Olaoluwa</h3>
+                <p class="fs-sm mb-0">Bursar</p>
+                <a class="btn btn-link btn-lg" href="principal.html"> Read more
+                  <i class="bx bx-right-arrow-alt lead ms-2"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="col">
+            <div class="card card-hover border-0 bg-transparent">
+              <div class="position-relative">
+                <img src="assets/img/Supervisor.jpg" class="rounded-3" alt="Jerome Bell">
+                <div class="card-img-overlay d-flex flex-column align-items-center justify-content-center rounded-3">
+                  <span class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-25 rounded-3"></span>
+                  <div class="position-relative d-flex zindex-2">
+                    <a href="#" class="btn btn-icon btn-secondary btn-facebook btn-sm bg-white me-2">
+                      <i class="bx bxl-facebook"></i>
+                    </a>
+                    <a href="#" class="btn btn-icon btn-secondary btn-twitter btn-sm bg-white me-2">
+                      <i class="bx bxl-twitter"></i>
+                    </a>
+                    <a href="#" class="btn btn-icon btn-secondary btn-linkedin btn-sm bg-white">
+                      <i class="bx bxl-linkedin"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body text-center p-3">
+                <h3 class="fs-lg fw-semibold pt-1 mb-2">Adeola Kayode</h3>
+                <p class="fs-sm mb-0">Supervisor</p>
+                <a class="btn btn-link btn-lg" href="principal.html"> Read more
+                  <i class="bx bx-right-arrow-alt lead ms-2"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Facilities -->
+      <section class="container pb-5">
+        <h2 class="h1 text-center pt-1 pb-3 mb-3 mb-lg-4">School Facilities</h2>
+        <p class="text-center fs-lg mb-0 pb-3 mb-3 mb-lg-4">Experience top-notch facilities that enrich your educational journey and promote personal and academic growth.</p>
+          <!-- Gallery grid no gutters -->
+          <div class="tab-pane fade show active" id="preview8" role="tabpanel">
+            <div class="position-relative px-md-5">
+              <button type="button" id="prev" class="btn btn-prev btn-icon btn-sm position-absolute top-50 translate-middle-y start-0 d-none d-md-inline-flex mt-n4" tabindex="0" aria-label="Previous slide" aria-controls="swiper-wrapper-6104213cdbb7d000d">
+                <i class="bx bx-chevron-left"></i>
+              </button>
+              <button type="button" id="next" class="btn btn-next btn-icon btn-sm position-absolute top-50 translate-middle-y end-0 d-none d-md-inline-flex mt-n4" tabindex="0" aria-label="Next slide" aria-controls="swiper-wrapper-6104213cdbb7d000d">
+                <i class="bx bx-chevron-right"></i>
+              </button>
+              <div class="swiper swiper-nav-onhover pt-1 swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden" data-swiper-options="{
+                &quot;slidesPerView&quot;: 1,
+                &quot;spaceBetween&quot;: 20,
+                &quot;loop&quot;: true,
+                &quot;speed&quot;: 1000,
+                &quot;autoplay&quot;: {
+                  &quot;delay&quot;: 7000,
+                  &quot;disableOnInteraction&quot;: false
+                },
+                &quot;pagination&quot;: {
+                  &quot;el&quot;: &quot;.swiper-pagination&quot;,
+                  &quot;clickable&quot;: true
+                },
+                &quot;navigation&quot;: {
+                  &quot;prevEl&quot;: &quot;#prev&quot;,
+                  &quot;nextEl&quot;: &quot;#next&quot;
+                },
+                &quot;breakpoints&quot;: {
+                  &quot;500&quot;: {
+                    &quot;slidesPerView&quot;: 2,
+                    &quot;spaceBetween&quot;: 16
+                  },
+                  &quot;1200&quot;: {
+                    &quot;slidesPerView&quot;: 2,
+                    &quot;spaceBetween&quot;: 16
+                  },
+                  &quot;1650&quot;: {
+                    &quot;slidesPerView&quot;: 3,
+                    &quot;spaceBetween&quot;: 24
+                  }
+                }
+              }">
+              <div class="swiper-wrapper gallery" data-video="true" id="swiper-wrapper-6104213cdbb7d000d" aria-live="polite" style="transform: translate3d(-2613px, 0px, 0px); transition-duration: 0ms;"><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2" style="width: 419.5px; margin-right: 16px;" role="group" aria-label="3 / 4">
+                  <a href="assets/img/portfolio/courses/03.jpg" class="gallery-item rounded-3" data-sub-html="<h6 class=&quot;fs-sm text-light&quot;>Gallery image caption</h6>" data-lg-id="57115426-f6c8-4f67-b8f2-b1af18b1300a">
+                    <img src="assets/img/portfolio/courses/03.jpg" alt="Gallery thumbnail">
+                    <div class="gallery-item-caption fs-sm fw-medium">Gallery image caption</div>
+                  </a>
+                </div><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="3" style="width: 419.5px; margin-right: 16px;" role="group" aria-label="4 / 4">
+                  <a href="assets/img/portfolio/courses/07.jpg" class="gallery-item rounded-3" data-sub-html="<h6 class=&quot;fs-sm text-light&quot;>Gallery image caption</h6>" data-lg-id="9488fd02-b938-45e2-8b41-74e76c8a385d">
+                    <img src="assets/img/portfolio/courses/07.jpg" alt="Gallery thumbnail">
+                    <div class="gallery-item-caption fs-sm fw-medium">Gallery image caption</div>
+                  </a>
+                </div>
+                <div class="swiper-slide swiper-slide-duplicate-active" data-swiper-slide-index="0" style="width: 419.5px; margin-right: 16px;" role="group" aria-label="1 / 4">
+                  <a href="assets/img/portfolio/courses/08.jpg" class="gallery-item rounded-3" data-sub-html="<h6 class=&quot;fs-sm text-light&quot;>Gallery image caption</h6>" data-lg-id="d6aa7034-b177-424a-bf90-32738fdb67ee">
+                    <img src="assets/img/portfolio/courses/08.jpg" alt="Gallery thumbnail">
+                    <div class="gallery-item-caption fs-sm fw-medium">Gallery image caption</div>
+                  </a>    
+                </div>
+                <div class="swiper-slide swiper-slide-duplicate-next" data-swiper-slide-index="1" style="width: 419.5px; margin-right: 16px;" role="group" aria-label="2 / 4">
+                  <a href="https://www.youtube.com/watch?v=8KaJRw-rfn8" class="gallery-item video-item rounded-3" data-sub-html="<h6 class=&quot;fs-sm text-light&quot;>Gallery image caption</h6>" data-lg-id="11f3bf90-3b1d-4d16-b607-826451e79729">
+                    <img src="assets/img/portfolio/courses/01.jpg" alt="Gallery thumbnail">
+                    <div class="gallery-item-caption fs-sm fw-medium">Gallery video caption</div>
+                  </a>
+                </div>
+                <div class="swiper-slide" data-swiper-slide-index="2" style="width: 419.5px; margin-right: 16px;" role="group" aria-label="3 / 4">
+                  <a href="assets/img/portfolio/courses/03.jpg" class="gallery-item rounded-3" data-sub-html="<h6 class=&quot;fs-sm text-light&quot;>Gallery image caption</h6>" data-lg-id="9301ed2b-b973-4e9b-922a-7906387bde82">
+                    <img src="assets/img/portfolio/courses/03.jpg" alt="Gallery thumbnail">
+                    <div class="gallery-item-caption fs-sm fw-medium">Gallery image caption</div>
+                  </a>
+                </div>
+                <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="3" style="width: 419.5px; margin-right: 16px;" role="group" aria-label="4 / 4">
+                  <a href="assets/img/portfolio/courses/07.jpg" class="gallery-item rounded-3" data-sub-html="<h6 class=&quot;fs-sm text-light&quot;>Gallery image caption</h6>" data-lg-id="ffa3e59c-2c36-4533-baa9-7c5a9d896ba3">
+                    <img src="assets/img/portfolio/courses/07.jpg" alt="Gallery thumbnail">
+                    <div class="gallery-item-caption fs-sm fw-medium">Gallery image caption</div>
+                  </a>
+                </div>
+              <div class="swiper-slide swiper-slide-duplicate swiper-slide-active" data-swiper-slide-index="0" style="width: 419.5px; margin-right: 16px;" role="group" aria-label="1 / 4">
+                  <a href="assets/img/portfolio/courses/08.jpg" class="gallery-item rounded-3" data-sub-html="<h6 class=&quot;fs-sm text-light&quot;>Gallery image caption</h6>" data-lg-id="4fcdf930-4c5a-4ffc-8c74-9cd526f54571">
+                    <img src="assets/img/portfolio/courses/08.jpg" alt="Gallery thumbnail">
+                    <div class="gallery-item-caption fs-sm fw-medium">Gallery image caption</div>
+                  </a>    
+                </div><div class="swiper-slide swiper-slide-duplicate swiper-slide-next" data-swiper-slide-index="1" role="group" aria-label="2 / 4" style="width: 419.5px; margin-right: 16px;">
+                  <a href="https://www.youtube.com/watch?v=8KaJRw-rfn8" class="gallery-item video-item rounded-3" data-sub-html="<h6 class=&quot;fs-sm text-light&quot;>Gallery image caption</h6>" data-lg-id="87f80895-4275-461e-9ab2-8f7ed94b0056">
+                    <img src="assets/img/portfolio/courses/01.jpg" alt="Gallery thumbnail">
+                    <div class="gallery-item-caption fs-sm fw-medium">Gallery video caption</div>
+                  </a>
+                </div></div>
+              <div class="swiper-pagination position-relative pt-3 pt-sm-4 mt-4 swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1" aria-current="true"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4"></span></div>
+            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery -->
+      <section class="container pb-5 my-md-3 my-lg-5">
+        <div class="d-flex align-items-center justify-content-between pb-4 mb-2">
+          <h2 class="h1 mb-0">School Gallery</h2>
+          <a href="gallery.html" class="btn btn-primary shadow-primary btn-lg">
+            <i class="bx bx-images fs-4 lh-1 me-2"></i>
+            View More
+          </a>  
+        </div>
+        <p class="fs-lg mb-0 pb-3 mb-3 mb-lg-4">Explore our captivating gallery showcasing memorable moments, achievements, and vibrant school life.</p>
+
+          <!-- Gallery grid no gutters -->
+          <div class="tab-pane fade active show" id="preview6" role="tabpanel">
+            <div class="gallery row g-4" data-video="true" data-thumbnails="true">
+              
+              <div class="col-md-4">
+                <a href="assets/img/Crowe-with-Students-2.jpg"class="gallery-item rounded-3 mb-4" data-sub-html='<h6 class="fs-sm text-light">Students of Crowe International Schools</h6>'>
+                  <img src="assets/img/Crowe-with-Students-2.jpg" alt="Gallery thumbnail">
+                  <div class="gallery-item-caption fs-sm fw-medium">Students of Crowe Int'l Schools</div>
+                </a>
+                <a href="assets/img/Physics-Lab-Students-2.jpg" class="gallery-item rounded-3" data-sub-html='<h6 class="fs-sm text-light">Group of Students in front of our Physics Laboratory</h6>'>
+                  <img src="assets/img/Physics-Lab-Students-2.jpg" alt="Gallery thumbnail">
+                  <div class="gallery-item-caption fs-sm fw-medium">Group of Students in front of our Physics Laboratory</div>
+                </a>
+              </div>
+              <div class="col-md-4">
+                <a href="assets/img/Students-Assemly.jpg" class="gallery-item rounded-3 mb-4" data-sub-html='<h6 class="fs-sm text-light">Students at Crowe International Schools on Assemly Grounds</h6>'>
+                  <img src="assets/img/Students-Assemly.jpg" alt="Gallery thumbnail">
+                  <div class="gallery-item-caption fs-sm fw-medium">Students at Crowe Int'l Schools on Assemly Ground</div>
+                </a>
+                <a href="assets/img/Female-Students-Group-1.jpg" class="gallery-item rounded-3" data-sub-html='<h6 class="fs-sm text-light">Group of Female Students at Crowe International Schools</h6>'>
+                  <img src="assets/img/Female-Students-Group-1.jpg" alt="Gallery thumbnail">
+                  <div class="gallery-item-caption fs-sm fw-medium">Group of Female Students at Crowe Int'l Schools</div>
+                </a>
+              </div>
+              <div class="col-md-4">
+                <a href="assets/img/Male-Students-Group-2.jpg" class="gallery-item rounded-3 mb-4" data-sub-html='<h6 class="fs-sm text-light">Group of Male Students at Crowe International Schools</h6>'>
+                  <img src="assets/img/Male-Students-Group-2.jpg" alt="Gallery thumbnail">
+                  <div class="gallery-item-caption fs-sm fw-medium">Group of Male Students at Crowe Int'l Schoolss</div>
+                </a>
+                <a href="assets/img/Physics-Lab-Students-2.jpg" class="gallery-item rounded-3" data-sub-html='<h6 class="fs-sm text-light">Group of Students in front of our Physics Laboratory</h6>'>
+                  <img src="assets/img/Physics-Lab-Students-2.jpg" alt="Gallery thumbnail">
+                  <div class="gallery-item-caption fs-sm fw-medium">Group of Students in front of our Physics Laboratory</div>
+                </a>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="container">
+        <div class="position-relative bg-secondary rounded-3 py-5 mb-2">
+          <div class="row pb-2 py-md-3 py-lg-5 px-4 px-lg-0 position-relative zindex-3">
+            <div class="col-xl-3 col-lg-4 col-md-5 offset-lg-1">
+              <p class="lead mb-2 mb-md-3">Ready to get started?</p>
+              <h2 class="h1 pb-3">Don’t Hesitate to Contact Us</h2>
+            </div>
+            <form onsubmit="sendEmail(); return false;" class="col-lg-6 col-md-7 offset-xl-1 needs-validation pb-3 pb-lg-4" novalidate>
+              <div class="row pb-2">
+                <div class="col-sm-6 mb-4">
+                  <label for="fn" class="form-label fs-base">First name</label>
+                  <input type="text" id="fn" class="form-control form-control-lg" required>
+                  <div class="invalid-feedback">Please enter your first name!</div>
+                </div>
+                <div class="col-sm-6 mb-4">
+                  <label for="sn" class="form-label fs-base">Second name</label>
+                  <input type="text" id="sn" class="form-control form-control-lg" required>
+                  <div class="invalid-feedback">Please enter your second name!</div>
+                </div>
+                <div class="col-sm-6 mb-4">
+                  <label for="email" class="form-label fs-base">Email address</label>
+                  <input type="email" id="email" class="form-control form-control-lg" required>
+                  <div class="invalid-feedback">Please provide a valid email address!</div>
+                </div>
+                <div class="col-sm-6 mb-4">
+                  <label for="phone" class="form-label fs-base">Phone <small class="text-muted">(optional)</small></label>
+                  <input type="text" id="phone" class="form-control form-control-lg" 
+                  data-format='{"numericOnly": true, "delimiters": ["+234 ", " ", " ", " "]}' 
+                  placeholder="+234 ___ ___ ____">
+                </div>
+                <div class="col-12 mb-4">
+                  <label for="message" class="form-label fs-base">Message</label>
+                  <textarea id="message" class="form-control form-control-lg" rows="4" required></textarea>
+                  <div class="invalid-feedback">Please enter your message!</div>
+                </div>
+              </div>
+              <div class="d-flex mb-3">
+                <button type="submit" class="btn btn-primary shadow-primary">Send message</button>
+              </div>
+            </form>
+          </div>
+
+          <!-- Pattern -->
+          <div class="position-absolute end-0 bottom-0 text-primary">
+            <svg width="416" height="444" viewBox="0 0 416 444" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity="0.08" fill-rule="evenodd" clip-rule="evenodd" d="M240.875 615.746C389.471 695.311 562.783 640.474 631.69 504.818C700.597 369.163 645.201 191.864 496.604 112.299C348.007 32.7335 174.696 87.5709 105.789 223.227C36.8815 358.882 92.278 536.18 240.875 615.746ZM208.043 680.381C388.035 776.757 605.894 713.247 694.644 538.527C783.394 363.807 709.428 144.04 529.436 47.6636C349.443 -48.7125 131.584 14.7978 42.8343 189.518C-45.916 364.238 28.0504 584.005 208.043 680.381Z" fill="currentColor"></path><path opacity="0.08" fill-rule="evenodd" clip-rule="evenodd" d="M262.68 572.818C382.909 637.194 526.686 594.13 584.805 479.713C642.924 365.295 595.028 219.601 474.799 155.224C354.57 90.8479 210.793 133.912 152.674 248.33C94.5545 362.747 142.45 508.442 262.68 572.818ZM253.924 590.054C382.526 658.913 538.182 613.536 601.593 488.702C665.004 363.867 612.156 206.847 483.554 137.988C354.953 69.129 199.296 114.506 135.886 239.341C72.4752 364.175 125.323 521.195 253.924 590.054Z" fill="currentColor"></path></svg>
+          </div>
+        </div>
+      </section>
+
+      <!-- Social networks (Carousel on narrow screens) -->
+      <section class="container text-center py-5 my-2 my-md-4 my-lg-5">
+        <h2 class="h1 mb-4">We Have Social Networks</h2>
+        <p class="fs-lg pb-4 mb-1 mb-md-2 mb-lg-3">Follow us and keep up to date with the freshest news!</p>
+        <div class="swiper" data-swiper-options='{
+          "slidesPerView": 2,
+          "centeredSlides": true,
+          "loop": true,
+          "speed": 1000,
+          "autoplay": {
+            "delay": 5000,
+            "disableOnInteraction": false
+          },
+          "pagination": {
+            "el": ".swiper-pagination",
+            "clickable": true
+          },
+          "breakpoints": {
+            "500": {
+              "slidesPerView": 1
+            },
+            "650": {
+              "slidesPerView": 1
+            },
+            "900": {
+              "slidesPerView": 2
+            },
+            "1100": {
+              "slidesPerView": 2
+            }
+          }
+        }'>
+          <div class="swiper-wrapper">
+
+            <!-- Item -->
+            <div class="swiper-slide">
+              <div class="position-relative text-center border-end mx-n1">
+                <a href="#" class="btn btn-icon btn-secondary btn-facebook btn-lg stretched-link">
+                  <i class="bx bxl-facebook"></i>
+                </a>
+                <div class="pt-4">
+                  <h6 class="mb-1">Facebook</h6>
+                  <p class="fs-sm text-muted mb-0">School Name</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item -->
+            <div class="swiper-slide">
+              <div class="position-relative text-center border-end mx-n1">
+                <a href="#" class="btn btn-icon btn-secondary btn-linkedin btn-lg stretched-link">
+                  <i class="bx bxl-linkedin"></i>
+                </a>
+                <div class="pt-4">
+                  <h6 class="mb-1">LinkedIn</h6>
+                  <p class="fs-sm text-muted mb-0">School Name</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item -->
+            <div class="swiper-slide">
+              <div class="position-relative text-center border-end mx-n1">
+                <a href="#" class="btn btn-icon btn-secondary btn-twitter btn-lg stretched-link">
+                  <i class="bx bxl-twitter"></i>
+                </a>
+                <div class="pt-4">
+                  <h6 class="mb-1">Twitter</h6>
+                  <p class="fs-sm text-muted mb-0">@school_name</p>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- Pagination (bullets) -->
+        <div class="swiper-pagination position-relative bottom-0 pt-3 mt-4"></div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer dark-mode pt-5 pb-4 pb-lg-5" style="background-color: #521417;">
+      <div class="container pt-lg-4">
+        <div class="row pb-5">
+          <div class="col-lg-4 col-md-6">
+            <div class="navbar-brand text-dark p-0 me-0 mb-3 mb-lg-4">
+              <img src="assets/img/logo.png" width="40" alt="Crowe Schools">Crowe Int'l Schools
+            </div>
+            <p class="fs-lg text-light pb-lg-3 mb-4">Choose Crowe Schools, where academic excellence, values-based education, state-of-the-art facilities, and a supportive environment come together to provide students with the best possible education and prepare them for a successful future.</p>
+          </div>
+          <div class="fs-lg col-xl-6 col-lg-7 col-md-5 offset-xl-2 offset-md-1 pt-4 pt-md-1 pt-lg-0">
+            <div id="footer-links" class="row d-sm-flex">
+              <div class="col-lg-4">
+                <h6 class="mb-2">Useful Links</h6>
+                <div id="useful-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
+                  <ul class="nav flex-column pb-lg-1 mb-lg-3">
+                    <li class="nav-item"><a href="index-2.html" class="nav-link d-inline-block px-0 pt-1 pb-2">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link d-inline-block px-0 pt-1 pb-2">About School</a></li>
+                    <li class="nav-item"><a href="gallery.html" class="nav-link d-inline-block px-0 pt-1 pb-2">Gallery</a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link d-inline-block px-0 pt-1 pb-2">News &amp; Events</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-3">
+                <h6 class="mb-2">Socials</h6>
+                <div id="social-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
+                  <ul class="nav flex-column mb-2 mb-lg-0">
+                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Facebook</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">LinkedIn</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Twitter</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-5 pt-2 pt-lg-0">
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="nav d-block fs-xs text-center text-md-start pb-2 pb-lg-0 mb-0">
+          <span class="text-light opacity-50">&copy; All rights reserved.</span>
+          <a href="index-2.html" class="nav-link d-inline-block p-0" >Crowe Schools</a>
+        </p>
+      </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <a href="#top" class="btn-scroll-top" data-scroll>
+      <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
+      <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
+    </a>
+
+    <!-- Vendor Scripts -->
+    <script src="../cdn.jsdelivr.net/npm/bootstrap%405.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <!-- Form Scripts -->
+    <script src="../cdn.jsdelivr.net/npm/cleave.js%401.6.0/dist/cleave.min.js"></script>
+    <script src="../smtpjs.com/v3/smtp.js"></script>
+    <script> 
+      function sendEmail(){
+        Email.send({
+            SecureToken : "7c557e5f-7410-46b6-ae35-234dda714f48",
+            To : 'hakandejoshua03@gmail.com',
+            From : 'hakandejoshua03@gmail.com',
+            Subject : "School Website Contact Form Enquiry",
+            Body : "Name: " + document.getElementById("fn").value 
+                   + document.getElementById("sn").value
+                   + "<br> Email: " + document.getElementById("email").value
+                   + "<br> Phone Number: " + document.getElementById("phone").value
+                   + "<br> Message: " + document.getElementById("message").value
+        }).then(
+          message => alert("Message sent successfully")
+        );
+      }
+    </script>
+
+    <!-- Animation Scripts -->
+    <script src="assets/vendor/%40lottiefiles/lottie-player/dist/lottie-player.js"></script>
+
+    <!-- Slider and Gallery Scripts -->
+    <script src="../cdn.jsdelivr.net/npm/swiper%4010/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/lightgallery/lightgallery.min.js"></script>
+    <script src="assets/vendor/lightgallery/plugins/fullscreen/lg-fullscreen.min.js"></script>
+    <script src="assets/vendor/lightgallery/plugins/zoom/lg-zoom.min.js"></script>
+    <script src="assets/vendor/lightgallery/plugins/video/lg-video.min.js"></script>
+    <script src="assets/vendor/lightgallery/plugins/thumbnail/lg-thumbnail.min.js"></script>
+
+    <!-- Parallax and Animation Scripts -->
+    <script src="assets/vendor/parallax-js/dist/parallax.min.js"></script>
+    <script src="assets/vendor/rellax/rellax.min.js"></script>
+    <script src="assets/vendor/jarallax/dist/jarallax.min.js"></script>
+
+    <!-- Image and Animation Scripts -->
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/shufflejs/dist/shuffle.min.js"></script>
+
+    <!-- Main Theme Script -->
+    <script src="assets/js/theme.min.js"></script>
+  </body>
+
+<!-- Mirrored from croweschools.com/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 24 Apr 2024 06:55:38 GMT -->
+</html>
